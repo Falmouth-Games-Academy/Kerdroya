@@ -20,12 +20,17 @@ public class BallMaze : MonoBehaviour
     {
         ballStartingPoint = ballRef.transform.position;
     }
-    void SetGyroData(Quaternion GyroData)
+    public void SetGyroData(Quaternion GyroData)
     {
         gyroData = new Quaternion(GyroData.x, GyroData.y, 0.0f, GyroData.z);
     }
 
-    void Activate()
+    public bool isActive()
+    {
+        return active;
+    }
+
+    public void Activate()
     {
         active = true;
     }
