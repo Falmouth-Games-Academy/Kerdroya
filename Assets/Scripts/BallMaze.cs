@@ -22,7 +22,7 @@ public class BallMaze : MonoBehaviour
     }
     public void SetGyroData(Quaternion GyroData)
     {
-        gyroData = new Quaternion(GyroData.x, GyroData.y, 0.0f, GyroData.z);
+        gyroData = new Quaternion(GyroData.x, GyroData.y, 0.0f, GyroData.w);
     }
 
     public bool isActive()
