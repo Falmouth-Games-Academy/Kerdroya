@@ -10,5 +10,6 @@ public class TapObject : MonoBehaviour
     {
         gameObject.GetComponent<MeshRenderer>().material = changeMaterial;
         maze.Activate();
+
     }
 }
