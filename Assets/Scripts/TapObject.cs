@@ -6,10 +6,18 @@ public class TapObject : MonoBehaviour
 {
     public Material changeMaterial;
     public BallMaze maze;
+    public Sigil sigil;
+    public bool isMaze;
     public void activate()
     {
         gameObject.GetComponent<MeshRenderer>().material = changeMaterial;
-        maze.Activate();
-
+        if (isMaze == true)
+        {
+            maze.Activate();
+        }
+        else
+        {
+            sigil.Activate();
+        }
     }
 }
