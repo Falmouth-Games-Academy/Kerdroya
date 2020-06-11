@@ -12,9 +12,9 @@ public class SigilWaypoint : MonoBehaviour
 
     public Material activeMaterial;
     public Material inactiveMaterial;
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.collider.name == "FingerTracker")
+        if (other.name == "FingerTracker")
         {
             if (parent.progressNumber == numberInOrder - 1)
             {
@@ -23,6 +23,7 @@ public class SigilWaypoint : MonoBehaviour
             }
         }
     }
+
 
     public void DisableWaypoint()
     {
