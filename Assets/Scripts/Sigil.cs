@@ -20,6 +20,7 @@ public class Sigil : MonoBehaviour
         for (int i = 0;  i < waypoints.Length; i++)
         {
             waypoints[i].GetComponent<SigilWaypoint>().numberInOrder = i + 1;
+            waypoints[i].GetComponent<SigilWaypoint>().parent = this;
         }
         Activate();
     }

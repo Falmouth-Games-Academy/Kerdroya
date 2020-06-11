@@ -20,6 +20,7 @@ public class SigilWaypoint : MonoBehaviour
             {
                 gameObject.GetComponent<MeshRenderer>().material = activeMaterial;
                 waypointActivated = true;
+                parent.progressNumber++;
             }
         }
     }
