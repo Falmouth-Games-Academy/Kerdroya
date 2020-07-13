@@ -37,7 +37,7 @@ public class GyroRotate : MonoBehaviour
         ApplyCalibration();
 
         transform.rotation = Quaternion.Slerp(transform.rotation, _rawGyroRotation.rotation, _smoothing);
-        if (maze.isActive())
+        if (maze != null && maze.isActive())
         {
             maze.SetGyroData(transform.rotation);
         }
