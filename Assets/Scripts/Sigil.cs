@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Sigil : MonoBehaviour
 
@@ -15,14 +17,20 @@ public class Sigil : MonoBehaviour
     private bool active = false;
     public bool completed;
 
+    private AppProgression appProgress;
+
+
     private void Start()
     {
         for (int i = 0;  i < waypoints.Length; i++)
         {
             waypoints[i].GetComponent<SigilWaypoint>().numberInOrder = i + 1;
             waypoints[i].GetComponent<SigilWaypoint>().parent = this;
-        }
+        }    
         Activate();
+
+        appProgress = GameObject.Find("AppProgress").GetComponent<AppProgression>();
+
     }
     public void Activate()
    {
@@ -52,6 +60,13 @@ public class Sigil : MonoBehaviour
     {
         if (active)
         {
+            if (progressNumber == waypoints.Length)
+            {
+                if (appProgress)
+                {
+                    appProgress.levelCompleted[SceneManager.GetActiveScene().buildIndex - 1] = true;
+                }
+            }
             if (Input.touchCount > 0)
             {
                 for (var i = 0; i < Input.touchCount; i++)
