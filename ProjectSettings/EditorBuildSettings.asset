@@ -6,42 +6,42 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestingScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/MainMenu.unity
+    guid: cc99bad90b4f8b441a721a5ff13645d0
   - enabled: 1
     path: Assets/Scenes/Predannak-1.unity
     guid: 40f8fd81349b1b245be4cfa4d47ae268
   - enabled: 1
-    path: Assets/Scenes/Morwenstow-2.unity
-    guid: 2f59f7e673c88404da01ce5147305833
+    path: Assets/Scenes/Clarrick Woods-2.unity
+    guid: b48b7dccf5b45f941915ac1a58af964f
   - enabled: 1
-    path: Assets/Scenes/Boscastle-3.unity
-    guid: 883c8af7584813c4badec5f702947d12
+    path: Assets/Scenes/Morwenstow-3.unity
+    guid: f0d034025d0de4e48849607e82da3fbd
   - enabled: 1
-    path: Assets/Scenes/St Agnes Head-4.unity
-    guid: 4ee1a079edb7ced43aa6178dd8f439e8
+    path: Assets/Scenes/Cape Cornwall-4.unity
+    guid: 587cf1d03301a8548b97f54439eebd0e
   - enabled: 1
-    path: Assets/Scenes/Lansallos-5.unity
-    guid: 0e45817ca61f5ed43ad34e0354f31986
+    path: Assets/Scenes/Boscastle-5.unity
+    guid: aba94eb9b0cafc046878cad1e98cc3b9
   - enabled: 1
-    path: Assets/Scenes/Tehidy-6.unity
-    guid: 4ec5d2a21d8c80a4594e594f0642a2a4
+    path: Assets/Scenes/Park Head-6.unity
+    guid: cda8a232c83184a41aa9f142671ca42e
   - enabled: 1
-    path: Assets/Scenes/Colliford Lake-7.unity
-    guid: 7d42ccc2e397c0842bb5fa1806d7efde
+    path: Assets/Scenes/St Agnes Head-7.unity
+    guid: a01d58d88553eb44f9072180e5009f09
   - enabled: 1
-    path: Assets/Scenes/Camel Trail-8.unity
+    path: Assets/Scenes/The Blouth-8.unity
+    guid: 8b03fbf3b4c61b64a8c9b98461a9d287
+  - enabled: 1
+    path: Assets/Scenes/Padstow-9.unity
     guid: c6a25336ca42d364f9cd4ee659c2d44c
   - enabled: 1
-    path: Assets/Scenes/The Blouth-9.unity
-    guid: fa9b6ac26a393ed47a2cce2cd97ff877
+    path: Assets/Scenes/Lansallos-10.unity
+    guid: 0e45817ca61f5ed43ad34e0354f31986
   - enabled: 1
-    path: Assets/Scenes/Park Head-10.unity
-    guid: 9eda4b92193c9034fa14ad60c8b6d16b
+    path: Assets/Scenes/Tehidy-11.unity
+    guid: 4ec5d2a21d8c80a4594e594f0642a2a4
   - enabled: 1
-    path: Assets/Scenes/Cape Cornwall-11.unity
-    guid: 16b2c07cea0d28946b00652f6ae11d68
-  - enabled: 1
-    path: Assets/Scenes/Clarrick Woods-12.unity
-    guid: 3318e42cd6818294b8a33f4331ece8d8
+    path: Assets/Scenes/Colliford Lake-12.unity
+    guid: 7d42ccc2e397c0842bb5fa1806d7efde
   m_configObjects: {}
