@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BallMaze : MonoBehaviour
 {
@@ -16,9 +17,12 @@ public class BallMaze : MonoBehaviour
     public bool completed;
     private Vector3 ballStartingPoint;
 
+    private AppProgression appProgress;
+
     private void Start()
     {
         ballStartingPoint = ballRef.transform.position;
+        appProgress = GameObject.Find("AppProgress").GetComponent<AppProgression>();
     }
     public void SetGyroData(Quaternion GyroData)
     {
@@ -68,6 +72,10 @@ public class BallMaze : MonoBehaviour
                 if (progress < 1 && ending)
                 {
                     completed = true;
+                    if (appProgress)
+                    {
+                        appProgress.levelCompleted[SceneManager.GetActiveScene().buildIndex-1] = true;
+                    }
                 }
             }
             /* For debugging purposes to test mazes on PC */            
