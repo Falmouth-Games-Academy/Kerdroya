@@ -29,6 +29,7 @@ public class MoveOnTouch : MonoBehaviour
         {
             showDetails = GameObject.Find("ShowDetails").GetComponent<ShowDetails>();
         }
+
     }
 
 

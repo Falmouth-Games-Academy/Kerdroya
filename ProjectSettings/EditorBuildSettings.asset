@@ -11,37 +11,40 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Predannak-1.unity
     guid: 40f8fd81349b1b245be4cfa4d47ae268
-  - enabled: 1
-    path: Assets/Scenes/Morwenstow-2.unity
-    guid: 2f59f7e673c88404da01ce5147305833
   - enabled: 0
-    path: Assets/Scenes/Boscastle-3.unity
-    guid: 883c8af7584813c4badec5f702947d12
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/St Agnes Head-4.unity
-    guid: 4ee1a079edb7ced43aa6178dd8f439e8
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Lansallos-5.unity
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/Lansallos-10.unity
     guid: 0e45817ca61f5ed43ad34e0354f31986
   - enabled: 0
-    path: Assets/Scenes/Tehidy-6.unity
+    path: Assets/Scenes/Tehidy-11.unity
     guid: 4ec5d2a21d8c80a4594e594f0642a2a4
   - enabled: 0
-    path: Assets/Scenes/Colliford Lake-7.unity
+    path: Assets/Scenes/Colliford Lake-12.unity
     guid: 7d42ccc2e397c0842bb5fa1806d7efde
   - enabled: 0
-    path: Assets/Scenes/Camel Trail-8.unity
+    path: Assets/Scenes/Padstow-9.unity
     guid: c6a25336ca42d364f9cd4ee659c2d44c
   - enabled: 0
-    path: Assets/Scenes/The Blouth-9.unity
-    guid: fa9b6ac26a393ed47a2cce2cd97ff877
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Park Head-10.unity
-    guid: 9eda4b92193c9034fa14ad60c8b6d16b
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Cape Cornwall-11.unity
-    guid: 16b2c07cea0d28946b00652f6ae11d68
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Clarrick Woods-12.unity
-    guid: 3318e42cd6818294b8a33f4331ece8d8
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Morwenstow-3.unity
+    guid: f0d034025d0de4e48849607e82da3fbd
   m_configObjects: {}
