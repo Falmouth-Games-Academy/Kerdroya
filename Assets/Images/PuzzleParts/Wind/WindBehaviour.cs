@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 public class WindBehaviour : MonoBehaviour
 {
-    public float lifespan = 2;
+    public float timer;
     Animator animator;
     BoxCollider boxCollider;
     
@@ -15,7 +15,8 @@ public class WindBehaviour : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        //animator.Play()
+
+        timer = Random.Range(2.0f, 6.0f);
     }
 
     void OnTriggerEnter(Collider other)
@@ -24,19 +25,29 @@ public class WindBehaviour : MonoBehaviour
         animator.SetInteger("State", 2);
     }
 
+    void ResetTimer()
+    {
+       
+        timer = Random.Range(2.0f, 6.0f);
+        animator.SetInteger("State", 0);
+        animator.Play("WindAnimation");
+
+    }
+
     // Update is called once per frame
     void Update()
     {
 
-        if (lifespan > 0)
+        if (timer > 0)
         {
-            lifespan -= Time.deltaTime;
+            timer -= Time.deltaTime;
         }
-        if (lifespan <= 0)
+        if (timer <= 0)
         {
-            //Debug.Log("sodfhsdfh");
-            animator.SetInteger("State", 1);
             
+            ResetTimer();
+            
+
         }
     }
 }
