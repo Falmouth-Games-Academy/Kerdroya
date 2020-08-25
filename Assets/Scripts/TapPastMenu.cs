@@ -17,7 +17,6 @@ public class TapPastMenu : MonoBehaviour
 
     public void ChangeScene(int input)
     {
-        Debug.Log("ASS");
         UnityEngine.SceneManagement.SceneManager.LoadScene(input);
     }
 }

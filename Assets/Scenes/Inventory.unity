@@ -375,7 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 324244567}
-  scene: 10
+  scene: 0
 --- !u!1 &632271770
 GameObject:
   m_ObjectHideFlags: 0

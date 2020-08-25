@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: cc99bad90b4f8b441a721a5ff13645d0
+  - enabled: 1
     path: Assets/Scenes/Predannak-1.unity
     guid: 40f8fd81349b1b245be4cfa4d47ae268
   - enabled: 1
@@ -35,9 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cape Cornwall-11.unity
     guid: 587cf1d03301a8548b97f54439eebd0e
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: cc99bad90b4f8b441a721a5ff13645d0
   - enabled: 1
     path: Assets/Scenes/Clarrick Woods-12.unity
     guid: b48b7dccf5b45f941915ac1a58af964f
