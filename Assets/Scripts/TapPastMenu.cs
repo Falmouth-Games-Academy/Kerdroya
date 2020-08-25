@@ -1,11 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TapPastMenu : MonoBehaviour
 {
-    public void OnMouseDown()
+    public Button SceneSelectButton;
+    public int scene; //BUILD SETTING ID, thats file -> build settings
+
+
+    void Start()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        SceneSelectButton.onClick.AddListener(() => ChangeScene(scene));
+    }
+
+
+    public void ChangeScene(int input)
+    {
+        Debug.Log("ASS");
+        UnityEngine.SceneManagement.SceneManager.LoadScene(input);
     }
 }

@@ -6,20 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: cc99bad90b4f8b441a721a5ff13645d0
-  - enabled: 1
     path: Assets/Scenes/Predannak-1.unity
     guid: 40f8fd81349b1b245be4cfa4d47ae268
-  - enabled: 1
-    path: Assets/Scenes/Morwenstow-2.unity
-    guid: f0d034025d0de4e48849607e82da3fbd
-  - enabled: 1
-    path: Assets/Scenes/Boscastle-3.unity
-    guid: aba94eb9b0cafc046878cad1e98cc3b9
-  - enabled: 1
-    path: Assets/Scenes/St Agnes Head-4.unity
-    guid: a01d58d88553eb44f9072180e5009f09
   - enabled: 1
     path: Assets/Scenes/Lansallos-5.unity
     guid: 0e45817ca61f5ed43ad34e0354f31986
@@ -30,18 +18,36 @@ EditorBuildSettings:
     path: Assets/Scenes/Colliford Lake-7.unity
     guid: 7d42ccc2e397c0842bb5fa1806d7efde
   - enabled: 1
+    path: Assets/Scenes/Boscastle-3.unity
+    guid: aba94eb9b0cafc046878cad1e98cc3b9
+  - enabled: 1
+    path: Assets/Scenes/Morwenstow-2.unity
+    guid: f0d034025d0de4e48849607e82da3fbd
+  - enabled: 1
     path: Assets/Scenes/Padstow-8.unity
     guid: c6a25336ca42d364f9cd4ee659c2d44c
+  - enabled: 1
+    path: Assets/Scenes/Inventory.unity
+    guid: 2829ac472a5938a49bdbb76ca2eb94b6
+  - enabled: 1
+    path: Assets/Scenes/SceneSelection.unity
+    guid: 47eec26374ba73e428e16ebebba2701a
+  - enabled: 1
+    path: Assets/Scenes/Cape Cornwall-11.unity
+    guid: 587cf1d03301a8548b97f54439eebd0e
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: cc99bad90b4f8b441a721a5ff13645d0
+  - enabled: 1
+    path: Assets/Scenes/Clarrick Woods-12.unity
+    guid: b48b7dccf5b45f941915ac1a58af964f
+  - enabled: 1
+    path: Assets/Scenes/St Agnes Head-4.unity
+    guid: a01d58d88553eb44f9072180e5009f09
   - enabled: 1
     path: Assets/Scenes/The Blouth-9.unity
     guid: 8b03fbf3b4c61b64a8c9b98461a9d287
   - enabled: 1
     path: Assets/Scenes/Park Head-10.unity
     guid: cda8a232c83184a41aa9f142671ca42e
-  - enabled: 1
-    path: Assets/Scenes/Cape Cornwall-11.unity
-    guid: 587cf1d03301a8548b97f54439eebd0e
-  - enabled: 1
-    path: Assets/Scenes/Clarrick Woods-12.unity
-    guid: b48b7dccf5b45f941915ac1a58af964f
   m_configObjects: {}
