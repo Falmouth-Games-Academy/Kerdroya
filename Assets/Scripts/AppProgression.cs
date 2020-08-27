@@ -7,27 +7,24 @@ using UnityEngine.UI;
 
 public class AppProgression : MonoBehaviour
 {
-    private bool created = false;
     public bool openingwatched = false;
     public bool[] levelCompleted = new bool[12];
-
     public DisplayProgress display;
 
+    private static AppProgression _instance;
+    public static AppProgression Instance { get { return _instance; } }
+
     // Prevent this object from being destroyed between scenes loading.
-    void Awake()
+    private void Awake()
     {
-        if (!created)
+        if (_instance != null && _instance != this)
         {
-            DontDestroyOnLoad(this.gameObject);
-            created = true;
-            if (!LoadGame())
-            {
-                SaveGame();
-            }
+            Destroy(this.gameObject);
         }
         else
         {
-            Destroy(this.gameObject);
+            _instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
     }
 
