@@ -15,6 +15,20 @@ public class BeeBehaviour : MonoBehaviour
         rand = Random.Range(1f, 10f); //This random value get's added to the sine wave so each bee is unique
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        switch (other.gameObject.name)
+        {
+            case "BeeGenerator":
+                GameObject.Destroy(gameObject);
+                break;
+            default:
+                break;
+        }
+
+        
+    }
+
     // Update is called once per frame
     void Update()
     {

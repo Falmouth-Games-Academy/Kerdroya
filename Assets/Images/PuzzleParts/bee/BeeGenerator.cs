@@ -7,7 +7,7 @@ public class BeeGenerator : MonoBehaviour
 
     public GameObject bee;
     public float timer = 3;
-    public bool left;
+    public bool right;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,17 +20,19 @@ public class BeeGenerator : MonoBehaviour
             GameObject b = Instantiate(bee, bee.transform.localPosition, bee.transform.localRotation);
             b.transform.parent = transform;
             b.transform.localPosition = Vector3.zero;
-            BeeBehaviour beeBahaviour = b.GetComponent<BeeBehaviour>();
+            BeeBehaviour beeBehaviour = b.GetComponent<BeeBehaviour>();
+            beeBehaviour.leftFacing = true;
 
-            float xpos = 2;
-            if (left)
+            float xpos = -2;
+            if (!right)
             {
-                xpos = -2;
-                beeBahaviour.leftFacing = false;
+                xpos = 2;
+                beeBehaviour.leftFacing = false;
                 b.transform.localRotation = Quaternion.Euler(0, 180,0);
             }
-            b.transform.localPosition = new Vector3(xpos, Random.Range(-0.5f, 0.5f), b.transform.localPosition.z);
-
+            beeBehaviour.startYpos = Random.Range(-0.5f, 0.5f);
+            b.transform.localPosition = new Vector3(xpos,beeBehaviour.startYpos, b.transform.localPosition.z);
+            
 
 
             //b.GetComponent<BeeBehaviour>().Initialise();
