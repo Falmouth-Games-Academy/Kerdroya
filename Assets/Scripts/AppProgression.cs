@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class AppProgression : MonoBehaviour
 {
     public bool openingwatched = false;
-    public bool[] levelCompleted = new bool[12];
+    public static bool[] levelCompleted = new bool[12];
     public DisplayProgress display;
 
     private static AppProgression _instance;

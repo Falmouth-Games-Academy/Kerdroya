@@ -10,7 +10,7 @@ public class DisplayProgress : MonoBehaviour
     public void Display()
     {
         int i = 0;
-        foreach (bool level in progress.levelCompleted)
+        foreach (bool level in AppProgression.levelCompleted)
         {
             gameObject.GetComponent<Text>().text += "Level " + i  + " Completed " + level + "\n";
             i++;
@@ -21,7 +21,7 @@ public class DisplayProgress : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            progress.levelCompleted[0] = true;
+            AppProgression.levelCompleted[0] = true;
             progress.SaveGame();
         }
     }
