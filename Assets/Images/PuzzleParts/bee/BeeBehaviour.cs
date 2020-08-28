@@ -6,12 +6,15 @@ public class BeeBehaviour : MonoBehaviour
 {
     public bool leftFacing;
     public float speed = 1.5f;
-    public int state = 1; //0 flying, 1 going to flower, 2 leaving.
+    public int state = 0; //0 flying, 1 going to flower, 2 leaving.
     public float startYpos = 0;
     float rand;
+    public GameObject Flower;
+
     // Start is called before the first frame update
     void Start()
     {
+        Flower = GameObject.Find("Flower");
         rand = Random.Range(1f, 10f); //This random value get's added to the sine wave so each bee is unique
     }
 
@@ -21,6 +24,14 @@ public class BeeBehaviour : MonoBehaviour
         {
             case "BeeGenerator":
                 GameObject.Destroy(gameObject);
+                break;
+
+            case "FlowerZone":
+                if (state == 0 && Flower != null)
+                {
+                    state = 1;
+                }
+                
                 break;
             default:
                 break;
@@ -51,6 +62,11 @@ public class BeeBehaviour : MonoBehaviour
                 }
                 break;
             case 1:
+                transform.position = Vector3.MoveTowards(transform.position, Flower.transform.position, 0.02f);
+                if (Vector3.Distance(transform.position, Flower.transform.position) < 0.1f)
+                {
+                    GameObject.Destroy(gameObject);
+                }
                 break;
             case 3:
                 break;

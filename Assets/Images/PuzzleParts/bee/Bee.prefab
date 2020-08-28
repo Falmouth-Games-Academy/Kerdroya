@@ -98,6 +98,7 @@ MonoBehaviour:
   speed: 1.5
   state: 0
   startYpos: 0
+  Flower: {fileID: 3755221215552559026, guid: 31bea183e8c88944b9fa2a9edace3445, type: 3}
 --- !u!65 &-7108327437805798037
 BoxCollider:
   m_ObjectHideFlags: 0
