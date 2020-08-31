@@ -10,9 +10,11 @@ public class AudioManager : MonoBehaviour
 
     private int playOrder = 0;
 
-    public GameObject interTitle;
+
 
     private bool audioQueued = false;
+
+    public  bool audioEnded = false; //
 
     // Start is called before the first frame update
     void Start()
@@ -24,16 +26,19 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!audioSource.isPlaying && playOrder == 0)
+        if(!audioEnded)
         {
-            interTitle.SetActive(false);
-            AdvancePlayOrder();
-        }
+            if (!audioSource.isPlaying && playOrder == 0)
+            {
+                audioEnded = true;
+                AdvancePlayOrder();
+            }
 
-        if (audioQueued)
-        {
-            audioQueued = false;
-            AdvancePlayOrder();
+            if (audioQueued)
+            {
+                audioQueued = false;
+                AdvancePlayOrder();
+            }
         }
     }
 
