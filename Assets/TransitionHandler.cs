@@ -21,9 +21,12 @@ public class TransitionHandler : MonoBehaviour
     public float puzzleFadeInSpeed = 0.05f;
     private float totalFadeInValue = 0f;
 
+    private Renderer myRenderer;
+
     private void Start()
     {
         WindPuzzle.SetActive(false);
+        myRenderer = findObjectTarget.GetComponent<Renderer>();
     }
 
     void Update()
@@ -62,18 +65,30 @@ public class TransitionHandler : MonoBehaviour
         {
             if (hit.transform.Equals(findObjectTarget.transform))
             {
-                Transform objectHit = hit.transform;
+                myRenderer.material.color = new Color(1, 1, 1, timeWaited/findObjectRollOverTime);
+
                 timeWaited += Time.deltaTime;
                 if (timeWaited > findObjectRollOverTime)
                 {
                     sceneState = 3;
                 }
             }
+            else
+            {
+                RayNotHitTarget();
+            }
         }
         else
         {
-            timeWaited = 0;
+            RayNotHitTarget();
         }
+    }
+
+    private void RayNotHitTarget()
+    {
+        myRenderer = findObjectTarget.GetComponent<Renderer>();
+        myRenderer.material.color = new Color(1, 1, 1, 0.01f);
+        timeWaited = 0;
     }
 
     private void SceneThree() //Transition to game
@@ -90,7 +105,6 @@ public class TransitionHandler : MonoBehaviour
                 }
                 if (fadeTarget.GetComponent<SpriteRenderer>() != null)
                 {
-                    Debug.Log(fadeTarget.name);
                     Renderer myRenderer = fadeTarget.GetComponent<SpriteRenderer>();
                     myRenderer.material.color = new Color(1, 1, 1, 0f);
                 }
@@ -103,7 +117,6 @@ public class TransitionHandler : MonoBehaviour
             if (totalFadeInValue >= 0.99f) { totalFadeInValue = 1.0f; }
             foreach (GameObject fadeTarget in GameObject.FindGameObjectsWithTag("PuzzleComponent"))
             {
-                Debug.Log(totalFadeInValue);
                 if (fadeTarget.GetComponent<Renderer>() != null)
                 {
                     fadeTarget.GetComponent<Renderer>().material.color = new Color(1, 1, 1, totalFadeInValue);
