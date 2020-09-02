@@ -11,6 +11,8 @@ public class AppProgression : MonoBehaviour
     public static bool[] levelCompleted = new bool[12];
     public DisplayProgress display;
 
+    public static int currentComplete = -1;
+
     private static AppProgression _instance;
     public static AppProgression Instance { get { return _instance; } }
 

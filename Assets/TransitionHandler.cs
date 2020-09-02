@@ -5,28 +5,34 @@ using UnityEngine;
 public class TransitionHandler : MonoBehaviour
 {
     public GameObject interTitle;
+    public GameObject fadeOutObject;
     public GameObject WindPuzzle;
     public AudioManager AManager;
     public Camera cam;
 
     public int sceneState = 0;
+    public int puzzleID = -1;// each puzzle has associated ID, see scene number
 
+    //Scene one
     private float alphaDelta = 0f;
     public float alphaTranitionSpeed = 0.05f; //speed of fade out on intertitle
-
+    //Scene two
     public GameObject findObjectTarget; // GameObject containing hidden
     public float findObjectRollOverTime = 1000;//time taken before object location recognised
     public float timeWaited = 0;
-
+    //Scene three
     public float puzzleFadeInSpeed = 0.05f;
     private float totalFadeInValue = 0f;
-
+    //scene four
+    
+    // internal globals
     private Renderer myRenderer;
 
     private void Start()
     {
         WindPuzzle.SetActive(false);
         myRenderer = findObjectTarget.GetComponent<Renderer>();
+        fadeOutObject.GetComponent<UnityEngine.UI.RawImage>().color = new Color(1, 1, 1, 0);
     }
 
     void Update()
@@ -37,6 +43,7 @@ public class TransitionHandler : MonoBehaviour
             case 1: SceneOne(); break;
             case 2: SceneTwo(); break; // used by FreeCamera script
             case 3: SceneThree(); break;
+            case 4: SceneFour(); break; //triggered externally by minigame progress tracker
         }
     }
 
@@ -54,6 +61,7 @@ public class TransitionHandler : MonoBehaviour
         interTitle.GetComponent<UnityEngine.UI.RawImage>().color = new Color(1, 1, 1, Mathf.SmoothStep(1.0f, 0.0f, alphaDelta));
         if (alphaDelta > 0.95f)
         {
+            alphaDelta = 0;
             interTitle.SetActive(false);
             sceneState = 2;
         }
@@ -126,6 +134,18 @@ public class TransitionHandler : MonoBehaviour
                     fadeTarget.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, totalFadeInValue);
                 }
             }
+        }
+    }
+
+    private void SceneFour()
+    {
+        alphaDelta += alphaTranitionSpeed;
+        fadeOutObject.GetComponent<UnityEngine.UI.RawImage>().color = new Color(1, 1, 1, Mathf.SmoothStep(1.0f, 0.0f, 1-alphaDelta));
+        if (alphaDelta > 0.95f)
+        {
+            AppProgression.levelCompleted[puzzleID] = true;
+            AppProgression.currentComplete = puzzleID;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(8);
         }
     }
 }

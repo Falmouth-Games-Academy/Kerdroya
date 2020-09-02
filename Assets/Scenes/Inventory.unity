@@ -1334,7 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.3097484
+  m_AspectRatio: 2.029734
 --- !u!1 &1282688609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,6 +1930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StainedWindowPanel: {fileID: 1222523980}
+  alphaTransitionSpeed: 0.01
 --- !u!4 &1787645408
 Transform:
   m_ObjectHideFlags: 0

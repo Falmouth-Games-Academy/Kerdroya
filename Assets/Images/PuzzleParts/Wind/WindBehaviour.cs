@@ -9,7 +9,7 @@ public class WindBehaviour : MonoBehaviour
     public float timer;
     Animator animator;
     BoxCollider boxCollider;
-    
+    public MinigameProgressTracker MGPT;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +21,11 @@ public class WindBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("collision");
-        animator.SetInteger("State", 2);
+        if (animator.GetInteger("State") != 2)
+        {
+            MGPT.points++;
+            animator.SetInteger("State", 2);
+        }
     }
 
     void ResetTimer()
@@ -44,10 +47,7 @@ public class WindBehaviour : MonoBehaviour
         }
         if (timer <= 0)
         {
-            
             ResetTimer();
-            
-
         }
     }
 }
