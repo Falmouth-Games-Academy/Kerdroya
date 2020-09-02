@@ -2290,7 +2290,7 @@ MonoBehaviour:
   cam: {fileID: 675972678}
   sceneState: 0
   puzzleID: 3
-  alphaTranitionSpeed: 0.05
+  alphaTranitionSpeed: 0.015
   findObjectTarget: {fileID: 624695735}
   findObjectRollOverTime: 1.5
   timeWaited: 0
