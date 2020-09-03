@@ -27,6 +27,7 @@ public class InventoryUIController : MonoBehaviour
             case 0: FadeInWhiteout(); break;
             case 1: FadeInPiece(); break;
             case 2: FadeInWindow(); break;
+            case 3: sceneState = -1; AppProgression.currentComplete = -1; break;
         }
     }
 
@@ -64,7 +65,7 @@ public class InventoryUIController : MonoBehaviour
         if (alphaDelta > 0.95f)
         {
             setWindowAlphaWithException(1, AppProgression.currentComplete);
-            sceneState = -1;
+            sceneState = 3;
         }
     }
 
