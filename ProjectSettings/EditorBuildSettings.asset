@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Park Head-10.unity
     guid: cda8a232c83184a41aa9f142671ca42e
+  - enabled: 1
+    path: Assets/Scenes/End Sequence.unity
+    guid: 406463952862e1e419a1bfe18830ee80
   m_configObjects: {}

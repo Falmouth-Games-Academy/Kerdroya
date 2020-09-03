@@ -1404,7 +1404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.9280125
+  m_AspectRatio: 1.8607199
 --- !u!1 &1264341448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,7 +1432,7 @@ RectTransform:
   m_GameObject: {fileID: 1264341448}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25098, y: 1.25098, z: 1.25098}
+  m_LocalScale: {x: 1.3334196, y: 1.4056011, z: 1.25098}
   m_Children:
   - {fileID: 492719304}
   m_Father: {fileID: 1562017126}

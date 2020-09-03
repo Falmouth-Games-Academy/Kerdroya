@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 //!!    ASSUMES APP PROGRESSION ORDER = WINDOW HIERARCHY ORDER  !!
@@ -24,11 +25,18 @@ public class InventoryUIController : MonoBehaviour
 
         switch (sceneState)
         {
-            case 0: FadeInWhiteout(); break;
-            case 1: FadeInPiece(); break;
-            case 2: FadeInWindow(); break;
-            case 3: sceneState = -1; AppProgression.currentComplete = -1; break;
+            case -1: DefaultAction(); break;
+            case  0: FadeInWhiteout(); break;
+            case  1: FadeInPiece(); break;
+            case  2: FadeInWindow(); break;
+            case  3: sceneState = -1; AppProgression.currentComplete = -1; break;
         }
+    }
+
+    private void DefaultAction()
+    {
+        //go to end scene is all levels complete
+        if (AppProgression.levelCompleted.All(x => x)) UnityEngine.SceneManagement.SceneManager.LoadScene(15);
     }
 
     private void FadeInWhiteout()
