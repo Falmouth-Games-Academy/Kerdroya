@@ -10,11 +10,12 @@ public class BeeBehaviour : MonoBehaviour
     public float startYpos = 0;
     float rand;
     public GameObject Flower;
-
+    private MinigameProgressTracker progressTracker;
     // Start is called before the first frame update
     void Start()
     {
         Flower = GameObject.Find("Flower");
+        progressTracker = GameObject.Find("GameManager").GetComponent("MinigameProgressTracker") as MinigameProgressTracker;
         rand = Random.Range(1f, 10f); //This random value get's added to the sine wave so each bee is unique
     }
 
@@ -45,7 +46,7 @@ public class BeeBehaviour : MonoBehaviour
     {
         switch (state)
         {
-            case 0:
+            case 0: //moving, not within flower radius
                 if (leftFacing)
                 {
                     float xpos = transform.localPosition.x - (speed * Time.deltaTime);
@@ -61,10 +62,11 @@ public class BeeBehaviour : MonoBehaviour
                     transform.localPosition = new Vector3(xpos, ypos, transform.localPosition.z);
                 }
                 break;
-            case 1:
+            case 1: // within flower radius
                 transform.position = Vector3.MoveTowards(transform.position, Flower.transform.position, 0.02f);
                 if (Vector3.Distance(transform.position, Flower.transform.position) < 0.1f)
                 {
+                    progressTracker.points++;
                     GameObject.Destroy(gameObject);
                 }
                 break;
