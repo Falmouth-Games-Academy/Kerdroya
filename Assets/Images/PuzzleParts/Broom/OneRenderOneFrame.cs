@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//??? what and why is this script???
 public class OneRenderOneFrame : MonoBehaviour
 {
 
@@ -16,7 +16,6 @@ public class OneRenderOneFrame : MonoBehaviour
 
     void OnPostRender()
     {
-        Debug.Log("dahsdha");
         spriteRenderer.enabled = false;
     }
 
