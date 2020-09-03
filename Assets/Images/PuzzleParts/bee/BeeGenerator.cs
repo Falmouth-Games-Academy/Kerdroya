@@ -30,11 +30,9 @@ public class BeeGenerator : MonoBehaviour
                 beeBehaviour.leftFacing = false;
                 b.transform.localRotation = Quaternion.Euler(0, 180,0);
             }
-            beeBehaviour.startYpos = Random.Range(-0.5f, 0.5f);
-            b.transform.localPosition = new Vector3(xpos,beeBehaviour.startYpos, b.transform.localPosition.z);
-            
-
-
+            //beeBehaviour.startYpos = Random.Range(-0.5f, 0.5f);
+            b.transform.localPosition = new Vector3(xpos,//beeBehaviour.startYpos, b.transform.localPosition.z);
+                                                          0, b.transform.localPosition.z);
             //b.GetComponent<BeeBehaviour>().Initialise();
         }
 
