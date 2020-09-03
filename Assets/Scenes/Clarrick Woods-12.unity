@@ -205,7 +205,7 @@ MonoBehaviour:
   AManager: {fileID: 57288815}
   cam: {fileID: 967440460}
   sceneState: 0
-  puzzleID: 3
+  puzzleID: 11
   alphaTranitionSpeed: 0.015
   findObjectTarget: {fileID: 522495370}
   findObjectRollOverTime: 1.5
