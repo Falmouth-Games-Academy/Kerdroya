@@ -64,7 +64,7 @@ public class BeeBehaviour : MonoBehaviour
                 break;
             case 1: // within flower radius
                 transform.position = Vector3.MoveTowards(transform.position, Flower.transform.position, 0.02f);
-                if (Vector3.Distance(transform.position, Flower.transform.position) < 0.1f)
+                if (Vector3.Distance(transform.position, Flower.transform.position) < 0.3f)
                 {
                     progressTracker.points++;
                     GameObject.Destroy(gameObject);
