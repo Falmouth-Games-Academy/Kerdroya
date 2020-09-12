@@ -10,6 +10,10 @@ public class DragBetweenPoints : MonoBehaviour
     int state = 0;
     public SpriteRenderer SandRenderer;
 
+    public GameObject[] source_sand;
+    public GameObject[] goal_sand;
+
+
     public void Update()
     {
         Vector3 mouse = Input.mousePosition;
@@ -26,6 +30,7 @@ public class DragBetweenPoints : MonoBehaviour
             {
                 if (!SandRenderer.enabled)
                 {
+                    source_sand[MGPT.points].SetActive(false);
                     Debug.Log("SOURCE");
                     state = 1;
                     SandRenderer.enabled = true;
@@ -35,6 +40,7 @@ public class DragBetweenPoints : MonoBehaviour
             {
                 if (SandRenderer.enabled)
                 {
+                    goal_sand[MGPT.points].SetActive(true);
                     SandRenderer.enabled = false;
                     MGPT.points++;
                 }
