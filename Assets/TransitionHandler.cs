@@ -39,11 +39,11 @@ public class TransitionHandler : MonoBehaviour
     {
         switch (sceneState)
         {
-            case 0: EntryScene(); break;
-            case 1: SceneOne(); break;
-            case 2: SceneTwo(); break; // used by FreeCamera script
-            case 3: SceneThree(); break;
-            case 4: SceneFour(); break; //triggered externally by minigame progress tracker
+            case 0: EntryScene(); break;//show and wait for intertitle
+            case 1: SceneOne(); break;//transition out of intertitle
+            case 2: SceneTwo(); break;//find object in scene, used by FreeCamera script
+            case 3: SceneThree(); break;//Transition to minigame, used by circle minigame (colliford lake)
+            case 4: SceneFour(); break; //End, triggered externally by minigame progress tracker
         }
     }
 
