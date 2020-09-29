@@ -1933,12 +1933,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: 8e57d0ad4790f704291a2ab5484da7ab, type: 3}
-  - {fileID: 8300000, guid: c5500b9d3f5e936468337647278463d7, type: 3}
-  - {fileID: 8300000, guid: 4ad7098b28ba1f9448a265647bcbe1c8, type: 3}
-  - {fileID: 8300000, guid: 770c04d0059821542b1db105c65c5953, type: 3}
-  - {fileID: 8300000, guid: da6bce60fc9f3d84faaca30d3fc0fd51, type: 3}
-  - {fileID: 8300000, guid: b8cbfae16eecc1740b664cd9ecfc487c, type: 3}
+  - {fileID: 8300000, guid: d4b68cae224cc774388ea8779198bd92, type: 3}
+  - {fileID: 8300000, guid: cf9fe3d47686efc4089cd01c51ed0291, type: 3}
+  - {fileID: 8300000, guid: 44795f0a5a8ff3c4bb6510e23cf9fb29, type: 3}
+  - {fileID: 8300000, guid: de12928c69611ad488e5272ec86982b2, type: 3}
+  - {fileID: 8300000, guid: a94880dbaf4c6374c8575606ee0ebf6c, type: 3}
   audioSource: {fileID: 44390671}
   audioEnded: 0
 --- !u!4 &1592629545

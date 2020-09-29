@@ -655,12 +655,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: 8e57d0ad4790f704291a2ab5484da7ab, type: 3}
-  - {fileID: 8300000, guid: c5500b9d3f5e936468337647278463d7, type: 3}
-  - {fileID: 8300000, guid: 4ad7098b28ba1f9448a265647bcbe1c8, type: 3}
-  - {fileID: 8300000, guid: 770c04d0059821542b1db105c65c5953, type: 3}
-  - {fileID: 8300000, guid: da6bce60fc9f3d84faaca30d3fc0fd51, type: 3}
-  - {fileID: 8300000, guid: b8cbfae16eecc1740b664cd9ecfc487c, type: 3}
+  - {fileID: 8300000, guid: 58cf7a69738250e49994b0be717cccc7, type: 3}
+  - {fileID: 8300000, guid: 33a8086bae3b41b478b25f767cfe8c70, type: 3}
+  - {fileID: 8300000, guid: add619950a502844da2e271e0f707979, type: 3}
+  - {fileID: 8300000, guid: 4225c658eefe7bb408ac1a1623202c91, type: 3}
+  - {fileID: 8300000, guid: fa6723e12fa3ec44db301480b89a6d4e, type: 3}
+  - {fileID: 8300000, guid: 40f2afb546af7b74883139f78f9afeea, type: 3}
   audioSource: {fileID: 1506347461}
   audioEnded: 0
 --- !u!4 &351893616
@@ -877,7 +877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &837806570
