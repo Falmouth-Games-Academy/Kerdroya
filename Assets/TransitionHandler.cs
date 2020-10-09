@@ -101,6 +101,9 @@ public class TransitionHandler : MonoBehaviour
 
     private void SceneThree() //Transition to game
     {
+        //SWitch the camera to orthographic for the 2D game - we may need to switch this back for subsequent plays
+        cam.orthographic = true;
+
         if (!WindPuzzle.active)
         {
             WindPuzzle.SetActive(true);
