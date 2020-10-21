@@ -10,14 +10,15 @@ public class TestLocationService : MonoBehaviour
         outputText.text = "Booting...\n";
 
         // First, check if user has location service enabled
-        if (!Input.location.isEnabledByUser)
+        /*if (!Input.location.isEnabledByUser)
         {
             outputText.color = Color.red;
             outputText.text = "GPS not enabled";
             yield break;
         }
+        */
         // Start service before querying location
-        Input.location.Start();
+        Input.location.Start(1,1);
 
         // Wait until service initializes
         int maxWait = 20;
