@@ -1008,7 +1008,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649557470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 10.8}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 127785349}
@@ -1526,7 +1526,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089720782}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2541,7 +2541,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450435584}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2753,7 +2753,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6cded637e36d93f4fbb521b049422bee, type: 2}
+  - {fileID: 2100000, guid: 0cab96b9b1847cd4ea8bd4d55254c03b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3144,6 +3144,13 @@ MonoBehaviour:
   MGPT: {fileID: 1766821827}
   minigameState: 0
   arrow: {fileID: 1354504006}
+  sandA: {fileID: 649557470}
+  sandB: {fileID: 649557470}
+  sandC: {fileID: 649557470}
+  goalA: {fileID: 649557470}
+  goalB: {fileID: 649557470}
+  goalC: {fileID: 649557470}
+  WidthModifier: 1
 --- !u!1 &1804646615
 GameObject:
   m_ObjectHideFlags: 0
