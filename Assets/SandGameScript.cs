@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SandGameScript : MonoBehaviour
 {
@@ -25,6 +26,17 @@ public class SandGameScript : MonoBehaviour
 
     public GameObject arrow;
 
+    public GameObject sandA, sandB, sandC = null;
+    public GameObject goalA, goalB, goalC = null;
+
+    public float WidthModifier = 1;
+    private int HeldSandID = 1;
+    Scene scene;
+
+    private void Start()
+    {
+         scene = SceneManager.GetActiveScene();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -48,27 +60,68 @@ public class SandGameScript : MonoBehaviour
                 indicator.transform.localPosition = Vector3.Lerp(
                         indicator.transform.localPosition,
                         GetClosestPointOnLineSegment(
-                            targetStart.localPosition, 
-                            targetEnd.localPosition, 
+                            targetStart.localPosition,
+                            targetEnd.localPosition,
                             targetObject.transform.localPosition),
                         0.5f);
+            }
+            if (scene.name == "Cape Cornwall-11")
+            {
+                switch (HeldSandID)
+                {
+                    case 1: sandA.transform.position = indicator.transform.position; break;
+                    case 2: sandB.transform.position = indicator.transform.position; break;
+                    case 3: sandC.transform.position = indicator.transform.position; break;
+                }
             }
         }
     }
 
     public void updateTrigger(int inValue)
     {
-        if(minigameState == 1)
+       
+        if (scene.name == "Cape Cornwall-11")
         {
-            arrow.transform.localRotation = Quaternion.identity;
-            if(inValue == 0)
+            if (inValue == 1)
             {
-                THandler.sceneState = 4;
+                switch (HeldSandID)
+                {
+                    case -1: break;
+                    case 1:
+                        sandA.transform.position = goalA.transform.position;
+                        break;
+                    case 2:
+                        sandB.transform.position = goalB.transform.position;
+                        break;
+                    case 3:
+                        sandC.transform.position = goalC.transform.position;
+                        break;
+                }
+                if (HeldSandID != -1)
+                {
+                    MGPT.points++;
+                    HeldSandID = -1;
+                }
+            }
+            else
+            {
+                HeldSandID = MGPT.points;
             }
         }
         else
         {
-            minigameState = inValue;
+            if (minigameState == 1)
+            {
+                arrow.transform.localRotation = Quaternion.identity;
+                if (inValue == 0)
+                {
+                    THandler.sceneState = 4;
+                }
+            }
+            else
+            {
+                minigameState = inValue;
+            }
         }
     }
 
@@ -94,7 +147,7 @@ public class SandGameScript : MonoBehaviour
         else
         {
             //generate sine wave
-            var localOffset = new Vector3(Mathf.Sin(sinOffset + distance * sinLength * 6.28f), 0, 0);
+            var localOffset = new Vector3(Mathf.Sin(sinOffset + distance * sinLength * 6.28f) * WidthModifier, 0, 0);
             return A + localOffset +  AB * distance;
         }
     }

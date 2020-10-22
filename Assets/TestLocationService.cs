@@ -14,10 +14,10 @@ public class TestLocationService : MonoBehaviour
         {
             outputText.color = Color.red;
             outputText.text = "GPS not enabled";
-            yield break;
+           // yield break;
         }
         // Start service before querying location
-        Input.location.Start();
+        Input.location.Start(1,1);
 
         // Wait until service initializes
         int maxWait = 20;
@@ -62,7 +62,7 @@ public class TestLocationService : MonoBehaviour
                "\nHorizontal Accuracy: " + Input.location.lastData.horizontalAccuracy +
                "\ntimeStamp: " + Input.location.lastData.timestamp +
                "\n" + elipseSwap;
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.5f);
         }
 
         // Stop service if there is no need to query location updates continuously
