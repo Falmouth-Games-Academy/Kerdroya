@@ -7,7 +7,7 @@ public class DragBetweenPoints : MonoBehaviour
     public GameObject targetObject;
     public LayerMask hitLayers;
     public MinigameProgressTracker MGPT;
-    int state = 0;
+    public int state = 0;
     public SpriteRenderer SandRenderer;
 
     public GameObject[] source_sand;
@@ -28,6 +28,7 @@ public class DragBetweenPoints : MonoBehaviour
 
             if(hit.transform.gameObject.name == "SAND_SOURCE")
             {
+               
                 if (!SandRenderer.enabled)
                 {
                     source_sand[MGPT.points].SetActive(false);
@@ -36,13 +37,15 @@ public class DragBetweenPoints : MonoBehaviour
                     SandRenderer.enabled = true;
                 }
             }
-            if (hit.transform.gameObject.name == "SAND_GOAL")
+            if (hit.transform.gameObject.name == "SAND_GOAL" && state == 1)
             {
+                Debug.Log("hit");
                 if (SandRenderer.enabled)
                 {
-                    goal_sand[MGPT.points].SetActive(true);
+                    goal_sand[MGPT.points].SetActive(false);
                     SandRenderer.enabled = false;
                     MGPT.points++;
+                    state = 0;
                 }
             }
         }
