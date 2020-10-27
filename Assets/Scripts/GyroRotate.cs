@@ -10,7 +10,7 @@ public class GyroRotate : MonoBehaviour
     private Transform _rawGyroRotation;
     private float _tempSmoothing;
 
-    public BallMaze maze;
+    //public BallMaze maze;
 
     // SETTINGS
     [SerializeField] private float _smoothing = 0.1f;
@@ -37,10 +37,11 @@ public class GyroRotate : MonoBehaviour
         ApplyCalibration();
 
         transform.rotation = Quaternion.Slerp(transform.rotation, _rawGyroRotation.rotation, _smoothing);
-        if (maze != null && maze.isActive())
+        /*if (maze != null && maze.isActive())
         {
             maze.SetGyroData(transform.rotation);
         }
+        */
 
     }
 

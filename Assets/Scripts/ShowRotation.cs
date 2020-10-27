@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShowRotation : MonoBehaviour
 {
+    //public bool tilt
     public float tiltBacklimitAngle = 30;
     public float tiltForwardslimitAngle = -15;
     public float distance;
@@ -25,9 +26,9 @@ public class ShowRotation : MonoBehaviour
 
     void OnGUI()
     {
-        //GUI.Label(new Rect(50, 100, 200, 100), "" + transform.localRotation.eulerAngles.x, style);
-        //GUI.Label(new Rect(50, 150, 200, 100), "" + Mathf.DeltaAngle(transform.localRotation.eulerAngles.x,30),style);
-        //GUI.Label(new Rect(50, 200, 200, 100), "" + tiltPercentage, style);
+        GUI.Label(new Rect(50, 100, 200, 100), "" + transform.localRotation.eulerAngles.x, style);
+        GUI.Label(new Rect(50, 150, 200, 100), "" + Mathf.DeltaAngle(transform.localRotation.eulerAngles.x,30),style);
+        GUI.Label(new Rect(50, 200, 200, 100), "" + tiltPercentage, style);
     }
 
     // Update is called once per frame
