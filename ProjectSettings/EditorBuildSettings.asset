@@ -54,6 +54,42 @@ EditorBuildSettings:
     path: Assets/Scenes/End Sequence.unity
     guid: 406463952862e1e419a1bfe18830ee80
   - enabled: 1
-    path: Assets/Scenes/Factoids/Onan.unity
+    path: Assets/Scenes/Factoids/Index.unity
+    guid: 5ebc92885b18c49e9beeb4ab837ec01e
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Onan.unity
     guid: ded5182f1afa240a8b2f3025fa2e2b8a
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Deg.unity
+    guid: b648a729869214164b06be6c41bc50b1
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Dew.unity
+    guid: 048198e0bf3154761993fafb289c3fad
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Dewthek.unity
+    guid: 1a33a271077804f23a81ef74f2eb2f8a
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Eth.unity
+    guid: ad6aa33625e5f4581a426c271d3b4e93
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Hwegh.unity
+    guid: 6f91180ca5fa44d7e88a9d3b42f6b6e1
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Naw.unity
+    guid: 0e25ace3d71ee4503b0f1646c84234b7
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Pymp.unity
+    guid: 2e03f018ccb064907ae12f0fa04d5528
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Seyth.unity
+    guid: 01d4147c6afa048d1b65ef0d04df9cac
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Try.unity
+    guid: 0a19de24af7214e25a91dc45afd8873b
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Peswar.unity
+    guid: eeaa92b4e774c4b99b0772d3f180f557
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Unnek.unity
+    guid: ff27d3bc328b84a44863f0e38c408973
   m_configObjects: {}
