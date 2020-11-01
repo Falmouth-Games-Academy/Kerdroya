@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 91401375}
-  scene: 13
+  scene: 16
 --- !u!114 &91401375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,7 +874,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1689183478}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.38987187
+  m_Size: 0.35897437
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

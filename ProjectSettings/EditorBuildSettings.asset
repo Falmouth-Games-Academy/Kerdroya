@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End Sequence.unity
     guid: 406463952862e1e419a1bfe18830ee80
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Onan.unity
+    guid: ded5182f1afa240a8b2f3025fa2e2b8a
   m_configObjects: {}
