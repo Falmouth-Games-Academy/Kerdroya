@@ -115,7 +115,7 @@ public class TestLocationService : MonoBehaviour
 
     public void SceneSelection(int sceneID, float distance)
     {
-
+        //check if main splash has loaded yet
         //check if already loading scene
         //case for player rejects scene change
 
