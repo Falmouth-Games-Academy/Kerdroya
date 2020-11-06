@@ -71,32 +71,54 @@ public class TransitionHandler : MonoBehaviour
     {
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit))
         {
-            if (hit.transform.Equals(findObjectTarget.transform))
-            {
-                myRenderer.material.color = new Color(1, 1, 1, timeWaited/findObjectRollOverTime);
+            // get hit game object and show text if it has any (this must be the first child object)
+            GameObject hitGameObject = hit.transform.gameObject; 
+            hitGameObject.transform.GetChild(0).gameObject.SetActive(true);
+            
+            // check if the answer is right and respond accordingly
+            if(hit.transform.gameObject.tag.Equals("right")){
+                
+                playAudio("RightAudio");
+                Renderer hitGameObjectRenderer = hitGameObject.GetComponent<Renderer>();
+                hitGameObjectRenderer.material.color = new Color(1, 1, 1, timeWaited/findObjectRollOverTime);
 
-                timeWaited += Time.deltaTime;
+                // check to see if we need to move to the next state
+                timeWaited += Time.deltaTime;                
                 if (timeWaited > findObjectRollOverTime)
                 {
+                    resetRightGamesObects();
                     sceneState = 3;
                 }
+                return;
             }
-            else
-            {
-                RayNotHitTarget();
-            }
+
+             // check if the answer is wrong and respond accordingly
+            if(hit.transform.gameObject.tag.Equals("wrong")){
+                playAudio("WrongAudio");
+            }   
         }
-        else
+
+        timeWaited = 0;
+        resetRightGamesObects();
+    }
+
+    private void resetRightGamesObects() {
+        GameObject[] rightGameObjects = GameObject.FindGameObjectsWithTag("right");
+        foreach (GameObject gameObject in rightGameObjects)
         {
-            RayNotHitTarget();
+            Renderer gameObjectRenderer = gameObject.GetComponent<Renderer>();
+            gameObjectRenderer.material.color = new Color(1, 1, 1, 0.01f);
         }
     }
 
-    private void RayNotHitTarget()
-    {
-        myRenderer = findObjectTarget.GetComponent<Renderer>();
-        myRenderer.material.color = new Color(1, 1, 1, 0.01f);
-        timeWaited = 0;
+    private void playAudio (string name) {
+        Debug.Log("AUDIO");
+        AudioSource audio = GameObject.Find(name).GetComponent<AudioSource>();
+        if (audio != null && !audio.isPlaying){
+            audio.Play();
+        }else{
+            Debug.Log("can't find");
+        }
     }
 
     private void SceneThree() //Transition to game
