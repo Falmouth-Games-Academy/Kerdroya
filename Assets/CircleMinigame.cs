@@ -18,6 +18,7 @@ public class CircleMinigame : MonoBehaviour
     public float fadeInSpeed = 0.01f;
     public GameObject draggedObject;
     public TrailRenderer trail;
+    public SimpleFadeIn simplefadeIn;
 
     private void Update()
     {
@@ -40,8 +41,25 @@ public class CircleMinigame : MonoBehaviour
 
     public void FadeImage()
     {
+        trail.Clear();
+        draggedObject.SetActive(false);
+        CircleCenter.gameObject.SetActive(false);
+
+        if (totalFadeInValue <3 && overlayImage != null)
+        {
+            overlayImage.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, totalFadeInValue);
+            totalFadeInValue += fadeInSpeed;
+        }
+        else
+        {
+            //complete game, move scene handler phase
+            THandler.sceneState = 4;
+        }
+
+        /*
         if (overlayImage.active == false)
         {
+            Debug.Log("dahsjdhajlsdas");
             //begin fade in of background object
             overlayImage.SetActive(true);
             Renderer myRenderer = overlayImage.GetComponent<SpriteRenderer>();
@@ -73,6 +91,7 @@ public class CircleMinigame : MonoBehaviour
             //complete game, move scene handler phase
             THandler.sceneState = 4;
         }
+        */
     }
 
     public void updateTrigger(int triggerID)
