@@ -35,7 +35,8 @@ public class ParkHeadScript : MonoBehaviour
             
             nextTarget++;
             MGPT.points++;
-            targets[targetID].GetComponent<Renderer>().material = replaceMentMaterial;
+            //targets[targetID].GetComponent<Renderer>().material = replaceMentMaterial;
+            targets[targetID].GetComponent<SpriteRenderer>().enabled = true;
             if (targetID < targets.Length-1)
             {
                 DragMarker.transform.position = targets[targetID + 1].transform.position;
