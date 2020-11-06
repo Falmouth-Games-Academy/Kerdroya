@@ -1910,7 +1910,7 @@ MonoBehaviour:
   sceneState: 0
   puzzleID: 1
   alphaTranitionSpeed: 0.015
-  findObjectTarget: {fileID: 0}
+  findObjectTarget: {fileID: 609079082}
   findObjectRollOverTime: 1.5
   timeWaited: 0
   puzzleFadeInSpeed: 0.01
