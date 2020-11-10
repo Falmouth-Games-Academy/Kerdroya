@@ -72,7 +72,8 @@ public class TransitionHandler : MonoBehaviour
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit))
         {
             // get hit game object and show text if it has any (this must be the first child object)
-            GameObject hitGameObject = hit.transform.gameObject; 
+            GameObject hitGameObject = hit.transform.gameObject;
+            Debug.Log(hitGameObject.name);
             hitGameObject.transform.GetChild(0).gameObject.SetActive(true);
             
             // check if the answer is right and respond accordingly
