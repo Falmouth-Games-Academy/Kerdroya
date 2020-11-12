@@ -77,30 +77,36 @@ public class TransitionHandler : MonoBehaviour
             hitGameObject.transform.GetChild(0).gameObject.SetActive(true);
             
             // check if the answer is right and respond accordingly
-            if(hit.transform.gameObject.tag.Equals("right")){
-                
-                playAudio("RightAudio");
-                Renderer hitGameObjectRenderer = hitGameObject.GetComponent<Renderer>();
-                hitGameObjectRenderer.material.color = new Color(1, 1, 1, timeWaited/findObjectRollOverTime);
-
-                // check to see if we need to move to the next state
-                timeWaited += Time.deltaTime;                
-                if (timeWaited > findObjectRollOverTime)
-                {
-                    resetRightGamesObects();
-                    sceneState = 3;
-                }
+            if(hit.transform.gameObject.tag.Equals("right"))
+            {
+                NewMethod(hitGameObject);
                 return;
             }
 
-             // check if the answer is wrong and respond accordingly
-            if(hit.transform.gameObject.tag.Equals("wrong")){
+            // check if the answer is wrong and respond accordingly
+            if (hit.transform.gameObject.tag.Equals("wrong")){
                 playAudio("WrongAudio");
             }   
         }
 
         timeWaited = 0;
         resetRightGamesObects();
+    }
+
+    private void NewMethod(GameObject hitGameObject)
+    {
+        playAudio("RightAudio");
+        Renderer hitGameObjectRenderer = hitGameObject.GetComponent<Renderer>();
+        hitGameObjectRenderer.material.color = new Color(1, 1, 1, timeWaited / findObjectRollOverTime);
+
+        // check to see if we need to move to the next state
+        timeWaited += Time.deltaTime;
+        if (timeWaited > findObjectRollOverTime)
+        {
+            resetRightGamesObects();
+            sceneState = 3;
+        }
+        return;
     }
 
     private void resetRightGamesObects() {
