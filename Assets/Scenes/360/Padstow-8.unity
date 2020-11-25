@@ -1169,7 +1169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &438094243
 Transform:
   m_ObjectHideFlags: 0
@@ -4026,6 +4026,7 @@ GameObject:
   - component: {fileID: 1766821828}
   - component: {fileID: 1766821827}
   - component: {fileID: 1766821833}
+  - component: {fileID: 1766821834}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4170,6 +4171,22 @@ MonoBehaviour:
   goalB: {fileID: 649557470}
   goalC: {fileID: 649557470}
   WidthModifier: 1
+  distance: 0
+--- !u!114 &1766821834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766821826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4411e253361932d49b75ecb931284af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 423864434}
+  sandGameScript: {fileID: 0}
+  halfway: 0
 --- !u!1 &1804646615
 GameObject:
   m_ObjectHideFlags: 0

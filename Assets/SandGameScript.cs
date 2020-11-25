@@ -31,6 +31,9 @@ public class SandGameScript : MonoBehaviour
 
     public float WidthModifier = 1;
     private int HeldSandID = 1;
+
+    public float distance;
+
     Scene scene;
 
     private void Start()
@@ -133,7 +136,7 @@ public class SandGameScript : MonoBehaviour
 
         float magnitudeAB = AB.magnitude * AB.magnitude;           //Magnitude of AB vector (it's length squared)     
         float ABAPproduct = Vector3.Dot(AP, AB);    //The DOT product of a_to_p and a_to_b     
-        float distance = ABAPproduct / magnitudeAB; //The normalized "distance" from a to your closest point  (0 to 1)
+        distance = ABAPproduct / magnitudeAB; //The normalized "distance" from a to your closest point  (0 to 1)
         
         if (distance < 0)         //Check if P projection is over vectorAB     
         {
