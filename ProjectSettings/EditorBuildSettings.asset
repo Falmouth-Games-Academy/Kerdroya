@@ -92,4 +92,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Factoids/Pages/Unnek.unity
     guid: ff27d3bc328b84a44863f0e38c408973
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Credits Scene.unity
+    guid: fc8d4ae0da8b55f4db5c507f8f86f543
   m_configObjects: {}
