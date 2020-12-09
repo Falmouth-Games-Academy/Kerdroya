@@ -84,7 +84,7 @@ public class GPSSceneSelector : MonoBehaviour
         //check if already loading scene
         //case for player rejects scene change
 
-        if (distance < minSceneSwapDistance)// && !AppProgression.levelCompleted[sceneID])
+        if (distance < minSceneSwapDistance && !AppProgression.levelCompleted[sceneID])
         {
             animatingPanel = true;
             switch (sceneID)
