@@ -94,48 +94,48 @@ public class GPSSceneSelector : MonoBehaviour
                     sceneText.text = "Predennak";
                     break;
                 case 1:
+                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(10));
+                    sceneText.text = "Cape Cornwall";
+                    break;
+                case 2:
+                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(6));
+                    sceneText.text = "Morwenstow";
+                    break;
+                case 3:
                     sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(2));
                     sceneText.text = "Lansallos";
                     break;
-                case 2:
-                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(3));
-                    sceneText.text = "Tehidy";
-                    break;
-                case 3:
+                case 4:
                     sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(4));
                     sceneText.text = "Colliford Lake";
                     break;
-                case 4:
-                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(5));
-                    sceneText.text = "Boscastle";
-                    break;
                 case 5:
-                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(6));
-                    sceneText.text = "Morwenstow";
+                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(13));
+                    sceneText.text = "The Blouth";
                     break;
                 case 6:
                     sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(7));
                     sceneText.text = "Padstow";
                     break;
                 case 7:
-                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(10));
-                    sceneText.text = "Cape Cornwall";
+                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(14));
+                    sceneText.text = "Park Head";
                     break;
                 case 8:
-                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(11));
-                    sceneText.text = "Clarrick woods";
-                    break;
-                case 9:
                     sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(12));
                     sceneText.text = "St Agnes Head";
                     break;
+                case 9:
+                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(5));
+                    sceneText.text = "Boscastle";
+                    break;
                 case 10:
-                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(13));
-                    sceneText.text = "The Blouth";
+                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(3));
+                    sceneText.text = "Tehidy";
                     break;
                 case 11:
-                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(14));
-                    sceneText.text = "Park Head";
+                    sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(11));
+                    sceneText.text = "Clarrick woods";
                     break;
             }
 

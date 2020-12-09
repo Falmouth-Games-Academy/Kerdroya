@@ -8,6 +8,20 @@ using UnityEngine.UI;
 public class AppProgression : MonoBehaviour
 {
     public static bool openingwatched = false;
+    /*
+        Predennak     = 0
+        Cape cornwall = 1
+        Morwenstow    = 2
+        Lansallos     = 3
+        Colliford lak = 4
+        the Blouth    = 5
+        Padstow       = 6
+        Park head     = 7
+        St Agnes Head = 8
+        Boscatle      = 9
+        Tehidy        = 10
+        Clarrick wood = 11
+     */
     public static bool[] levelCompleted = new bool[12];
     public DisplayProgress display;
 
