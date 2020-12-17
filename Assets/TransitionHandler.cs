@@ -79,13 +79,14 @@ public class TransitionHandler : MonoBehaviour
             // check if the answer is right and respond accordingly
             if(hit.transform.gameObject.tag.Equals("right"))
             {
-                NewMethod(hitGameObject);
+                ActivateGame(hitGameObject);
                 return;
             }
 
             // check if the answer is wrong and respond accordingly
             if (hit.transform.gameObject.tag.Equals("wrong")){
                 playAudio("WrongAudio");
+                StartCoroutine(destroyAfter(hitGameObject, 2));
             }   
         }
 
@@ -93,7 +94,7 @@ public class TransitionHandler : MonoBehaviour
         resetRightGamesObects();
     }
 
-    private void NewMethod(GameObject hitGameObject)
+    private void ActivateGame(GameObject hitGameObject)
     {
         playAudio("RightAudio");
         Renderer hitGameObjectRenderer = hitGameObject.GetComponent<Renderer>();
@@ -107,6 +108,13 @@ public class TransitionHandler : MonoBehaviour
             sceneState = 3;
         }
         return;
+    }
+
+    IEnumerator destroyAfter(GameObject gameObject, int delay)
+    {
+        Debug.Log("DESTROY");
+        yield return new WaitForSeconds(delay);
+        Destroy(gameObject);
     }
 
     private void resetRightGamesObects() {
