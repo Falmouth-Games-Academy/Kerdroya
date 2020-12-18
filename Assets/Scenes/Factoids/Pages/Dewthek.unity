@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -534,9 +534,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Along this coast look out for flowers such as Tegeyryan Gwenen (Bee Orchid)
-    and Pys an Gath (Bird's-foot Trefoil). Insect life includes an important population
-    of Hwil Tron Gosek (Bloody-nosed Beetle or \u2018Dumbledore\u2019). \r\n\r\n"
+  m_Text: "Along this coast look out for flowers such as <b>Tegeyryan Gwenen (Bee
+    Orchid)</b> and <b>Pys an Gath (Bird's-foot Trefoil)</b>. Insect life includes
+    an important population of <b>Hwil Tron Gosek (Bloody-nosed Beetle or \u2018Dumbledore\u2019)</b>.
+    \r\n\r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -984,7 +985,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -996,10 +997,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "The holy St Germans also cried a lot. Out on Rame Head, the rocks themselves
     joined in his misery and filled up his Holy Well that you can see there to this
-    day.\r\nThe River Tamar was declared the boundary between Cornwall and England
+    day.\r\n\nThe River Tamar was declared the boundary between Cornwall and England
     by King Athelstan over a thousand years ago in 926 AD. Interestingly, the border
     does not run down the middle of the river. The ancient Duchy charters are clear
-    that border runs along the highwater mark on the Devon side; so the whole River
+    that border runs along the highwater mark on the Devon side: so the whole River
     Tamar is actually in Cornwall.\r\n"
 --- !u!222 &892152494
 CanvasRenderer:
@@ -1140,7 +1141,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1151,11 +1152,12 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "The two Dartmoor Giants, Taw and Tavi, were both in love with Tamara. She
-    cried herself into a river to run away from. Both giants sat down and wept themselves
-    into rivers too. Poor old Taw trickled away northwards and never saw Tamara again.
-    But luckily for Tavi his stream of tears ran southwards and mingled forever with
-    Tamara\u2019s as they both flow to the sea.\r\nJan Tregeagle\u2019s impossible
-    task is cry enough Dagren (Teardrop) to fill up an entire river.\r\n\r\n"
+    cried herself into a river to run away from. Them. Both giants sat down and wept
+    themselves into rivers too. Poor old Taw trickled away northwards and never saw
+    Tamara again. But luckily for Tavi his stream of tears ran southwards and mingled
+    forever with Tamara\u2019s as they both flow to the sea.\r\n\nJan Tregeagle\u2019s
+    impossible task  here is cry enough <b>Dagren (Teardrop)</b> to fill up an entire
+    river.\r\n\r\n"
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1222,7 +1224,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1235,7 +1237,8 @@ MonoBehaviour:
   m_Text: "Devonport Dockyard and the urban sprawl of Plymouth are visible from much
     of the Rame Head section of the Cornwall AONB, but they are a world apart from
     the beauty of this sparsely populated stretch of coast known as Cornwall\u2019s
-    \u201CForgotten Corner\u201D.\r\n\r\n\r\n\r\n"
+    \u201CForgotten Corner\u201D. Indeed, Samuel Pepys in 1684 described Mount Edgcumbe
+    as \u201Cthe most beautiful place as ever was seen\u201D.\r"
 --- !u!222 &981588337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1376,7 +1379,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1807,7 +1810,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2165,7 +2168,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.07197773
+  m_Size: 0.16116014
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2375,7 +2378,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2465,7 +2468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

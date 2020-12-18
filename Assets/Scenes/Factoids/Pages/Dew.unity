@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -534,10 +534,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Along this craggy coast the Prierin (Peregrine Falcon) nests and hunts.
-    \u2018Stooping\u2019 on their prey at over 200mph, the peregrine wins the title
-    of \u2018fastest animal in the world\u2019. \r\nThe ancient woodlands here are
-    known for their rare Fongalgi (Lichen), XXX (Liverwort) and Kewni (Moss).\r\n"
+  m_Text: "Along this craggy coast the <b>Pryerin (Peregrine Falcon)</b> nests and
+    hunts. \u2018Stooping\u2019 on their prey at over 200mph, the peregrine wins the
+    title of \u2018fastest animal in the world\u2019. \r\n\nThe ancient woodlands
+    here are known for their rare<b> Fongalgi (Lichen), Losow avi (Liverwort)</b>
+    and <b>Kewni (Moss)</b>.\r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -985,7 +986,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -999,7 +1000,7 @@ MonoBehaviour:
     \ She came to Cornwall with 23 of her other saintly brothers and sisters around
     480 CE.  Morwenna is said to have carried stones up from the beach to build the
     original chapel. Perhaps each of the stones in the hedge here might have been
-    handled by Morwenna herself!    \r\n150 years ago, Parson Hawker was the vicar
+    handled by Morwenna herself!    \r\n\n150 years ago, Parson Hawker was the vicar
     of Morwenstow. He wrote the Cornish National Anthem, \u2018Trelawney\u2019 right
     here. (Some say he wrote it whilst smoking opium in his hut on the cliffs.) \r\n"
 --- !u!222 &892152494
@@ -1141,7 +1142,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1151,13 +1152,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "In the seventeeth century wars, the Cornish army was led by Richard Grenville
-    of Stowe Barton (just 3 miles from Morwenstow). Jan Tregeagle supplied information
-    about Grenville\u2019s movements to the enemy (the \u2018Roundheads\u2019) and
-    then he was forced to run away from Cornwall to save himself.\r\nIn Charles Causley\u2019s
-    poem \u2018Morwenstow\u2019 the sea forever wears away the cliffs: Tregeagle\u2019s
-    impossible task here is to use a Pluvenn (Feather) to grind down the cliffs at
-    \u2018Lucky Hole\u2019.  \r\n"
+  m_Text: "In the seventeeth century civil wars, the Cornish army was led by Richard
+    Grenville of Stowe Barton (just 3 miles from Morwenstow). Jan Tregeagle supplied
+    information about Grenville\u2019s movements to the enemy (the \u2018Roundheads\u2019)
+    and then he was forced to run away from Cornwall to save himself.\r\n\nIn Charles
+    Causley\u2019s poem \u2018Morwenstow\u2019 the sea forever wears away the cliffs:
+    Tregeagle\u2019s impossible task here is to use a <b>Pluvenn (Feather)</b> to
+    grind down the cliffs at \u2018Lucky Hole\u2019.  \r\n"
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1224,7 +1225,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1379,7 +1380,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1814,7 +1815,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2172,7 +2173,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.06441281
+  m_Size: 0.1419412
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2382,7 +2383,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2472,7 +2473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -534,12 +534,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The mud flats of the camel estuary have become salt marsh reedbeds; a perfect
+  m_Text: "The mud flats of the Camel estuary have become salt marsh reedbeds; a perfect
     overwintering habitat for waders and wildfowl. The Camel Trail is well known to
-    bird watchers and if you're lucky you will see Morvran (Cormorant), XXX (Widgeon),
-    XXX (Goosander) and more. There are also many different mammals that live in the
-    Camel Valley; Dowrgi (Otter), Lowarn (Fox), Brogh (Badger) and Gwiwer (Squirrel)
-    too.\r\n\r\n\r\n"
+    bird watchers and if you're lucky you will see <b>Morvran (Cormorant), Hwewer
+    (Widgeon), Hos Densek (Goosander)</b> and more. There are also many different
+    mammals that live in the Camel Valley; <b>Dowrgi (Otter), Lowarn (Fox), Brogh
+    (Badger)</b> and <b>Gwiwer (Squirrel)</b> too.\r\n\r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -987,7 +987,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1004,7 +1004,7 @@ MonoBehaviour:
     of sand with her dying curse and created the Doom Bar to block off Padstow\u2019s
     harbour. Since then, many ships have been wrecked on the Doom Bar and many sailors
     have drowned just as they thought they were reaching safety. How many of them
-    also cursed Tristan Burd with their final breath? "
+    also cursed Tristan Burd with their final breath? \r"
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1159,8 +1159,8 @@ MonoBehaviour:
     \u2013 a headstone with his name can still be seen in St Breock churchyard to
     this day. In the story, the holy St Petroc decrees that Tregeagle must to try
     to save his soul through another impossible task; he has to weave a rope from
-    Tewes (Sand) out on the wave-lashed Doom Bar. His howls of anguish can still be
-    heard on stormy nights."
+    <b>Tewes (Sand)</b> out on the wave-lashed Doom Bar. His howls of anguish can
+    still be heard on stormy nights."
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1238,11 +1238,11 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "The \u2018Camel Estuary\u2019 section of the Cornwall AONB is defined by
-    the broad, undulating banks of the Dowr Kammel (River Camel) between Wadebridge
+    the broad, undulating banks of the <b>Dowr Kammel (River Camel)</b> between Wadebridge
     and Padstow. The very popular Camel Trail Cycle Path follows the course of the
     disused railway line, between Bodmin and Padstow. In the sheltered side waters
     of Little Petherick and Pinkson Creeks small woodlands have formed, contrasting
-    with the more open coastal stretches of the river.\r\n\r\n"
+    with the more open coastal stretches of the river.\r"
 --- !u!222 &981588337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1397,7 +1397,7 @@ MonoBehaviour:
     is a well-known type of killas, perfect for building Cornish hedges \u2013 it
     can be seen far and wide alongside new road schemes across Cornwall. Here the
     hedges have regular horizontal courses, usually with 3 courses of \u2018Jack and
-    Jenny\u2019 on top to finish off."
+    Jenny\u2019 on top to finish off.\r"
 --- !u!222 &1198179551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1815,7 +1815,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2173,7 +2173,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.06256481
+  m_Size: 0.15133351
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2383,7 +2383,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2473,7 +2473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

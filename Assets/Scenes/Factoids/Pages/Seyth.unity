@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -535,11 +535,12 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Bodmin Moor is internationally important for the numerous birds that visit
-    annually or make the moors their home all year round. \r\nXXX (Golden Plover)
-    are seen in large flocks between October and March. Their numbers can reach a
-    staggering 7,000 birds - a significant proportion of the British population. You
-    might also see flocks of XXX (Lapwing) and Gaver Hal (Snipe). In the wetlands
-    are there some really interesting bog plants e.g. XXX (Bog Bean) and Eyles (Sundew).\r\n\r\n"
+    annually or make the moors their home all year round. \r\n\n<b>Kornhwilen Owr
+    (Golden Plover)</b> are seen in large flocks between October and March. Their
+    numbers can reach a staggering 7,000 birds - a significant proportion of the British
+    population. You might also see flocks of <b>Kornwhilen (Lapwing)</b> and <b>Gaver
+    Hal (Snipe)</b>. In the wetlands are there some really interesting bog plants
+    e.g. <b>Teyrdelen an Kors (Bog Bean)</b> and <b>Eyles (Sundew)</b>.\r\n\r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -987,7 +988,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -998,13 +999,13 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u2018Bodmin Moor\u2019 is a relatively recent name for these wild moors.
-    In Cornish they were known as Goen Bren, in English \u2018Fowey Moor\u2019 - because
-    the River Fowey has its source here. It was the English poet, Alfred Tennyson,
-    in 1859, who first invented the idea that Dozmary Pool was the legendary home
-    of King Arthur\u2019s sword Excalibur (or Kalesvol in Cornish). The nearby, \u2018King
-    Arthurs Hall\u2019 is a rectangular enclosure, much older than the mythical king
-    it is named after; most likely it was built several thousand years ago to contain
-    and revere the waters of the natural spring there. "
+    In Cornish they were known as <b>Goen Bren</b>, in English \u2018Fowey Moor\u2019
+    - because the River Fowey has its source here. It was the English poet, Alfred
+    Tennyson, in 1859, who first invented the idea that Dozmary Pool was the legendary
+    home of King Arthur\u2019s sword Excalibur (or <b>Kalesvol</b> in Cornish). The
+    nearby, \u2018King Arthurs Hall\u2019 is a rectangular enclosure, much older than
+    the mythical king it is named after; most likely it was built several thousand
+    years ago to contain and revere the waters of the natural spring there. "
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1144,7 +1145,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1160,7 +1161,7 @@ MonoBehaviour:
     into a monstrous black bull, raging and raving. But the horned apparition was
     unable to gore the brave Parson, protected by his magical chalk circle. Tregeagle
     was then set the endless task of forever trying to empty the bottomless Dozmary
-    Pool using only a leaky Krogen (Shell).
+    Pool using only a leaky <b>Krogen (Shell)</b>.
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1227,7 +1228,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1240,10 +1241,11 @@ MonoBehaviour:
   m_Text: "\u2018Bodmin Moor\u2019 is the largest of the Cornwall AONB sections and
     is unique because it is not on the coast but is exposed and open moorland. Much
     of the moor is protected as a Site of Special Scientific Interest consisting of
-    coarse grassland, wet heathland with poor, acid and peaty soils that support Gruglans
-    (Heather), Eythin (Gorse) and Krann (Bracken). Cornwall\u2019s two highest hills,
-    Bron Weneli (Brown Willy) and Torr Garow (Rough Tor) are part of an ancient sacred
-    landscape featuring propped stones, stone circles and burial chambers. "
+    coarse grassland, wet heathland with poor, acid and peaty soils that support <b>Grug
+    (Heather), Eythin (Gorse)</b> and <b>Krann (Bracken)</b>. Cornwall\u2019s two
+    highest hills, <b>Bron Weneli (Brown Willy)</b> and <b>Torr Garow (Rough Tor)</b>
+    are part of the ancient sacred landscape here featuring propped stones, stone
+    circles and burial chambers. "
 --- !u!222 &981588337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1384,7 +1386,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1819,7 +1821,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2177,7 +2179,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.056176286
+  m_Size: 0.13294579
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2387,7 +2389,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2477,7 +2479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

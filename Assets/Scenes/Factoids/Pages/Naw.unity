@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -535,8 +535,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'A range of very special water birds can sometimes be spotted along this
-    stretch of coast: Sedher Kledh Bras (Great Northern Diver), Sedher Briansen Dhu
-    (Black Throated Diver), XXX (Slavonian Grebe)'
+    stretch of coast: <b>Sedher Kledh Bras (Great Northern Diver), Sedher Konna Du
+    (Black Throated Diver), Grib Kornyek (Slavonian Grebe)</b>'
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -984,7 +984,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -995,10 +995,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Carne is also said to be the last resting place of King Gerens after he
-    was mortally wounded in battle against the English. The people of Kernow built
-    a golden boat with oars of silver. They rowed the body of the king across Gerrans
-    Bay, then buried him and the boat under Cargurrel Barrow (who knows, perhaps the
-    golden boat is still there \u2026?)\r\n\r\n"
+    was mortally wounded in battle against the English. The people of <b>Kernow (Cornwall)</b>
+    built a golden boat with oars of silver. They rowed the body of the king across
+    Gerrans Bay, then buried him and the boat under Cargurrel Barrow (who knows, perhaps
+    the golden boat is still there \u2026?)\r\n\r\n"
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1149,12 +1149,13 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "The tor-like outcrops of quartzite at Carne are known as \u2018Tregeagle\u2019s
-    Quoits\u2019 \u2013 some say they were hurled here from the north coast by the
+    Quoits\u2019 \u2013 some say they were hurled here like a game of bowls by the
     giant spirit. When the weather is wild, his ghost may still be heard howling in
     \u2018Tregagle\u2019s Hole\u2019; a cave in the tiny Paradoe Cove on the western
-    side of Nare Head.\r\nEven though the boulders continually roll back down to the
-    beach, Tregeagle\u2019s endless task here is keep throwing the rocks up the hill
-    until they create a stacked-up \u2018carn\u2019. \r\n"
+    side of Nare Head.\r\n\nEven though the boulders continually roll back down to
+    the beach, Tregeagle\u2019s endless task here is keep throwing the rocks up the
+    hill until they create a stacked-up <b>karn (carn)</b> \u2013 which gives the
+    farmstead its name.\r\n"
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1221,7 +1222,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1234,10 +1235,10 @@ MonoBehaviour:
   m_Text: "The \u2018South Coast Central\u2019 section of the AONB includes the Fal
     estuary which is the classic example of a \u2018ria\u2019; a drowned river valley,
     here creating the deepest natural harbour in Europe. Many tidal creeks branch
-    off the main Fal estuary; these sheltered locations have lush microclimatse with
-    the fine gardens and parklands in several places.\r\nEast of St Mawes lies the
-    picturesque Roseland; a landscape of well-managed farms and a stunning coastline
-    with the pilchard fishing villages of Porthscatho, Portloe and Portholland.\r\n\r\n"
+    off the main Fal estuary; these sheltered locations have lush microclimates with
+    the fine gardens and parklands in several places. East of St Mawes lies the picturesque
+    Roseland; a landscape of well-managed farms and a stunning coastline with the
+    pilchard fishing villages of Porthscatho, Portloe and Portholland.\r"
 --- !u!222 &981588337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1378,7 +1379,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1389,11 +1390,11 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "The rocks here are fractured into very angular and oddly shaped chunks
-    making them quite hard to work with. The hedgers are built in horizontal courses,
+    making them quite hard to work with. The hedges are built in horizontal courses,
     all the stones are vertically pitched as \u2018edgers\u2019. The whole of the
     Roseland peninsula is an assorted mixture of rock types. Nare Head is part of
     the \u2018Roseland Breccia\u2019 (pronounced \u2018bretchya\u2019); a chaotic
-    jumble of mixed rock types broken into angular fragments in a muddy matrix. \r\n\r\n"
+    jumble of mixed rock types broken into angular fragments in a muddy matrix. \r"
 --- !u!222 &1198179551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1811,7 +1812,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2169,7 +2170,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.067394815
+  m_Size: 0.15457949
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2379,7 +2380,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2469,7 +2470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

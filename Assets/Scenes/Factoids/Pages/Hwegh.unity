@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -535,8 +535,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "The tiny inaccessible coves along the North Cliffs provide a safe breeding
-    space for an important population of Reun Loos (Grey Seal).\r\nOn land also look
-    out for Nader (Adder), XXX (Kestrel), Nader Margh Owrek (Golden Ringed Dragonfly)\r\n"
+    space for an important population of <b>Reun Loos (Grey Seal).</b>\r\nOn land
+    also look out for <b>Nader (Adder), Tygri (Kestrel)</b>, and <b>Nader Margh Owrek
+    (Golden Ringed Dragonfly).</b>\r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -984,7 +985,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -994,11 +995,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tin has been won from the streams and from underground in Cornwall for at
-    least four thousand years. Recent research has shown even that way back in the
-    early Bronze Age, Cornish tin (and gold) were being traded right across Europe,
+  m_Text: "Tin has been won from the streams and from underground in Cornwall for
+    at least four thousand years. Recent research has shown that even way back in
+    the early Bronze Age, Cornish tin (and gold) were being traded right across Europe,
     reaching places as far away as Israel. The last tin mine to close was South Crofty
-    at Pool in 1998, although there are plans to reopen the mine soon.
+    at Pool in 1998, although there are plans to reopen that mine soon and exciting
+    new initiatives to mine for Lithium.\r\n\r\n"
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1138,7 +1140,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1150,9 +1152,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Wherever you are stood in the Camborne/Redruth area, beneath your feet
     are a honeycomb of many 100s of miles of mining tunnels. The deepest mine, at
-    870m, was Dolcoath, Camborne, which gave rise to the saying; mar dhown avel Dorkoth
-    (as deep as Dolcoath).\r\nJan Tregeagle\u2019s task here is to use an Askorn-Hwans
-    (Wishbone) to dig a mine shaft mar dhown avel Dorkoth\r\n"
+    870m, was Dolcoath, Camborne, which gave rise to the saying; <b>mar dhown avel
+    Dorkoth (as deep as Dolcoath)</b>.\r\nJan Tregeagle\u2019s task here is to use
+    an <b>Askorn-Hwans (Wishbone)</b> to dig a mine shaft mar dhown avel Dorkoth\r\n"
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1219,7 +1221,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1230,9 +1232,11 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "The \u2018Godrevy to Portreath\u2019 section of the Cornwall AONB is known
-    locally as \u2018North Cliffs\u2019 and famously includes the dizzy drop at Hell\u2019s
-    Mouth. The Red River valley runs down through Cornwall\u2019s most important mining
-    area and shelters the ancient woodlands of Tehidy Country Park."
+    locally as \u2018North Cliffs\u2019 with sheer drops above inaccessible coves
+    and famously includes the dizzy heights of \u2018Hell\u2019s Mouth\u2019. The
+    Red River valley runs down through Cornwall\u2019s most important mining region
+    and, although closest to Cornwall\u2019s largest urban area the valley also shelters
+    the beautiful ancient woodlands of Tehidy Country Park."
 --- !u!222 &981588337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1373,7 +1377,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1383,12 +1387,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Killas is the general Cornish word for stones which started out as sedimentary
-    rocks but were \u2018cooked\u2019 by the molten granite thrusting upwards. Killas
-    often splits into very regular slabs of rock ideally suited for hedging. The huge
-    temperature and pressure of the granite intrusion caused mineralisation in the
-    rocks and this led to Cornwall being one of the most important mining areas in
-    the world. Not just gold and tin but over the years, many other important metals
+  m_Text: "<b>Killas</b> is the general Cornish word for stones which started out
+    as sedimentary rocks but were \u2018cooked\u2019 by the molten granite thrusting
+    upwards. Killas often splits into very regular slabs of rock ideally suited for
+    hedging. The huge temperature and pressure of the granite intrusion caused mineralisation
+    in the rocks and this led to Cornwall being one of the most important mining areas
+    in the world. Not just gold and tin but over the years, many other important metals
     such as antimony, arsenic, copper, lead, silver, uranium, wolfram, zinc etc etc
     have all been mined in Cornwall."
 --- !u!222 &1198179551
@@ -1808,7 +1812,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2166,7 +2170,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.066863686
+  m_Size: 0.14845774
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2376,7 +2380,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2466,7 +2470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

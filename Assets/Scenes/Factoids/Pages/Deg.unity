@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -536,10 +536,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Park Head is a SSSI; a \u2018site of special scientific interest\u2019.
     The Cornish hedges here create just the right growing conditions for lush cushions
-    of Bryton (Thrift), Fenoghel Mor (Rock Samphire), Kosfinel (Thyme) and Bewles
-    (Stonecrop). Besides the abundant seabirds all along the coast, XXX (Corn Bunting),
-    Ahwesydh (Skylark) and XXX (Wheatear) are often seen on the fertile farmland just
-    inland.\r\n\r\n"
+    of <b>Tammon (Thrift), Fenoghel Mor (Rock Samphire), Kosfinel (Thyme)</b> and
+    <b>Bewles (Stonecrop)</b>. Besides the abundant seabirds all along the coast,
+    <b>Golvan Ys (Corn Bunting), Ahwesydh (Skylark)</b> and <b>Tinwynn (Wheatear)</b>
+    are often seen on the fertile farmland just inland.\r\n\r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -987,7 +987,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1154,14 +1154,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "On Park Head itself is a well-preserved example of an Iron Age cliff castle;
-    two high banks separated by a ditch across the neck of the headland. There are
-    other, similar cliff castles nearby; Trethias Island consists of a series of three
-    triple forts, each separated by a narrow inlet of sea. These cliff castles are
-    found all along the Cornish coast and also in our neighbouring Celtic countries
-    of Wales, Ireland and Brittany. No-one is really sure what cliff castles were
-    for; they don\u2019t entirely make sense as defensive structures, so perhaps they
-    were about enclosing a ritual or sacred space."
+  m_Text: If Tregeagle pauses for one moment from his never-ending task, the Black
+    Hunter and his pack of hell-hounds are ready to pounce. They pursue him across
+    the skies and along the cliffs of Cornwall. All around the Cornish coast, the
+    relentless crashing and roaring of the waves is said to be the sound of Jan Tregeagle
+    howling in anguish. Here, his impossible task is to use a frond of <b>Gommon (Seaweed)</b>
+    to stop the waves from breaking
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1228,7 +1226,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1242,7 +1240,7 @@ MonoBehaviour:
     Cornwall AONB lies the iconic and craggy Bedruthan Steps, while to the north are
     the exposed headlands of Trevose with its lighthouse and Stepper Point. In between
     lie the gentler coves and bays of Harlyn, Trevone, Treyarnon and Mother Ivey\u2019s
-    that are also busier beaches. \r\n\r\n"
+    that are also busier beaches. \r"
 --- !u!222 &981588337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1383,7 +1381,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1395,7 +1393,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "These are classic \u2018Jack and Jenny\u2019 (Herringbone) style hedges,
     typical of slate areas, many hedges here also feature one large slate overhang
-    at the top (to deter sheep from climbing over). \r\nThe Trevose Slate formation
+    at the top (to deter sheep from climbing over). \r\n\nThe Trevose Slate formation
     was laid down about 380 million years ago and often contain fossils such as trilobites
     or fish. These pale to dark grey slates split really well and are widely used
     as roofing slates. However, the tip of Park Head itself is an isolated igneous
@@ -1817,7 +1815,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2175,7 +2173,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.0619863
+  m_Size: 0.15030782
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2385,7 +2383,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2475,7 +2473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

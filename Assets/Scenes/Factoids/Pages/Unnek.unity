@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -535,12 +535,13 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Cape Cornwall is an excellent place to see a variety of marine mammals,
-    fish and seabirds. Pyffyer (Dolphin) are seen throughout the year although their
-    appearance is unpredictable. Morvleydh XXX (Basking Shark) appear in inshore Cornish
-    waters as the water warms and plankton on which they feed increases. Even an occasional
-    Morvil XXX (Minke Whale) is reported from this stretch of the coastline but views
-    are often distant. \r\nThere is also a chance of seeing Palores (Chough) which
-    are now returning to this part of the Cornish coast as well as to the Lizard.\r\n\r\n"
+    fish and seabirds. <b>Morhogh (Dolphin)</b> are seen throughout the year although
+    their appearance is unpredictable. <b>Morvleydh Howl (Basking Shark)</b> appear
+    in inshore Cornish waters as the water warms and plankton on which they feed increases.
+    Even an occasional <b>Morvil Minke (Minke Whale)</b> is reported from this stretch
+    of the coastline but views are often distant. \r\n\nThere is also a chance of
+    seeing <b>Palores (Chough)</b> which are now returning to this part of the Cornish
+    coast as well as to the Lizard.\r\n\r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -988,7 +989,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -999,13 +1000,13 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "The peninsula of West Penwith is a multi-layered jigsaw of Cornish history;
-    ancient monuments such as the Neolithic Lanyon Quoit and the Bronze Age Men-an-Tol
-    (Holed Stone). jostle with the pointed chimney stack and crumbling Jynji (Engine
-    House) of the nineteenth century mining era. \r\nThe Cornish language is in evidence
-    all around in the placenames, for example; Crows-an-Wra (the Witch\u2019s Cross),
-    Kelynack (Holly Grove), Pednavounder (End of the Lane).\r\nBecause of the headland\u2019s
-    distinctive shape, Cape Cornwall itself was known as Kilguth (Goose\u2019s Back)
-    in Cornish. \r\n\r\n"
+    ancient monuments such as the Neolithic Lanyon Quoit and the Bronze Age <b>Men-an-Tol
+    (Holed Stone)</b> jostle with the pointed chimney stack and crumbling <b>Jynji
+    (Engine House)</b> of the nineteenth century mining era. \r\n\nThe Cornish language
+    is in evidence all around in the placenames, for example: <b>Crows-an-Wra (the
+    Witch\u2019s Cross), Kelynack (Holly Grove), Pednavounder (End of the Lane)</b>.
+    Because of the headland\u2019s distinctive shape, Cape Cornwall itself is known
+    as <b>Kilguth (Goose\u2019s Back)</b> in Cornish. \r\n\r\n"
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1145,7 +1146,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1156,10 +1157,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Jan Tregeagle\u2019s tormented spirit was hunted to the western cliffs
-    of Kernow. Here he was set the task of using Banadhel (Broom) to sweep the sand
-    from Porthcurno round the headland of Tol-Pedn-Penwith into Nanjizal Bay. It is
-    said that if you are out on those wild western cliffs on a winter night you can
-    still hear Tregeagle howling and roaring at the hopelessness of his task.\r\n\r\n"
+    of Kernow. Here he was set the task of using <b>Banadhel (Broom)</b> to sweep
+    the sand from Porthcurno round the headland of Tol-Pedn-Penwith into Nanjizal
+    Bay. It is said that if you are out on those wild western cliffs on a winter night
+    you can still hear Tregeagle howling and roaring at the hopelessness of his task.\r\n\r\n"
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1226,7 +1227,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1241,7 +1242,7 @@ MonoBehaviour:
     natural environment; all shaped by the full force of the Atlantic Ocean. The entire
     coastline is a succession of dramatic and iconic scenes; such as the imposing
     cliff castle with towering granite cliffs at Treryn Dinas and the glorious expanses
-    of beach and turquoise waters at Porthcurno. \r\n\r\n\r\n"
+    of beach and turquoise waters at Porthcurno. \r\n"
 --- !u!222 &981588337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1382,7 +1383,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1400,7 +1401,7 @@ MonoBehaviour:
     on Cape Cornwall are the \u2018Rolls-Royce\u2019 of Cornish hedging. Random \u2018grounders\u2019
     and larger \u2018fillers\u2019 are built up to a line, then as many as seven horizontal
     courses of vertical pitched \u2018edgers\u2019, all with a perfectly curved \u2018batter\u2019
-    (profile).\r\n\r\n"
+    (profile).\r"
 --- !u!222 &1198179551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1818,7 +1819,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2176,7 +2177,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.054583836
+  m_Size: 0.13182415
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2386,7 +2387,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2476,7 +2477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

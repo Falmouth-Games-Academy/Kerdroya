@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -534,12 +534,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Along the coast colonies of Popa (Puffin), Wellagog (Guillemot) and Gelvinalsen
-    (Razorbill) can be seen. The cliff tops and slopes provide habitats for xxx (Linnet),
-    Briansenwynn (Whitethroat) and Klapven (Stonechat). The steep sided valleys in
-    the summer months are home to a great variety of Tykki Duw (Butterflies), including
-    Kap\u2019n Rudh (Red Admiral), Besowik (Ringlet) and the [XXX UPDATE IMPORTANT]
-    (Small Pearl Bordered Fritillary). "
+  m_Text: "Along the coast colonies of <b>Popa (Puffin), Kyddaw (Guillemot)</b> and
+    <b>Gelvinlymm (Razorbill)</b> can be seen. The cliff tops and slopes provide habitats
+    for <b>Linoges (Linnet), Lonkgwynn (Whitethroat)</b> and <b>Chekkyar (Stonechat)</b>.
+    The steep sided valleys in the summer months are home to a great variety of <b>Tykki
+    Duw (Butterflies)</b>, including <b>Kap\u2019n Rudh (Red Admiral), Gellik an Kylgh
+    (Ringlet)</b> and the <b>Brithek Perlek Bian (Small Pearl Bordered Fritillary)</b>. "
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -987,7 +987,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -999,12 +999,12 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Until recently Boscastle was home to a strong tradition of Step Dancing;
     solo dancers would perform the \u2018Boscastle Breakdown\u2019 on top of a barrel
-    or on a slab of slate.\r\nThe next gully westwards from Pentargon (Pen dowr goon
-    in Cornish, meaning \u2018Otters\u2019 head\u2019) is Rocky Valley; hidden away
-    there are the Labyrinth rock carvings which first inspired Kerdroya. Just along
-    the coast is the well-known tourist destination of Tintagel is the birthplace
-    of the mythical King Arthur who was said to have led the British resistance against
-    the coming of the English. \r\n"
+    or on a slab of slate; serious aerobic exercise!\r\n\nThe next gully westwards
+    from Pentargon (<b>Pen dowr goon</b> in Cornish, meaning <b>\u2018Otters\u2019
+    head\u2019</b>) is Rocky Valley; hidden away there are the Labyrinth rock carvings
+    which first inspired Kerdroya. Just along the coast is the well-known tourist
+    destination of Tintagel is the birthplace of the mythical King Arthur who was
+    said to have led the British resistance against the coming of the English. \r\n"
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1159,8 +1159,8 @@ MonoBehaviour:
     of St Teath; she said that she survived her lengthy sentence of solitary confinement
     because the Little People brought her food and drink. Witches were often experts
     at catching and releasing the winds: Tregeagle\u2019s impossible task here is
-    to use a tiny smidgen of thistledown to capture enough puff for a full night of
-    Step Dancing. \r\r\n"
+    to capture enough wind for a lung-bursting night of Step Dancing using nothing
+    but a tiny smidgen of thistledown. "
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1238,9 +1238,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "The \u2018Pentire to Widemouth\u2019 section of the Cornwall AONB is 30km
-    of rugged and exposed coastline cut through by deep and narrow valleys. Inland
-    is a sheltered landscape of small farming hamlets. Just North of Boscastle at
-    Trevigue, are the highest cliffs in the whole of Cornwall (223m)"
+    of dramatic, rugged and exposed coastline cut through by deep and narrow valleys.
+    Just North of Boscastle at mTrevigue, are the highest cliffs in the whole of Cornwall
+    (223m) and there are numerous cliff castles such as The Rumps and St Gennys. Inland
+    is a contrasting pastoral landscape of small, sheltered farming hamlets. "
 --- !u!222 &981588337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1381,7 +1382,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1816,7 +1817,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2174,7 +2175,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.063139535
+  m_Size: 0.14354411
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2384,7 +2385,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2474,7 +2475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

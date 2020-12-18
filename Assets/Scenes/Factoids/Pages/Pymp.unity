@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -534,10 +534,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Along this coast are a great variety of bird life; XXX (Fulmar), XXX (Little
-    Egret), XXX (Kittiwake).\r\nSome of the woodlands are important for their subspecies
-    of Elow Kernow (Cornish Narrow-leaved Elm); which is the essential tree providing
-    the water-proof planking for every Cornish gig.\r\n"
+  m_Text: "Along this coast are a great variety of bird life; <b>Golan an Garrek (Fulmar),
+    Kerghydh Bennvagas (Little Egret), Golan Kernow (Kittiwake)</b>.\r\nSome of the
+    woodlands are important for their subspecies of <b>Elow Kernow (Cornish Narrow-leaved
+    Elm)</b>; which is the essential tree providing the water-proof planking for every
+    Cornish gig.\r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -985,7 +986,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -999,9 +1000,9 @@ MonoBehaviour:
     past.  The path up from Lansallos cove is cut through the soft slate rock \u2013
     this was often a technique for smugglers to make sure that their loaded wagons
     could trundle up from the beach without being seen by unfriendly searchers along
-    the coast.\r\nThis stretch of coast was also home to many saints who were children
-    of King Brychan \u2013 Barri who founded Fowey, Reydhow who founded Landreath
-    and Keyn who founded St Keyne.\r\n"
+    the coast.\r\n\nThis stretch of coast was also home to many saints who were children
+    of King Brychan \u2013 <b>Barri</b> who founded Fowey, <b>Reydhow</b> who founded
+    Landreath and <b>Keyn</b> who founded St Keyne.\r\n"
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1141,7 +1142,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1151,11 +1152,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The Gwenen Du Kernow (Cornish Black Bee) is now very rare. It is said that
-    its dark colour and increased body hair enable it to fly in cold temperatures
+  m_Text: The <b>Gwenen Du Kernow (Cornish Black Bee)</b> is now very rare. It is
+    said that its dark colour and increased body hair enable it to fly in cold temperatures
     and poor conditions including the famous Cornish "mizzle". Now that all our pollinators
     are in such a critical decline, we have set Tregeagle another important, impossible
-    task; he must use a Bleujen (Flower) to gather every black bee left in Kernow.
+    task; he must use a <b>Bleujen (Flower)</b> to gather every black bee left in
+    Kernow.
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1222,7 +1224,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1232,10 +1234,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Both Fowey and Looe in the \u2018South Coast Eastern\u2019 section of the
-    Cornwall AONB are drowned river valleys or \u2018Rias\u2019, each with its own
-    enclosed woodland setting of river and creekside. The coast here is a relatively
-    sparsely populated characterised by deep valleys extending inland from the sea. "
+  m_Text: "The \u2018Polperro coast\u2019 is a relatively sparsely populated stretch
+    characterised by deep valleys extending inland from the sea. But the \u2018South
+    Coast Eastern\u2019 section of the Cornwall AONB also includes the drowned river
+    valleys or \u2018Rias\u2019 of Fowey and Looe, each with its own enclosed woodland
+    setting of river and tidal creeks. \r\n\r\r\n"
 --- !u!222 &981588337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1376,7 +1379,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1807,7 +1810,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2165,7 +2168,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.072438635
+  m_Size: 0.15892808
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2375,7 +2378,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2465,7 +2468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

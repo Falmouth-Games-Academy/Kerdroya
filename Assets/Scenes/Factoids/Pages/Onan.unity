@@ -524,7 +524,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -534,7 +534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The most famous residents of the Lizard are the Palores (Cornish Choughs).
+  m_Text: "The most famous residents of the Lizard are the <b>Palores (Cornish Choughs)</b>.
     The National Bird of Cornwall; these entertaining and acrobatic flyers with their
     bright red legs and beaks are said to be the returned spirit of King Arthur. Having
     disappeared from Cornwall in the 1970s, a pair returned in 2002 and have since
@@ -987,7 +987,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -997,12 +997,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The Lizard remained as one of the last places where Kernowek (Cornish)
-    was spoken as an everyday, community language. In 1648 after defeating the Cornish
-    Uprising at the battle known as the \u2018Gear Rout\u2019, the Roundhead army
-    chased the Cornish-speaking rebels down the Lizard peninsula. Trapped on these
-    cliffs, the survivors refused to surrender but chose instead to join hands and
-    jump to their deaths."
+  m_Text: "Claimed to be the oldest surviving place-name in Britain, <b>Predannack</b>
+    is the original name for the whole Lizard peninsula. it\u2019s meaning is the
+    <b>\u2018Britannic\u2019</b> headland; that is, the very first land you sight
+    as you arrive at Britain by the sea. \r\n\nThe Lizard remained as one of the last
+    places where<b> Kernowek (Cornish)</b> was spoken as an everyday, community language.
+    In 1648 after defeating the Cornish Uprising at the battle known as the \u2018Gear
+    Rout\u2019, the Roundhead army chased the Cornish-speaking rebels down the Lizard
+    peninsula. Trapped on these cliffs, the survivors refused to surrender but chose
+    instead to join hands and jump to their deaths. \r\n"
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1142,7 +1145,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1152,13 +1155,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: In the Cornish legend, St Petroc contains the ghost of Jan Tregeagle by
+  m_Text: 'In the Cornish legend, St Petroc contains the ghost of Jan Tregeagle by
     setting him an endless task; the tormented soul must carry sand across from Berepper
     to Porthleven only for the tides to wash it all back again. As the unhappy spirit
-    of Tregeagle lousters (labours) away, one of the pack of encircling demons trips
-    him up. Tregeagle drops his load of sand and that is how the Loe Bar is formed.
-    Before this happened Hellys (Helston) had a been a busy port with ships coming
-    and going; but no more.
+    of Tregeagle <b>lousters (labours) </b> away, one of the pack of encircling demons
+    trips him up. Tregeagle drops his load of sand and that is how the Loe Bar is
+    formed. Before this happened <b>Hellys (Helston)</b> had a been a busy port with
+    ships coming and going; but no more. '
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1225,7 +1228,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1235,14 +1238,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The \u2018South Coast Western\u2019 section of the Cornwall AONB includes
-    the heathland interior of the Goonhilly Downs, iconic Cornish beaches like Gunwalloe,
-    Poldhu and Kynance as well as the working fishing coves of Cadgwith and Coverack.\r\nPredannack
-    is claimed to be the oldest surviving place-name in Britain! With roots going
-    back for more than three thousand years, it is the original name for the whole
-    Lizard peninsula. It\u2019s meaning is the \u2018Britannic\u2019 headland; that
-    is, the very first land you sight as you arrive at Britain by the sea (and is
-    the most Southernly point of mainland Britain). \r\n"
+  m_Text: "The \u2018South Coast Western\u2019 section of the Cornwall AONB is incredibly
+    diverse and includes: the drowned valley of the Helford River, fringed with dense
+    <b>Dar (Sessile Oak)</b> woodland; the wild heathland interior of the Goonhilly
+    Downs, littered with Bronze Age cairns, settlements, barrows and standing stones;
+    iconic Cornish beaches like Gunwalloe, Poldhu and Kynance; as well as the working
+    fishing coves of Cadgwith and Coverack. Lizard Point itself is, of course, the
+    most Southernly point of mainland Britain."
 --- !u!222 &981588337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1383,7 +1385,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 549f0e54e97054b5b91dd594fc919ffb, type: 3}
     m_FontSize: 40
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1393,14 +1395,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The hedges here are a beautiful mixture of the different rocks making up
-    the Lizard; granite, gabbro, blue elvan and serpentine. Random grounders and fillers
-    are built up to a line then horizontal courses of vertically pitched \u2018edgers\u2019
-    complete the hedge. \r\n\nThe rocks of the Lizard Complex are unlike anywhere
-    else in Cornwall or in Britain. The whole peninsula is a great chunk of uplifted
-    oceanic crust consisting of the dark green and red rock, serpentine, a 400-million-year-old
-    bedrock, which forms the cliffs at Kynance Cove, and can be carved and polished
-    to create ornaments.\r\n99\r\n"
+  m_Text: "The rocks of the Lizard are unlike anywhere else in Cornwall or in Britain;
+    the whole peninsula is a great chunk of uplifted oceanic crust. The dark green
+    and red rock, \u2018serpentine\u2019 gets its name from the patterns on the rock\u2019s
+    surface that look like reptile skin. There is no connection with the name \u2018Lizard\u2019
+    (which actually comes from the Cornish <b>Lys Ardh</b> meaning <b>\u2018High Court\u2019</b>).
+    \ The hedges here are a beautiful mixture of Lizard rocks; granite, gabbro, blue
+    elvan and serpentine. Random grounders and fillers are built up to a line then
+    horizontal courses of vertically pitched \u2018edgers\u2019 complete the hedge. "
 --- !u!222 &1198179551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1818,7 +1820,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 124
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2176,7 +2178,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.099377744
+  m_Size: 0.12856998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2386,7 +2388,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660441015}
   m_HandleRect: {fileID: 660441014}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2476,7 +2478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
