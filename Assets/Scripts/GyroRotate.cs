@@ -33,15 +33,13 @@ public class GyroRotate : MonoBehaviour
 
     private void Update()
     {
-        ApplyGyroRotation();
-        ApplyCalibration();
-
-        transform.rotation = Quaternion.Slerp(transform.rotation, _rawGyroRotation.rotation, _smoothing);
-        /*if (maze != null && maze.isActive())
+        if (!Application.isEditor)
         {
-            maze.SetGyroData(transform.rotation);
+            ApplyGyroRotation();
+            ApplyCalibration();
+
+            transform.rotation = Quaternion.Slerp(transform.rotation, _rawGyroRotation.rotation, _smoothing);
         }
-        */
 
     }
 

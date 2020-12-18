@@ -21,15 +21,19 @@ public class FreeCamera : MonoBehaviour
 
     void Update()
     {
-        if (THandler.sceneState == 2) {
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = -Input.GetAxis("Mouse Y");
+        if (Application.isEditor)
+        {
+            if (THandler.sceneState == 2)
+            {
+                float mouseX = Input.GetAxis("Mouse X");
+                float mouseY = -Input.GetAxis("Mouse Y");
 
-            rotY += mouseX * mouseSensitivity * Time.deltaTime;
-            rotX += mouseY * mouseSensitivity * Time.deltaTime;
+                rotY += mouseX * mouseSensitivity * Time.deltaTime;
+                rotX += mouseY * mouseSensitivity * Time.deltaTime;
 
-            Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
-            target.transform.rotation = localRotation;
+                Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
+                target.transform.rotation = localRotation;
+            }
         }
     }
 }
