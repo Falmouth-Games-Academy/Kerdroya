@@ -17,8 +17,7 @@ public class BeeGenerator : MonoBehaviour
     {
         if (bee != null)
         {
-            GameObject b = Instantiate(bee, bee.transform.localPosition, bee.transform.localRotation);
-            b.transform.parent = transform;
+            GameObject b = Instantiate(bee, Vector3.zero, transform.rotation, transform);
             b.transform.localPosition = Vector3.zero;
             BeeBehaviour beeBehaviour = b.GetComponent<BeeBehaviour>();
             beeBehaviour.leftFacing = true;
