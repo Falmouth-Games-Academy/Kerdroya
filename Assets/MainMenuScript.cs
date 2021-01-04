@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +18,9 @@ public class MainMenuScript : MonoBehaviour
 
     public void Start()
     {
+        string result = string.Join(", ", AppProgression.levelCompleted.Select(x => x.ToString()).Aggregate((x, y) => x + ", " + y));
+        Debug.Log(result);
+
         if (AppProgression.openingwatched)
         {
             SplashGameObject.SetActive(false);
