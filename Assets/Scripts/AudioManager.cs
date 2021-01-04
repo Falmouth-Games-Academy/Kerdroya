@@ -3,29 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
-{
-
-    public AudioClip[] audioClips;
+{  
     public AudioSource audioSource;
+    public AudioClip[] audioClips;
+    public bool[] clipsPlayed;
+    public bool coRoutineStarted = false;
+    public bool coRoutineEnded = false;
 
-    private int playOrder = 0;
+    //private int playOrder = 0;
 
+    //public bool audioQueued = false;
 
-
-    private bool audioQueued = false;
-
-    public  bool audioEnded = false; //
+    //public  bool audioEnded = false; //
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource.clip = audioClips[0];
-        audioSource.Play();
+        clipsPlayed = new bool[audioClips.Length];
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         if(!audioEnded)
         {
             if (!audioSource.isPlaying && playOrder == 0)
@@ -40,8 +40,9 @@ public class AudioManager : MonoBehaviour
                 AdvancePlayOrder();
             }
         }
+        */
     }
-
+    /*
     public void AdvancePlayOrder()
     {
         if (playOrder <= audioClips.Length)
@@ -56,5 +57,69 @@ public class AudioManager : MonoBehaviour
             audioSource.clip = audioClips[playOrder];
             audioSource.Play();
         }
+    }
+    */
+
+    public void PlayClip(int clip)
+    {
+        if (clip < 0 || clip > audioClips.Length)
+        {
+            return;
+        }
+
+        audioSource.clip = audioClips[clip];
+        audioSource.Play();
+    }
+
+    public void PlayClipOnce(int clip)
+    {
+        if (clip < 0 || clip > audioClips.Length)
+        {
+            return;
+        }
+
+        if (!clipsPlayed[clip])
+        {
+            audioSource.clip = audioClips[clip];
+            audioSource.Play();
+            clipsPlayed[clip] = true;
+        }
+        
+    }
+
+    public void PlayClipsToEnd(int startingClip)
+    {
+       
+        if (coRoutineStarted == false)
+        {
+            Debug.Log("222222");
+            StartCoroutine(PlayClipsToEndCoroutine(3));
+            coRoutineStarted = true;
+        }
+    }
+
+    public IEnumerator PlayClipsToEndCoroutine(int startingClip)
+    {
+        if (startingClip < 0 || startingClip > audioClips.Length)
+        {
+            yield return null;
+        }
+
+        int currentClip = startingClip;
+
+        while(currentClip < audioClips.Length)
+        {
+            if (audioSource.isPlaying)
+            {
+                yield return new WaitForSeconds(1);
+            }
+
+            if (!audioSource.isPlaying)
+            {
+                PlayClip(currentClip);
+                currentClip++;
+            }
+        }
+        coRoutineEnded = true;
     }
 }

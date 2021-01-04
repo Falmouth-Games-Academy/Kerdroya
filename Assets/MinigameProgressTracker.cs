@@ -10,8 +10,8 @@ public class MinigameProgressTracker : MonoBehaviour
 
     public void LateUpdate()
     {
-        if (points >= maxPoints) {
-            THandler.sceneState = 4; // WARNING this may need updating if the order in TransitionHandler is changed
+        if (points >= maxPoints && THandler.sceneState < 5) {
+            THandler.sceneState = 5; // WARNING this may need updating if the order in TransitionHandler is changed
         }
     }
 }

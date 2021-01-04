@@ -24,6 +24,9 @@ public class TransitionHandler : MonoBehaviour
     public float puzzleFadeInSpeed = 0.05f;
     private float totalFadeInValue = 0f;
     //scene four
+
+    //StateFive
+    bool coRoutineStarted = false;
     
     // internal globals
     private Renderer myRenderer;
@@ -39,23 +42,29 @@ public class TransitionHandler : MonoBehaviour
     {
         switch (sceneState)
         {
-            case 0: EntryScene(); break;//show and wait for intertitle
-            case 1: SceneOne(); break;//transition out of intertitle
-            case 2: SceneTwo(); break;//find object in scene, used by FreeCamera script
-            case 3: SceneThree(); break;//Transition to minigame, used by circle minigame (colliford lake)
-            case 4: SceneFour(); break; //End, triggered externally by minigame progress tracker
+            case 0: StateZero(); break;//show and wait for intertitle
+            case 1: StateOne(); break;//transition out of intertitle
+            case 2: StateTwo(); break;//find object in scene, used by FreeCamera script
+            case 3: StateThree(); break;//Display puzzle instructions/prompt
+            case 4: StateFour(); break;//Transition to minigame, used by circle minigame (colliford lake)
+            case 5: StateFive(); break;//Puzzle completed, Will finishes his audio clips 
+            case 6: StateSix(); break; //End, triggered externally by minigame progress tracker
         }
     }
 
-    private void EntryScene()
+    private void StateZero()
     { //show intertitle, wait for end of interititle
-        if (AManager.audioEnded)
+
+        AManager.PlayClipOnce(0);
+
+        if (!AManager.audioSource.isPlaying)
         {
             sceneState = 1;
         }
+        
     }
 
-    private void SceneOne() //transition out of intertitle
+    private void StateOne() //transition out of intertitle
     {
         alphaDelta += alphaTranitionSpeed;
         interTitle.GetComponent<UnityEngine.UI.RawImage>().color = new Color(1, 1, 1, Mathf.SmoothStep(1.0f, 0.0f, alphaDelta));
@@ -67,8 +76,10 @@ public class TransitionHandler : MonoBehaviour
         }
     }
 
-    private void SceneTwo() //find object in scene
+    private void StateTwo() //find object in scene
     {
+        AManager.PlayClipOnce(1);
+
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit))
         {
             // get hit game object and show text if it has any (this must be the first child object)
@@ -136,7 +147,21 @@ public class TransitionHandler : MonoBehaviour
         }
     }
 
-    private void SceneThree() //Transition to game
+    private void StateThree()
+    {
+        //This should display the intructions / prompt when we have them - presumably on a canvas
+        //The user will advance to the next state by tapping through the prompt of similar
+
+        AManager.PlayClipOnce(2);
+
+        if (!AManager.audioSource.isPlaying)
+        {
+            sceneState = 4;
+        }
+
+    }
+
+    private void StateFour() //Transition to game
     {
         //SWitch the camera to orthographic for the 2D game - we may need to switch this back for subsequent plays
         cam.orthographic = true;
@@ -177,7 +202,21 @@ public class TransitionHandler : MonoBehaviour
         }
     }
 
-    private void SceneFour()
+    public void StateFive()
+    {
+        if (AManager.coRoutineEnded == false)
+        {
+            AManager.PlayClipsToEnd(3);
+        }
+
+        if (AManager.coRoutineEnded == true && AManager.audioSource.isPlaying == false)
+        {
+            sceneState = 6;
+        }
+
+    }
+
+    private void StateSix()
     {
         alphaDelta += alphaTranitionSpeed;
         fadeOutObject.GetComponent<UnityEngine.UI.RawImage>().color = new Color(1, 1, 1, Mathf.SmoothStep(1.0f, 0.0f, 1-alphaDelta));
