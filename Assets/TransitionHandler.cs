@@ -16,18 +16,24 @@ public class TransitionHandler : MonoBehaviour
     //Scene one
     private float alphaDelta = 0f;
     public float alphaTranitionSpeed = 0.05f; //speed of fade out on intertitle
+
     //Scene two
     public GameObject findObjectTarget; // GameObject containing hidden
     public float findObjectRollOverTime = 1000;//time taken before object location recognised
     public float timeWaited = 0;
+
     //Scene three
+    public CanvasGroup promptCanvasGroup;
+    public float waitTime = 3;
+    public float timeElapsed = 0;
+
+    //Scene four
     public float puzzleFadeInSpeed = 0.05f;
     private float totalFadeInValue = 0f;
-    //scene four
 
     //StateFive
     bool coRoutineStarted = false;
-    
+
     // internal globals
     private Renderer myRenderer;
 
@@ -36,6 +42,7 @@ public class TransitionHandler : MonoBehaviour
         WindPuzzle.SetActive(false);
         myRenderer = findObjectTarget.GetComponent<Renderer>();
         fadeOutObject.GetComponent<UnityEngine.UI.RawImage>().color = new Color(1, 1, 1, 0);
+        promptCanvasGroup.alpha = 0;
     }
 
     void Update()
@@ -61,7 +68,7 @@ public class TransitionHandler : MonoBehaviour
         {
             sceneState = 1;
         }
-        
+
     }
 
     private void StateOne() //transition out of intertitle
@@ -86,19 +93,19 @@ public class TransitionHandler : MonoBehaviour
             GameObject hitGameObject = hit.transform.gameObject;
             Debug.Log(hitGameObject.name);
             hitGameObject.transform.GetChild(0).gameObject.SetActive(true);
-            
+
             // check if the answer is right and respond accordingly
-            if(hit.transform.gameObject.tag.Equals("right"))
+            if (hit.transform.gameObject.tag.Equals("right"))
             {
                 ActivateGame(hitGameObject);
                 return;
             }
 
             // check if the answer is wrong and respond accordingly
-            if (hit.transform.gameObject.tag.Equals("wrong")){
+            if (hit.transform.gameObject.tag.Equals("wrong")) {
                 playAudio("WrongAudio");
                 StartCoroutine(destroyAfter(hitGameObject, 2));
-            }   
+            }
         }
 
         timeWaited = 0;
@@ -137,12 +144,12 @@ public class TransitionHandler : MonoBehaviour
         }
     }
 
-    private void playAudio (string name) {
+    private void playAudio(string name) {
         Debug.Log("AUDIO");
         AudioSource audio = GameObject.Find(name).GetComponent<AudioSource>();
-        if (audio != null && !audio.isPlaying){
+        if (audio != null && !audio.isPlaying) {
             audio.Play();
-        }else{
+        } else {
             Debug.Log("can't find");
         }
     }
@@ -152,16 +159,26 @@ public class TransitionHandler : MonoBehaviour
         //This should display the intructions / prompt when we have them - presumably on a canvas
         //The user will advance to the next state by tapping through the prompt of similar
 
-        AManager.PlayClipOnce(2);
 
-        if (!AManager.audioSource.isPlaying)
+        AManager.PlayClipOnce(2);
+        promptCanvasGroup.alpha = 1;
+
+        if (timeElapsed < waitTime)
         {
+            
+            timeElapsed += Time.deltaTime;
+            Debug.Log(timeElapsed);
+        }
+        if (promptCanvasGroup.alpha == 1 && timeElapsed >= waitTime && !AManager.audioSource.isPlaying)
+        {
+            promptCanvasGroup.alpha = 0;
             sceneState = 4;
         }
 
     }
 
-    private void StateFour() //Transition to game
+
+private void StateFour() //Transition to game
     {
         //SWitch the camera to orthographic for the 2D game - we may need to switch this back for subsequent plays
         cam.orthographic = true;
