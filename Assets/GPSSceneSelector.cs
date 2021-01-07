@@ -138,7 +138,6 @@ public class GPSSceneSelector : MonoBehaviour
                     sceneText.text = "Clarrick woods";
                     break;
             }
-
         }
     }
 

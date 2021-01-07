@@ -23,7 +23,6 @@ public class AppProgression : MonoBehaviour
         Clarrick wood = 11
      */
     public static bool[] levelCompleted = new bool[12];
-    public DisplayProgress display;
 
     public static int currentComplete = -1;
 
@@ -41,6 +40,7 @@ public class AppProgression : MonoBehaviour
         {
             _instance = this;
             DontDestroyOnLoad(this.gameObject);
+            LoadGame();
         }
     }
 
@@ -50,7 +50,7 @@ public class AppProgression : MonoBehaviour
         SaveGame();
     }
 
-    private Save CreateSaveGameObject()
+    private static Save CreateSaveGameObject()
     {
         Save save = new Save();
         foreach (bool CompletedLevel in levelCompleted)
@@ -63,7 +63,7 @@ public class AppProgression : MonoBehaviour
         return save;
     }
 
-    public void SaveGame()
+    public static void SaveGame()
     {
         Save save = CreateSaveGameObject();
 
@@ -92,8 +92,6 @@ public class AppProgression : MonoBehaviour
             openingwatched = save.openingWatched;
 
             Debug.Log("Game Loaded");
-
-            display.Display();
 
             return true;
         }

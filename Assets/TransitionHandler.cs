@@ -241,6 +241,7 @@ private void StateFour() //Transition to game
         {
             AppProgression.levelCompleted[puzzleID] = true;
             AppProgression.currentComplete = puzzleID;
+            AppProgression.SaveGame();
             UnityEngine.SceneManagement.SceneManager.LoadScene(8);
         }
     }
