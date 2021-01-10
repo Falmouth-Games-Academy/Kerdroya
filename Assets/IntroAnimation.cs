@@ -168,7 +168,7 @@ public class IntroAnimation : MonoBehaviour
                 break;
 
             case (IntroStates)8:
-                WhenTimeElapsed(5, 9);
+                WhenTimeElapsed(5, 9);//white wait
 
                 break;
             case (IntroStates)9:
@@ -178,22 +178,67 @@ public class IntroAnimation : MonoBehaviour
                 graphics[3].canvasRenderer.SetAlpha(0);
                 graphics[5].canvasRenderer.SetAlpha(1);
                 graphics[6].canvasRenderer.SetAlpha(1);
-                graphics[4].CrossFadeAlpha(0, 8, false);
+                graphics[4].CrossFadeAlpha(0, 6, false);
                 introState = (IntroStates)10;
+
                 break;
 
             case (IntroStates)10:
                 audioManager.PlayClipsToEnd(2);
+                WhenTimeElapsed(7, 11);//Jan Tragegal
 
                 break;
             case (IntroStates)11:
-                //WhenTimeElapsed(1.5f, graphics[4], 0, 4, 9);
+                graphics[7].canvasRenderer.SetAlpha(1);
+                graphics[8].canvasRenderer.SetAlpha(1);
+                WhenTimeElapsed(5.5f, 12);
 
                 break;
             case (IntroStates)12:
-                //WhenTimeElapsed(1.5f, graphics[4], 0, 4, 9);
+                graphics[7].canvasRenderer.SetAlpha(0);
+                graphics[8].canvasRenderer.SetAlpha(0);
+                WhenTimeElapsed(38, 13);//Born
+
 
                 break;
+            case (IntroStates)13:
+                graphics[7].canvasRenderer.SetAlpha(1);
+                graphics[9].canvasRenderer.SetAlpha(1);
+                WhenTimeElapsed(5.5f, 14);
+                break;
+
+            case (IntroStates)14:
+                graphics[7].canvasRenderer.SetAlpha(0);
+                graphics[9].canvasRenderer.SetAlpha(0);
+                WhenTimeElapsed(14, 15);//Died
+                break;
+            case (IntroStates)15:
+                graphics[7].canvasRenderer.SetAlpha(1);
+                graphics[10].canvasRenderer.SetAlpha(1);
+                WhenTimeElapsed(5.5f, 16);
+                break;
+            case (IntroStates)16:
+                graphics[7].canvasRenderer.SetAlpha(0);
+                graphics[10].canvasRenderer.SetAlpha(0);
+                WhenTimeElapsed(14, 17);//Summoned
+                break;
+            case (IntroStates)17:
+                graphics[7].canvasRenderer.SetAlpha(1);
+                graphics[11].canvasRenderer.SetAlpha(1);
+                WhenTimeElapsed(5.5f, 18);
+                break;
+            case (IntroStates)18:
+                graphics[7].canvasRenderer.SetAlpha(0);
+                graphics[11].canvasRenderer.SetAlpha(0);
+                WhenTimeElapsed(17, 19);//Cursed
+                break;
+            case (IntroStates)19:
+                graphics[7].canvasRenderer.SetAlpha(1);
+                graphics[12].canvasRenderer.SetAlpha(1);
+                WhenTimeElapsed(4, 20);
+                break;
+            case (IntroStates)20:
+
 
             default:
                 break;
