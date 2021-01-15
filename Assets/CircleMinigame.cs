@@ -9,7 +9,7 @@ public class CircleMinigame : MonoBehaviour
     public float radius = 3f;
     public float minDragDistance = 1f;
     public ElementDragger dragger;
-    public TransitionHandler THandler;
+    public ColifordLakeTransitionHandler THandler;
     public bool[] activegate = new bool[3];
     int startID = 0;
     private bool fadeImage;
