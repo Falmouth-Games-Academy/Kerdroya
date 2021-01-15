@@ -92,8 +92,7 @@ public class AudioManager : MonoBehaviour
        
         if (coRoutineStarted == false)
         {
-            Debug.Log("222222");
-            StartCoroutine(PlayClipsToEndCoroutine(3));
+            StartCoroutine(PlayClipsToEndCoroutine(startingClip));
             coRoutineStarted = true;
         }
     }

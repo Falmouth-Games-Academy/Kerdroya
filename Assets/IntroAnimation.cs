@@ -18,7 +18,17 @@ public class IntroAnimation : MonoBehaviour
         Seven,
         Eight,
         Nine,
-        Ten
+        Ten,
+        Eleven,
+        Twelve,
+        Thirteen,
+        Fourteen,
+        Fifteen,
+        Sixteen,
+        Seventeen,
+        Eighteen,
+        Nineteen,
+        Twenty
     };
 
     public List<Graphic> graphics;
@@ -184,7 +194,7 @@ public class IntroAnimation : MonoBehaviour
                 break;
 
             case (IntroStates)10:
-                audioManager.PlayClipsToEnd(2);
+                audioManager.PlayClipsToEnd(3);
                 WhenTimeElapsed(7, 11);//Jan Tragegal
 
                 break;
@@ -197,10 +207,9 @@ public class IntroAnimation : MonoBehaviour
             case (IntroStates)12:
                 graphics[7].canvasRenderer.SetAlpha(0);
                 graphics[8].canvasRenderer.SetAlpha(0);
-                WhenTimeElapsed(38, 13);//Born
-
-
+                WhenTimeElapsed(7, 13);//Born
                 break;
+
             case (IntroStates)13:
                 graphics[7].canvasRenderer.SetAlpha(1);
                 graphics[9].canvasRenderer.SetAlpha(1);
@@ -210,7 +219,7 @@ public class IntroAnimation : MonoBehaviour
             case (IntroStates)14:
                 graphics[7].canvasRenderer.SetAlpha(0);
                 graphics[9].canvasRenderer.SetAlpha(0);
-                WhenTimeElapsed(14, 15);//Died
+                WhenTimeElapsed(7, 15);//Died
                 break;
             case (IntroStates)15:
                 graphics[7].canvasRenderer.SetAlpha(1);
@@ -220,7 +229,7 @@ public class IntroAnimation : MonoBehaviour
             case (IntroStates)16:
                 graphics[7].canvasRenderer.SetAlpha(0);
                 graphics[10].canvasRenderer.SetAlpha(0);
-                WhenTimeElapsed(14, 17);//Summoned
+                WhenTimeElapsed(7, 17);//Summoned
                 break;
             case (IntroStates)17:
                 graphics[7].canvasRenderer.SetAlpha(1);
@@ -230,30 +239,34 @@ public class IntroAnimation : MonoBehaviour
             case (IntroStates)18:
                 graphics[7].canvasRenderer.SetAlpha(0);
                 graphics[11].canvasRenderer.SetAlpha(0);
-                WhenTimeElapsed(17, 19);//Cursed
+                WhenTimeElapsed(7, 19);//Cursed
                 break;
             case (IntroStates)19:
                 graphics[7].canvasRenderer.SetAlpha(1);
                 graphics[12].canvasRenderer.SetAlpha(1);
-                WhenTimeElapsed(4, 20);
+                WhenTimeElapsed(5.5f, 20);
                 break;
             case (IntroStates)20:
+                graphics[7].canvasRenderer.SetAlpha(0);
+                graphics[12].canvasRenderer.SetAlpha(0);
+                if (audioManager.coRoutineEnded)
+                {
+                    introState = (IntroStates)21;
+                }
+                break;
+            case (IntroStates)21:
+                WhenTimeElapsed(6f, 22);
 
+                break;
+            case (IntroStates)22:
+                Debug.Log("intro ends");
+
+                break;
 
             default:
                 break;
         }
         
     }
-    /*
-     * case IntroStates.Zero:
-                WhenTimeElapsed(3,white,1,0.25f,1);
-                break;
-            case IntroStates.One:
-                WhenGraphicFaded(white, 1, window, 0, 0.01f, 2);
-                break;
-            case IntroStates.Two:
-                WhenGraphicFaded(window, 0, white, 0, 0.25f, 3);
-                break;
-    */
+
 }

@@ -646,14 +646,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f1133d749e21a1a49a4ab8d267bf8e25, type: 3}
   - {fileID: 8300000, guid: b6c990ea6b786194c8d139604338fb1a, type: 3}
   - {fileID: 8300000, guid: 7715002eade300e42a9ccdec6b87a79d, type: 3}
-  - {fileID: 8300000, guid: 6f74b138fe06e4948ac041fe3c2b25b7, type: 3}
-  - {fileID: 8300000, guid: de7a2c0c2b200114dbac3f668f6bd408, type: 3}
+  - {fileID: 8300000, guid: 2a8a95a2f2e7eea46aa66db9a6a767ae, type: 3}
   - {fileID: 8300000, guid: b58f45ff686607e48aad885594193908, type: 3}
   - {fileID: 8300000, guid: 277bb8cd6897a7d47b99ade945e0e5a4, type: 3}
   - {fileID: 8300000, guid: 653bcac401faffa42bd74440200c101e, type: 3}
   - {fileID: 8300000, guid: f17c0959f2c3ac9459c7c672907fd640, type: 3}
-  - {fileID: 8300000, guid: 8aae28a75650bd748a16d53155172a11, type: 3}
-  - {fileID: 8300000, guid: 8aae28a75650bd748a16d53155172a11, type: 3}
   clipsPlayed: 
   coRoutineStarted: 0
   coRoutineEnded: 0
@@ -1091,7 +1088,7 @@ MonoBehaviour:
   - {fileID: 517379692}
   - {fileID: 981465148}
   graphicsFaded: 
-  introState: 6
+  introState: 0
   waitTimer: 0
 --- !u!4 &1466910222
 Transform:
