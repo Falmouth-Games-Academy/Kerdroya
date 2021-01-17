@@ -95,4 +95,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Factoids/Pages/Credits Scene.unity
     guid: fc8d4ae0da8b55f4db5c507f8f86f543
+  - enabled: 1
+    path: Assets/Scenes/ARCoreFace.unity
+    guid: 3ffda925a5e704f4ca28dcb75319183d
+  - enabled: 1
+    path: Assets/Scenes/Utilities/Intro.unity
+    guid: 5f66b5bc76e9f3c40a92e4569c67c88f
   m_configObjects: {}

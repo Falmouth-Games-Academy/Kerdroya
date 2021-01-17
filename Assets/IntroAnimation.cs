@@ -259,7 +259,7 @@ public class IntroAnimation : MonoBehaviour
 
                 break;
             case (IntroStates)22:
-                Debug.Log("intro ends");
+                //Debug.Log("intro ends");
 
                 break;
 
