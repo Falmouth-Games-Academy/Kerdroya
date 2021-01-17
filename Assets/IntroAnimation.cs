@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class IntroAnimation : MonoBehaviour
 {
@@ -259,7 +260,7 @@ public class IntroAnimation : MonoBehaviour
 
                 break;
             case (IntroStates)22:
-                //Debug.Log("intro ends");
+                SceneManager.LoadScene("MainMenu");
 
                 break;
 
