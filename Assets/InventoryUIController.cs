@@ -36,7 +36,7 @@ public class InventoryUIController : MonoBehaviour
     private void DefaultAction()
     {
         //go to end scene is all levels complete
-        if (AppProgression.levelCompleted.All(x => x)) UnityEngine.SceneManagement.SceneManager.LoadScene(15);
+        if (AppProgression.levelCompleted.All(x => x)) UnityEngine.SceneManagement.SceneManager.LoadScene(32);
     }
 
     private void FadeInWhiteout()
