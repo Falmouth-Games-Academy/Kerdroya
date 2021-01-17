@@ -167,7 +167,7 @@ public class TransitionHandler : MonoBehaviour
         {
             
             timeElapsed += Time.deltaTime;
-            Debug.Log(timeElapsed);
+            //Debug.Log(timeElapsed);
         }
         if (promptCanvasGroup.alpha == 1 && timeElapsed >= waitTime && !AManager.audioSource.isPlaying)
         {

@@ -22,7 +22,7 @@ public class CircleMinigame : MonoBehaviour
 
     private void Update()
     {
-        if (THandler.sceneState == 3) // prevents indicator from getting trapped, if Transition handler scene system is changed, this value will need updating
+        if (THandler.sceneState == 4) // prevents indicator from getting trapped, if Transition handler scene system is changed, this value will need updating
         {
             if (fadeImage)
             {
@@ -53,7 +53,7 @@ public class CircleMinigame : MonoBehaviour
         else
         {
             //complete game, move scene handler phase
-            THandler.sceneState = 4;
+            THandler.sceneState = 5;
         }
 
         /*

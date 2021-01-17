@@ -43,7 +43,7 @@ public class SandGameScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (THandler.sceneState == 3)
+        if (THandler.sceneState == 4)
         {
             MainLoop();
         }
@@ -115,10 +115,10 @@ public class SandGameScript : MonoBehaviour
         {
             if (minigameState == 1)
             {
-                arrow.transform.localRotation = Quaternion.identity;
+                //arrow.transform.localRotation = Quaternion.identity;
                 if (inValue == 0)
                 {
-                    THandler.sceneState = 4;
+                    THandler.sceneState = 5;
                 }
             }
             else
