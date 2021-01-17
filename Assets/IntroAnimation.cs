@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class IntroAnimation : MonoBehaviour
 {
     public AudioManager audioManager;
+    public AudioSource demonsAudio;
     public enum IntroStates
     {
         Zero,
@@ -175,6 +176,7 @@ public class IntroAnimation : MonoBehaviour
             case (IntroStates)7:
                 graphics[4].CrossFadeAlpha(1, 0.01f, false);
                 audioManager.PlayClip(0);
+                demonsAudio.Stop();
                 introState = (IntroStates)8;
                 break;
 
