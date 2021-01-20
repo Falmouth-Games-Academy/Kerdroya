@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EndingAnimation : MonoBehaviour
 {
@@ -182,7 +183,7 @@ public class EndingAnimation : MonoBehaviour
 
                 break;
             case (IntroStates)9:
-                Debug.Log("Ending ends");
+                SceneManager.LoadScene("Credits Scene");
 
                 break;
 
