@@ -4,6 +4,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AppProgression : MonoBehaviour
 {
@@ -41,6 +42,15 @@ public class AppProgression : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(this.gameObject);
             LoadGame();
+            checkOpeningWatched();
+        }
+    }
+
+    private void checkOpeningWatched () {
+        if (openingwatched == false){
+            openingwatched = true;
+            SceneManager.LoadScene("Intro");
+            SaveGame();
         }
     }
 
