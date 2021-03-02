@@ -104,7 +104,7 @@ public class TransitionHandler : MonoBehaviour
             // check if the answer is wrong and respond accordingly
             if (hit.transform.gameObject.tag.Equals("wrong")) {
                 playAudio("WrongAudio");
-                StartCoroutine(destroyAfter(hitGameObject, 2));
+                StartCoroutine(destroyAfter(hitGameObject, 5));
             }
         }
 

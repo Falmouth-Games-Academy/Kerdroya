@@ -1263,8 +1263,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 449}
-  m_SizeDelta: {x: 1023.8, y: 218}
+  m_AnchoredPosition: {x: 0, y: 439}
+  m_SizeDelta: {x: 1023.8, y: 438.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &601170927
 MonoBehaviour:
@@ -1297,7 +1297,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stack the cairn
+  m_Text: Hurl the rock to stack the cairn
 --- !u!222 &601170928
 CanvasRenderer:
   m_ObjectHideFlags: 0

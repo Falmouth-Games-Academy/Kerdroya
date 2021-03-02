@@ -10,7 +10,7 @@ using UnityEngine.UIElements;
 public class TestLocationService : MonoBehaviour
 {
     public Text outputText;
-    public float minSceneSwapDistance = 1f;
+    public float minSceneSwapDistance = 99999;//1f;
     public Vector3[] locationData;
     public GameObject popUpPanel;
     public UnityEngine.UI.Button sceneSelectBtn;
@@ -20,8 +20,17 @@ public class TestLocationService : MonoBehaviour
     public float alphaTranitionSpeed = 0.05f;
     public float alphaDelta = 0f;
 
+    public float TESTlat;
+    public float TESTlon;
+    public float TESTalt;
+    public float TESTclosestDistance = 0;
+    public int TESTbestID = -1;
+    public Text TESTtext;
+
+    
     IEnumerator Start()
     {
+        /*
         RT = popUpPanel.GetComponent<RectTransform>();
         outputText.text = "Booting...\n";
 
@@ -33,6 +42,7 @@ public class TestLocationService : MonoBehaviour
            // yield break;
         }
         */
+    /*
         // Start service before querying location
         Input.location.Start(1,1);
 
@@ -78,22 +88,35 @@ public class TestLocationService : MonoBehaviour
                "\nHorizontal Accuracy: " + Input.location.lastData.horizontalAccuracy +
                "\ntimeStamp: " + Input.location.lastData.timestamp +
                "\n" + elipseSwap;
-
+    */
 
             float closestDistance = 0;
             int bestID = -1;
+            //took out Input.location.lastData.latitude, long, alt
             ArrayProximityTest(locationData,
-                                   new Vector3(Input.location.lastData.latitude,
-                                               Input.location.lastData.longitude,
-                                               Input.location.lastData.altitude),
+                                   new Vector3(TESTlat,
+                                               TESTlon,
+                                               TESTlat),
                                    ref bestID,
                                    ref closestDistance);
-            SceneSelection(bestID, closestDistance);
+            TESTSceneSelection(bestID, closestDistance); //<-----------------------Remove test from this line
             yield return new WaitForSeconds(0.5f);
+        /*
         }
         // Stop service if there is no need to query location updates continuously
         Input.location.Stop();
+
+        */
     }
+
+    
+    
+    private void Update()
+    {
+       ArrayProximityTest(locationData,new Vector3(TESTlat, TESTlon, TESTalt),ref TESTbestID, ref TESTclosestDistance);
+        TESTSceneSelection(TESTbestID, TESTclosestDistance);
+    }
+    
 
     public void ArrayProximityTest(Vector3[] targetLocations, Vector3 comparitor, ref int bestID, ref float closestDistance)
     {
@@ -175,6 +198,62 @@ public class TestLocationService : MonoBehaviour
             }
 
         }
+    }
+
+    public void TESTSceneSelection(int sceneID, float distance)
+    {
+        //check if main splash has loaded yet
+        //check if already loading scene
+        //case for player rejects scene change
+
+        if (distance < minSceneSwapDistance)
+        {
+            animatingPanel = true;
+            switch (sceneID)
+            {
+                case 0:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 1:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 2:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 3:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 4:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 5:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 6:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 7:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 8:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 9:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 10:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+                case 11:
+                    TESTtext.text = "Site: " + sceneID + '\n' + "Distance: " + distance;
+                    break;
+            }
+        }
+        else
+        {
+            TESTtext.text = "No point in range";
+        }
+        
     }
 
     public void FixedUpdate()
