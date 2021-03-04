@@ -1082,6 +1082,7 @@ MonoBehaviour:
   bee: {fileID: 7698314340344206500, guid: d1b888c619b2d424b8e3025a9591724b, type: 3}
   timer: 3
   right: 0
+  MGPT: {fileID: 351893611}
 --- !u!65 &656887057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1567,6 +1568,7 @@ MonoBehaviour:
   bee: {fileID: 7698314340344206500, guid: d1b888c619b2d424b8e3025a9591724b, type: 3}
   timer: 3
   right: 1
+  MGPT: {fileID: 351893611}
 --- !u!65 &913283001
 BoxCollider:
   m_ObjectHideFlags: 0

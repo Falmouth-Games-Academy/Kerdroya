@@ -8,6 +8,8 @@ public class BeeGenerator : MonoBehaviour
     public GameObject bee;
     public float timer = 3;
     public bool right;
+    public MinigameProgressTracker MGPT;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +43,9 @@ public class BeeGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // check to see whether bee generators can be destroyed
+        if (MGPT.points >= MGPT.maxPoints) Destroy(this);
+
         if (timer > 0)
         {
             timer -= Time.deltaTime;
