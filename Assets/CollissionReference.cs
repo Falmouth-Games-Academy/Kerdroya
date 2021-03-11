@@ -6,18 +6,22 @@ public class CollissionReference : MonoBehaviour
 {
     public bool hitWall = false;
 
-    void OnCollisionEnter(Collision colli)
+    void OnTriggerEnter(Collider colli)
     {
+        Debug.Log("Enter" + colli.gameObject.name);
         if (colli.gameObject.layer == 11)
         {
+            Debug.Log("Enter" + colli.gameObject.name);
             hitWall = true;
         }
     }
 
-    private void OnCollisionExit(Collision colli)
+    private void OnTriggerExit(Collider colli)
     {
+        Debug.Log("Exit" + colli.gameObject.name);
         if (colli.gameObject.layer == 11)
         {
+            Debug.Log("Exit"+colli.gameObject.name);
             hitWall = false;
         }
     }
