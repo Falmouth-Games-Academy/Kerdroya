@@ -17,8 +17,10 @@ public class RockTossScript : MonoBehaviour
     public float MinSwipeDistance = 2f;
     public GameObject targetObject;
     public LayerMask hitLayers;
-    private bool tossComplete, rockThrown, dragActive = false;
-    private float rockScale = 1;
+    public bool tossComplete, rockThrown, dragActive = false, success = false;
+    public float rockScale = 1;
+    public float rockScaleFactor = 0.99f;
+    public float rockForce = 240f;
     private float gravity = 0;
     public GameObject GoalCollider;
     public MinigameProgressTracker MGPT;
@@ -35,17 +37,7 @@ public class RockTossScript : MonoBehaviour
 
     void FixedUpdate()
     {   
-        if (rock.GetComponent<CollissionReference>().hitWall){
-            ResetPuzzle();
-        }
-        if (GoalCollider.GetComponent<GoalCollission>().hitGoal)
-        {
-            if (rockYCurrentFrame < rockYlastFrame) // rock is falling
-            {
-                MGPT.points++;
-                ResetPuzzle();
-            }
-        }
+
 
         if (!rockThrown)
         {
@@ -60,14 +52,18 @@ public class RockTossScript : MonoBehaviour
         {
             if (tossComplete)
             { ResetPuzzle(); }
-            if (rockThrown)
+            if (rockThrown && success == false)
             { RunRockPhysics(); }
+            if (success)
+            {
+                Success();
+            }
         }
     }
 
     private void RunRockPhysics()
     {
-        rockScale = rockScale * 0.99f;
+        rockScale = rockScale * rockScaleFactor;
         gravity += 0.001f;
         rock.transform.localPosition = rock.transform.localPosition - new Vector3(0, gravity, 0);
         rock.transform.localScale = Vector3.one * rockScale;
@@ -75,7 +71,7 @@ public class RockTossScript : MonoBehaviour
         rockYCurrentFrame = rock.transform.localPosition.y;
     }
 
-    private void ResetPuzzle()
+    public void ResetPuzzle()
     {
         ResetMinigame();
         rockThrown = false;
@@ -88,6 +84,11 @@ public class RockTossScript : MonoBehaviour
         rock.GetComponent<Rigidbody>().angularVelocity = new Vector3(0f, 0f, 0f);
     }
 
+    void Success()
+    {
+        rock.GetComponent<Rigidbody>().velocity = Vector3.zero;
+    }
+
     void ReleaseAndFling()
     {
         if (true) {
@@ -98,7 +99,7 @@ public class RockTossScript : MonoBehaviour
                 if (swipedistance > MinSwipeDistance)
                 {
                     Vector3 dir = (EndPos - StartPos).normalized;
-                    rock.GetComponent<Rigidbody>().AddForce(dir * 240f);
+                    rock.GetComponent<Rigidbody>().AddForce(dir * rockForce);
                     rockThrown = true;
                 }
                 else
