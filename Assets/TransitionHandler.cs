@@ -16,15 +16,24 @@ public class TransitionHandler : MonoBehaviour
     //Scene one
     private float alphaDelta = 0f;
     public float alphaTranitionSpeed = 0.05f; //speed of fade out on intertitle
+
     //Scene two
     public GameObject findObjectTarget; // GameObject containing hidden
     public float findObjectRollOverTime = 1000;//time taken before object location recognised
     public float timeWaited = 0;
+
     //Scene three
+    public CanvasGroup promptCanvasGroup;
+    public float waitTime = 3;
+    public float timeElapsed = 0;
+
+    //Scene four
     public float puzzleFadeInSpeed = 0.05f;
     private float totalFadeInValue = 0f;
-    //scene four
-    
+
+    //StateFive
+    bool coRoutineStarted = false;
+
     // internal globals
     private Renderer myRenderer;
 
@@ -33,29 +42,36 @@ public class TransitionHandler : MonoBehaviour
         WindPuzzle.SetActive(false);
         myRenderer = findObjectTarget.GetComponent<Renderer>();
         fadeOutObject.GetComponent<UnityEngine.UI.RawImage>().color = new Color(1, 1, 1, 0);
+        promptCanvasGroup.alpha = 0;
     }
 
     void Update()
     {
         switch (sceneState)
         {
-            case 0: EntryScene(); break;//show and wait for intertitle
-            case 1: SceneOne(); break;//transition out of intertitle
-            case 2: SceneTwo(); break;//find object in scene, used by FreeCamera script
-            case 3: SceneThree(); break;//Transition to minigame, used by circle minigame (colliford lake)
-            case 4: SceneFour(); break; //End, triggered externally by minigame progress tracker
+            case 0: StateZero(); break;//show and wait for intertitle
+            case 1: StateOne(); break;//transition out of intertitle
+            case 2: StateTwo(); break;//find object in scene, used by FreeCamera script
+            case 3: StateThree(); break;//Display puzzle instructions/prompt
+            case 4: StateFour(); break;//Transition to minigame, used by circle minigame (colliford lake)
+            case 5: StateFive(); break;//Puzzle completed, Will finishes his audio clips 
+            case 6: StateSix(); break; //End, triggered externally by minigame progress tracker
         }
     }
 
-    private void EntryScene()
+    private void StateZero()
     { //show intertitle, wait for end of interititle
-        if (AManager.audioEnded)
+
+        AManager.PlayClipOnce(0);
+
+        if (!AManager.audioSource.isPlaying)
         {
             sceneState = 1;
         }
+
     }
 
-    private void SceneOne() //transition out of intertitle
+    private void StateOne() //transition out of intertitle
     {
         alphaDelta += alphaTranitionSpeed;
         interTitle.GetComponent<UnityEngine.UI.RawImage>().color = new Color(1, 1, 1, Mathf.SmoothStep(1.0f, 0.0f, alphaDelta));
@@ -67,39 +83,102 @@ public class TransitionHandler : MonoBehaviour
         }
     }
 
-    private void SceneTwo() //find object in scene
+    private void StateTwo() //find object in scene
     {
+        AManager.PlayClipOnce(1);
+
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit))
         {
-            if (hit.transform.Equals(findObjectTarget.transform))
-            {
-                myRenderer.material.color = new Color(1, 1, 1, timeWaited/findObjectRollOverTime);
+            // get hit game object and show text if it has any (this must be the first child object)
+            GameObject hitGameObject = hit.transform.gameObject;
+            Debug.Log(hitGameObject.name);
+            hitGameObject.transform.GetChild(0).gameObject.SetActive(true);
 
-                timeWaited += Time.deltaTime;
-                if (timeWaited > findObjectRollOverTime)
-                {
-                    sceneState = 3;
-                }
-            }
-            else
+            // check if the answer is right and respond accordingly
+            if (hit.transform.gameObject.tag.Equals("right"))
             {
-                RayNotHitTarget();
+                ActivateGame(hitGameObject);
+                return;
+            }
+
+            // check if the answer is wrong and respond accordingly
+            if (hit.transform.gameObject.tag.Equals("wrong")) {
+                playAudio("WrongAudio");
+                StartCoroutine(destroyAfter(hitGameObject, 5));
             }
         }
-        else
-        {
-            RayNotHitTarget();
-        }
-    }
 
-    private void RayNotHitTarget()
-    {
-        myRenderer = findObjectTarget.GetComponent<Renderer>();
-        myRenderer.material.color = new Color(1, 1, 1, 0.01f);
         timeWaited = 0;
+        resetRightGamesObects();
     }
 
-    private void SceneThree() //Transition to game
+    private void ActivateGame(GameObject hitGameObject)
+    {
+        playAudio("RightAudio");
+        Renderer hitGameObjectRenderer = hitGameObject.GetComponent<Renderer>();
+        hitGameObjectRenderer.material.color = new Color(1, 1, 1, timeWaited / findObjectRollOverTime);
+
+        // check to see if we need to move to the next state
+        timeWaited += Time.deltaTime;
+        if (timeWaited > findObjectRollOverTime)
+        {
+            resetRightGamesObects();
+            sceneState = 3;
+        }
+        return;
+    }
+
+    IEnumerator destroyAfter(GameObject gameObject, int delay)
+    {
+        Debug.Log("DESTROY");
+        yield return new WaitForSeconds(delay);
+        Destroy(gameObject);
+    }
+
+    private void resetRightGamesObects() {
+        GameObject[] rightGameObjects = GameObject.FindGameObjectsWithTag("right");
+        foreach (GameObject gameObject in rightGameObjects)
+        {
+            Renderer gameObjectRenderer = gameObject.GetComponent<Renderer>();
+            gameObjectRenderer.material.color = new Color(1, 1, 1, 0.01f);
+        }
+    }
+
+    private void playAudio(string name) {
+        Debug.Log("AUDIO");
+        AudioSource audio = GameObject.Find(name).GetComponent<AudioSource>();
+        if (audio != null && !audio.isPlaying) {
+            audio.Play();
+        } else {
+            Debug.Log("can't find");
+        }
+    }
+
+    private void StateThree()
+    {
+        //This should display the intructions / prompt when we have them - presumably on a canvas
+        //The user will advance to the next state by tapping through the prompt of similar
+
+
+        AManager.PlayClipOnce(2);
+        promptCanvasGroup.alpha = 1;
+
+        if (timeElapsed < waitTime)
+        {
+            
+            timeElapsed += Time.deltaTime;
+            //Debug.Log(timeElapsed);
+        }
+        if (promptCanvasGroup.alpha == 1 && timeElapsed >= waitTime && !AManager.audioSource.isPlaying)
+        {
+            promptCanvasGroup.alpha = 0;
+            sceneState = 4;
+        }
+
+    }
+
+
+private void StateFour() //Transition to game
     {
         //SWitch the camera to orthographic for the 2D game - we may need to switch this back for subsequent plays
         cam.orthographic = true;
@@ -140,7 +219,21 @@ public class TransitionHandler : MonoBehaviour
         }
     }
 
-    private void SceneFour()
+    public void StateFive()
+    {
+        if (AManager.coRoutineEnded == false)
+        {
+            AManager.PlayClipsToEnd(3);
+        }
+
+        if (AManager.coRoutineEnded == true && AManager.audioSource.isPlaying == false)
+        {
+            sceneState = 6;
+        }
+
+    }
+
+    private void StateSix()
     {
         alphaDelta += alphaTranitionSpeed;
         fadeOutObject.GetComponent<UnityEngine.UI.RawImage>().color = new Color(1, 1, 1, Mathf.SmoothStep(1.0f, 0.0f, 1-alphaDelta));
@@ -148,6 +241,7 @@ public class TransitionHandler : MonoBehaviour
         {
             AppProgression.levelCompleted[puzzleID] = true;
             AppProgression.currentComplete = puzzleID;
+            AppProgression.SaveGame();
             UnityEngine.SceneManagement.SceneManager.LoadScene(8);
         }
     }

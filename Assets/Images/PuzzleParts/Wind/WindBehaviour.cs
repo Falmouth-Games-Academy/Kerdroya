@@ -40,6 +40,9 @@ public class WindBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // check to see whether wind should stop
+        if (MGPT.points >= MGPT.maxPoints) Destroy(this);
+
 
         if (timer > 0)
         {

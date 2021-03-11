@@ -10,6 +10,7 @@ public class ParkHeadTarget : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)){
             PHS.TargetClicked(ID);
+            Debug.Log(ID);
         }
     }
 }

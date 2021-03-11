@@ -4,12 +4,26 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AppProgression : MonoBehaviour
 {
-    public bool openingwatched = false;
+    public static bool openingwatched = false;
+    /*
+        Predennak     = 0
+        Cape cornwall = 1
+        Morwenstow    = 2
+        Lansallos     = 3
+        Colliford lak = 4
+        the Blouth    = 5
+        Padstow       = 6
+        Park head     = 7
+        St Agnes Head = 8
+        Boscatle      = 9
+        Tehidy        = 10
+        Clarrick wood = 11
+     */
     public static bool[] levelCompleted = new bool[12];
-    public DisplayProgress display;
 
     public static int currentComplete = -1;
 
@@ -27,6 +41,16 @@ public class AppProgression : MonoBehaviour
         {
             _instance = this;
             DontDestroyOnLoad(this.gameObject);
+            LoadGame();
+            checkOpeningWatched();
+        }
+    }
+
+    private void checkOpeningWatched () {
+        if (openingwatched == false){
+            openingwatched = true;
+            SceneManager.LoadScene("Intro");
+            SaveGame();
         }
     }
 
@@ -36,7 +60,7 @@ public class AppProgression : MonoBehaviour
         SaveGame();
     }
 
-    private Save CreateSaveGameObject()
+    private static Save CreateSaveGameObject()
     {
         Save save = new Save();
         foreach (bool CompletedLevel in levelCompleted)
@@ -49,7 +73,7 @@ public class AppProgression : MonoBehaviour
         return save;
     }
 
-    public void SaveGame()
+    public static void SaveGame()
     {
         Save save = CreateSaveGameObject();
 
@@ -78,8 +102,6 @@ public class AppProgression : MonoBehaviour
             openingwatched = save.openingWatched;
 
             Debug.Log("Game Loaded");
-
-            display.Display();
 
             return true;
         }

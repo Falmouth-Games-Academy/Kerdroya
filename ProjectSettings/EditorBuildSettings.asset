@@ -6,54 +6,107 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Utilities/MainMenu.unity
     guid: cc99bad90b4f8b441a721a5ff13645d0
   - enabled: 1
-    path: Assets/Scenes/Predannak-1.unity
+    path: Assets/Scenes/360/Predannak-1.unity
     guid: 40f8fd81349b1b245be4cfa4d47ae268
   - enabled: 1
-    path: Assets/Scenes/Lansallos-5.unity
+    path: Assets/Scenes/360/Lansallos-5.unity
     guid: 0e45817ca61f5ed43ad34e0354f31986
   - enabled: 1
-    path: Assets/Scenes/Tehidy-6.unity
+    path: Assets/Scenes/360/Tehidy-6.unity
     guid: 4ec5d2a21d8c80a4594e594f0642a2a4
   - enabled: 1
-    path: Assets/Scenes/Colliford Lake-7.unity
+    path: Assets/Scenes/360/Colliford Lake-7.unity
     guid: 7d42ccc2e397c0842bb5fa1806d7efde
   - enabled: 1
-    path: Assets/Scenes/Boscastle-3.unity
+    path: Assets/Scenes/360/Boscastle-3.unity
     guid: aba94eb9b0cafc046878cad1e98cc3b9
   - enabled: 1
-    path: Assets/Scenes/Morwenstow-2.unity
+    path: Assets/Scenes/360/Morwenstow-2.unity
     guid: f0d034025d0de4e48849607e82da3fbd
   - enabled: 1
-    path: Assets/Scenes/Padstow-8.unity
+    path: Assets/Scenes/360/Padstow-8.unity
     guid: c6a25336ca42d364f9cd4ee659c2d44c
   - enabled: 1
-    path: Assets/Scenes/Inventory.unity
+    path: Assets/Scenes/Utilities/Inventory.unity
     guid: 2829ac472a5938a49bdbb76ca2eb94b6
   - enabled: 1
-    path: Assets/Scenes/SceneSelection.unity
+    path: Assets/Scenes/Utilities/SceneSelection.unity
     guid: 47eec26374ba73e428e16ebebba2701a
   - enabled: 1
-    path: Assets/Scenes/Cape Cornwall-11.unity
+    path: Assets/Scenes/360/Cape Cornwall-11.unity
     guid: 587cf1d03301a8548b97f54439eebd0e
   - enabled: 1
-    path: Assets/Scenes/Clarrick Woods-12.unity
+    path: Assets/Scenes/360/Clarrick Woods-12.unity
     guid: b48b7dccf5b45f941915ac1a58af964f
   - enabled: 1
-    path: Assets/Scenes/St Agnes Head-4.unity
+    path: Assets/Scenes/360/St Agnes Head-4.unity
     guid: a01d58d88553eb44f9072180e5009f09
   - enabled: 1
-    path: Assets/Scenes/The Blouth-9.unity
+    path: Assets/Scenes/360/The Blouth-9.unity
     guid: 8b03fbf3b4c61b64a8c9b98461a9d287
   - enabled: 1
-    path: Assets/Scenes/Park Head-10.unity
+    path: Assets/Scenes/360/Park Head-10.unity
     guid: cda8a232c83184a41aa9f142671ca42e
   - enabled: 1
-    path: Assets/Scenes/End Sequence.unity
+    path: Assets/Scenes/Utilities/End Sequence.unity
     guid: 406463952862e1e419a1bfe18830ee80
+  - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scenes/ARCoreFace.unity
+    guid: 3ffda925a5e704f4ca28dcb75319183d
+=======
+    path: Assets/Scenes/Factoids/Index.unity
+    guid: 5ebc92885b18c49e9beeb4ab837ec01e
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Onan.unity
+    guid: ded5182f1afa240a8b2f3025fa2e2b8a
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Deg.unity
+    guid: b648a729869214164b06be6c41bc50b1
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Dew.unity
+    guid: 048198e0bf3154761993fafb289c3fad
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Dewthek.unity
+    guid: 1a33a271077804f23a81ef74f2eb2f8a
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Eth.unity
+    guid: ad6aa33625e5f4581a426c271d3b4e93
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Hwegh.unity
+    guid: 6f91180ca5fa44d7e88a9d3b42f6b6e1
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Naw.unity
+    guid: 0e25ace3d71ee4503b0f1646c84234b7
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Pymp.unity
+    guid: 2e03f018ccb064907ae12f0fa04d5528
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Seyth.unity
+    guid: 01d4147c6afa048d1b65ef0d04df9cac
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Try.unity
+    guid: 0a19de24af7214e25a91dc45afd8873b
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Peswar.unity
+    guid: eeaa92b4e774c4b99b0772d3f180f557
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Unnek.unity
+    guid: ff27d3bc328b84a44863f0e38c408973
+  - enabled: 1
+    path: Assets/Scenes/Factoids/Pages/Credits Scene.unity
+    guid: fc8d4ae0da8b55f4db5c507f8f86f543
   - enabled: 1
     path: Assets/Scenes/ARCoreFace.unity
     guid: 3ffda925a5e704f4ca28dcb75319183d
+  - enabled: 1
+    path: Assets/Scenes/Utilities/Intro.unity
+    guid: 5f66b5bc76e9f3c40a92e4569c67c88f
+  - enabled: 1
+    path: Assets/Scenes/Utilities/Ending.unity
+    guid: ef725c71f1b62834490506b58d73d041
+>>>>>>> c984df1e8ee38017861873e134f47d094abad4d4
   m_configObjects: {}
