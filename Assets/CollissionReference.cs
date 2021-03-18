@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class CollissionReference : MonoBehaviour
 {
-    public bool hitWall = false;
+    public MinigameProgressTracker miniGameProgressTracker;
+    public RockTossScript rockTossScript;
+    public bool success = false;
 
-    void OnCollisionEnter(Collision colli)
+
+    private void OnTriggerExit(Collider colli)
     {
         if (colli.gameObject.layer == 11)
         {
-            hitWall = true;
+            Debug.Log("Exit actualtarget"+colli.gameObject.name);
+            success = true;
+            rockTossScript.success = true;
+            miniGameProgressTracker.points++;
         }
-    }
-
-    private void OnCollisionExit(Collision colli)
-    {
-        if (colli.gameObject.layer == 11)
+        if (colli.gameObject.layer != 11 && success == false)
         {
-            hitWall = false;
+            rockTossScript.ResetPuzzle();
         }
     }
 }
