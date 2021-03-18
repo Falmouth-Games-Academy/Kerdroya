@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 756}
   m_SizeDelta: {x: 800, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &49300780
@@ -188,7 +188,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " Born \n1606"
+  m_Text: Born 1606
 --- !u!222 &49300781
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -231,7 +231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1014}
   m_SizeDelta: {x: 800, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454547920
@@ -308,8 +308,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 500}
+  m_AnchoredPosition: {x: 0, y: -959}
+  m_SizeDelta: {x: 900, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &517379692
 MonoBehaviour:
@@ -342,7 +342,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " Summoned \n1655"
+  m_Text: Summoned 1655
 --- !u!222 &517379693
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -768,16 +768,10 @@ MonoBehaviour:
   audioClips:
   - {fileID: 8300000, guid: 4ed8c74c7458dfc46b49df7f14db0983, type: 3}
   - {fileID: 8300000, guid: 3243950209f30d64abcea4233865687d, type: 3}
-  - {fileID: 8300000, guid: 17f96a31bb6a9ea49863ef515c5eca9d, type: 3}
   - {fileID: 8300000, guid: bcc1cd020237c4c4b8c56b5b35a2ede4, type: 3}
-  - {fileID: 8300000, guid: f1133d749e21a1a49a4ab8d267bf8e25, type: 3}
-  - {fileID: 8300000, guid: b6c990ea6b786194c8d139604338fb1a, type: 3}
-  - {fileID: 8300000, guid: 7715002eade300e42a9ccdec6b87a79d, type: 3}
-  - {fileID: 8300000, guid: 2a8a95a2f2e7eea46aa66db9a6a767ae, type: 3}
   - {fileID: 8300000, guid: b58f45ff686607e48aad885594193908, type: 3}
   - {fileID: 8300000, guid: 277bb8cd6897a7d47b99ade945e0e5a4, type: 3}
-  - {fileID: 8300000, guid: 653bcac401faffa42bd74440200c101e, type: 3}
-  - {fileID: 8300000, guid: f17c0959f2c3ac9459c7c672907fd640, type: 3}
+  - {fileID: 8300000, guid: 8aae28a75650bd748a16d53155172a11, type: 3}
   clipsPlayed: 
   coRoutineStarted: 0
   coRoutineEnded: 0
@@ -968,7 +962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1278920678
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1041,7 +1035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1307849754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1666,7 +1660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1831438407
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1756,7 +1750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -734}
   m_SizeDelta: {x: 800, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1881113847
@@ -1790,7 +1784,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " Died \n1654"
+  m_Text: Died 1654
 --- !u!222 &1881113848
 CanvasRenderer:
   m_ObjectHideFlags: 0

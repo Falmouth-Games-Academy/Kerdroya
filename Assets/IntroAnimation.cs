@@ -197,52 +197,52 @@ public class IntroAnimation : MonoBehaviour
                 break;
 
             case (IntroStates)10:
-                audioManager.PlayClipsToEnd(3);
-                WhenTimeElapsed(7, 11);//Jan Tragegal
+                audioManager.PlayClipsToEnd(2);
+                WhenTimeElapsed(5, 11);//Jan Tragegal
 
                 break;
             case (IntroStates)11:
-                graphics[7].canvasRenderer.SetAlpha(1);
+                //graphics[7].canvasRenderer.SetAlpha(1);
                 graphics[8].canvasRenderer.SetAlpha(1);
-                WhenTimeElapsed(5.5f, 12);
+                WhenTimeElapsed(0.1f, 12);
 
                 break;
             case (IntroStates)12:
-                graphics[7].canvasRenderer.SetAlpha(0);
-                graphics[8].canvasRenderer.SetAlpha(0);
-                WhenTimeElapsed(7, 13);//Born
+               // graphics[7].canvasRenderer.SetAlpha(0);
+                //graphics[8].canvasRenderer.SetAlpha(0);
+                WhenTimeElapsed(3, 13);//Born
                 break;
 
             case (IntroStates)13:
-                graphics[7].canvasRenderer.SetAlpha(1);
+                //graphics[7].canvasRenderer.SetAlpha(1);
                 graphics[9].canvasRenderer.SetAlpha(1);
-                WhenTimeElapsed(5.5f, 14);
+                WhenTimeElapsed(0.1f, 14);
                 break;
 
             case (IntroStates)14:
-                graphics[7].canvasRenderer.SetAlpha(0);
-                graphics[9].canvasRenderer.SetAlpha(0);
-                WhenTimeElapsed(7, 15);//Died
+                //graphics[7].canvasRenderer.SetAlpha(0);
+                //graphics[9].canvasRenderer.SetAlpha(0);
+                WhenTimeElapsed(3, 15);//Died
                 break;
             case (IntroStates)15:
-                graphics[7].canvasRenderer.SetAlpha(1);
+                //graphics[7].canvasRenderer.SetAlpha(1);
                 graphics[10].canvasRenderer.SetAlpha(1);
-                WhenTimeElapsed(5.5f, 16);
+                WhenTimeElapsed(0.1f, 16);
                 break;
             case (IntroStates)16:
-                graphics[7].canvasRenderer.SetAlpha(0);
-                graphics[10].canvasRenderer.SetAlpha(0);
-                WhenTimeElapsed(7, 17);//Summoned
+                //graphics[7].canvasRenderer.SetAlpha(0);
+                //graphics[10].canvasRenderer.SetAlpha(0);
+                WhenTimeElapsed(3, 17);//Summoned
                 break;
             case (IntroStates)17:
-                graphics[7].canvasRenderer.SetAlpha(1);
+                //graphics[7].canvasRenderer.SetAlpha(1);
                 graphics[11].canvasRenderer.SetAlpha(1);
-                WhenTimeElapsed(5.5f, 18);
+                WhenTimeElapsed(0.1f, 18);
                 break;
             case (IntroStates)18:
-                graphics[7].canvasRenderer.SetAlpha(0);
-                graphics[11].canvasRenderer.SetAlpha(0);
-                WhenTimeElapsed(7, 19);//Cursed
+                //graphics[7].canvasRenderer.SetAlpha(0);
+                //graphics[11].canvasRenderer.SetAlpha(0);
+                WhenTimeElapsed(6, 19);//Cursed
                 break;
             case (IntroStates)19:
                 graphics[7].canvasRenderer.SetAlpha(1);
@@ -251,6 +251,10 @@ public class IntroAnimation : MonoBehaviour
                 break;
             case (IntroStates)20:
                 graphics[7].canvasRenderer.SetAlpha(0);
+                graphics[8].canvasRenderer.SetAlpha(0);
+                graphics[9].canvasRenderer.SetAlpha(0);
+                graphics[10].canvasRenderer.SetAlpha(0);
+                graphics[11].canvasRenderer.SetAlpha(0);
                 graphics[12].canvasRenderer.SetAlpha(0);
                 if (audioManager.coRoutineEnded)
                 {
@@ -258,7 +262,7 @@ public class IntroAnimation : MonoBehaviour
                 }
                 break;
             case (IntroStates)21:
-                WhenTimeElapsed(6f, 22);
+                WhenTimeElapsed(10f, 22);
 
                 break;
             case (IntroStates)22:
