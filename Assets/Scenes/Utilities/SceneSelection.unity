@@ -817,7 +817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 194909192}
-  scene: 30
+  scene: 33
 --- !u!114 &194909192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1689183478}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.7058824
+  m_Size: 0.35897437
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2951,6 +2951,7 @@ RectTransform:
   - {fileID: 2113865851}
   - {fileID: 194909189}
   - {fileID: 1200465193}
+  - {fileID: 1442901469}
   m_Father: {fileID: 1525109809}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3880,7 +3881,7 @@ RectTransform:
   m_Children:
   - {fileID: 1738447880}
   m_Father: {fileID: 932852696}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
