@@ -230,6 +230,14 @@ public class ColifordLakeTransitionHandler : MonoBehaviour
 
     public void StateFive()
     {
+        waitTime -= Time.deltaTime;
+
+        if (waitTime <= 0)
+        {
+            sceneState = 6;
+        }
+
+        /*
         if (AManager.coRoutineEnded == false)
         {
             AManager.PlayClipsToEnd(3);
@@ -239,6 +247,7 @@ public class ColifordLakeTransitionHandler : MonoBehaviour
         {
             sceneState = 6;
         }
+        */
 
     }
 
@@ -251,7 +260,7 @@ public class ColifordLakeTransitionHandler : MonoBehaviour
             AppProgression.levelCompleted[puzzleID] = true;
             AppProgression.currentComplete = puzzleID;
             AppProgression.SaveGame();
-            UnityEngine.SceneManagement.SceneManager.LoadScene(8);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(33);
         }
     }
 }

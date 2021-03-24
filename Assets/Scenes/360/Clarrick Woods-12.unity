@@ -232,11 +232,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9ab1df3ef86950044b218821ce4db604, type: 3}
   - {fileID: 8300000, guid: fd78a14c5d437f0418928f0bf6c51bbe, type: 3}
   - {fileID: 8300000, guid: 81232b641fe3b574a99a7550bd509f20, type: 3}
-  - {fileID: 8300000, guid: 5fb3cb6fe874f5c4c975572a581fe9e8, type: 3}
-  - {fileID: 8300000, guid: 5e5f192caecccfa49b3cf219d6f8bcf5, type: 3}
-  - {fileID: 8300000, guid: 35b33068a4135104595b79eabf08be4b, type: 3}
-  - {fileID: 8300000, guid: cd9c37b0d3635a2468a793c4032e9df6, type: 3}
-  - {fileID: 8300000, guid: cfcdb9780bf011244b315ddc4d08671a, type: 3}
   clipsPlayed: 
   coRoutineStarted: 0
   coRoutineEnded: 0

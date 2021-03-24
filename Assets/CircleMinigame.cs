@@ -54,6 +54,7 @@ public class CircleMinigame : MonoBehaviour
         {
             //complete game, move scene handler phase
             THandler.sceneState = 5;
+            THandler.waitTime = 4;
         }
 
         /*
