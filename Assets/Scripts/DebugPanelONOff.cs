@@ -6,11 +6,18 @@ public class DebugPanelONOff : MonoBehaviour
 {
 
     public GameObject debugPanel;
-    public bool active = false;
+    public int taps;
 
-    public void TogglePanel()
+    public void buttonTapped()
     {
-        active = !active;
-        debugPanel.SetActive(active);
+        taps++;
+        if (taps>10)
+        {
+            debugPanel.SetActive(true);
+            taps = 0;
+        }
     }
+
+
+
 }

@@ -4,18 +4,29 @@ using UnityEngine.UI;
 
 public class GPSSceneSelector : MonoBehaviour
 {
-
+    public Slider locationSlider;
+    //public int locationToggle = 0;
     public float minSceneSwapDistance = 1f;
-    public Vector3[] locationData;
+    public Vector3[] KerdroyaSiteCoords;
+    public Vector3[] NewquayCoords;
+    public Vector3[] PenrynCoords;
     public GameObject popUpPanel;
     public Button sceneSelectBtn;
     public Text sceneText;
     public bool animatingPanel = false;
     public float alphaTranitionSpeed = 0.05f;
     public float alphaDelta = 0f;
+    public Text outputText;
 
     IEnumerator Start()
     {
+        // First, check if user has location service enabled
+        if (!Input.location.isEnabledByUser)
+        {
+            outputText.text = "GPS not enabled";
+           // yield break;
+        }
+        
 
         // Start service before querying location
         Input.location.Start(1, 1);
@@ -24,6 +35,7 @@ public class GPSSceneSelector : MonoBehaviour
         int maxWait = 20;
         while (Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
         {
+            outputText.text += ".";
             yield return new WaitForSeconds(1);
             maxWait--;
         }
@@ -31,12 +43,14 @@ public class GPSSceneSelector : MonoBehaviour
         // Service didn't initialize in 20 seconds
         if (maxWait < 1)
         {
+            outputText.text = "Service did not initialize. Timed out";
             yield break;
         }
 
         // Connection has failed
         if (Input.location.status == LocationServiceStatus.Failed)
         {
+            outputText.text = "LocationServiceStatus = failed. Unable to determine device location";
             yield break;
         }
 
@@ -44,14 +58,60 @@ public class GPSSceneSelector : MonoBehaviour
         bool waitingIcon = false;
         while (true)
         {
+            outputText.text = "Location: \nLatitude: " + Input.location.lastData.latitude +
+               "\nLongitude: " + Input.location.lastData.longitude +
+               "\nAltitude: " + Input.location.lastData.altitude +
+               "\nHorizontal Accuracy: " + Input.location.lastData.horizontalAccuracy +
+               "\ntimeStamp: " + Input.location.lastData.timestamp +
+               "\n";
+
             float closestDistance = 0;
             int bestID = -1;
-            ArrayProximityTest(locationData,
+
+            //Switch based on the toggle in the debug menu. 0 and default are the coordinates of the Kerdroya labyrinth site
+            switch (locationSlider.value)
+            {
+                case 0:
+                    ArrayProximityTest(KerdroyaSiteCoords,
                                    new Vector3(Input.location.lastData.latitude,
                                                Input.location.lastData.longitude,
                                                Input.location.lastData.altitude),
                                    ref bestID,
                                    ref closestDistance);
+                    outputText.text += "\n " + "KERDROYA SITE" + "\n";
+                    break;
+                case 1:
+                    ArrayProximityTest(NewquayCoords,
+                                   new Vector3(Input.location.lastData.latitude,
+                                               Input.location.lastData.longitude,
+                                               Input.location.lastData.altitude),
+                                   ref bestID,
+                                   ref closestDistance);
+                    outputText.text += "\n " + "NEWQUAY" + "\n";
+                    break;
+                    
+                case 2:
+                    ArrayProximityTest(PenrynCoords,
+                                   new Vector3(Input.location.lastData.latitude,
+                                               Input.location.lastData.longitude,
+                                               Input.location.lastData.altitude),
+                                   ref bestID,
+                                   ref closestDistance);
+                    outputText.text += "\n " + "PENRYN" + "\n";
+                    break;
+                default:
+                    ArrayProximityTest(KerdroyaSiteCoords,
+                                   new Vector3(Input.location.lastData.latitude,
+                                               Input.location.lastData.longitude,
+                                               Input.location.lastData.altitude),
+                                   ref bestID,
+                                   ref closestDistance);
+                    outputText.text += "\n " + "KERDROYA SITE" + "\n";
+                    break;
+            }
+            
+            outputText.text += "BestID: " + bestID + "\n" +
+                "Closest Distance: " + closestDistance + "\n";
             SceneSelection(bestID, closestDistance);
             yield return new WaitForSeconds(0.5f);
         }
@@ -77,6 +137,13 @@ public class GPSSceneSelector : MonoBehaviour
         }
 
     }
+
+    public void HideLevelSelectButton() {
+
+    animatingPanel = false;
+
+    }
+
 
     public void SceneSelection(int sceneID, float distance)
     {
