@@ -107,4 +107,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARKitFace.unity
     guid: 94060f02e87924c1ab6508effd0dc100
+  - enabled: 1
+    path: Assets/Scenes/Utilities/SofaSceneSelection.unity
+    guid: 85a73f96cd8722241ae11d8a6746b795
   m_configObjects: {}
