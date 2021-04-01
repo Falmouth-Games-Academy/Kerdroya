@@ -7,7 +7,21 @@ public class GPSSceneSelector : MonoBehaviour
     public Slider locationSlider;
     //public int locationToggle = 0;
     public float minSceneSwapDistance = 1f;
-    public Vector3[] KerdroyaSiteCoords;
+    public Vector3[] KerdroyaSiteCoords = 
+    {
+        new Vector3(50.52843f	,-4.592323f, 0f),
+        new Vector3(50.52837f	,-4.592353f, 0f),
+        new Vector3(50.528219f	,-4.592422f, 0f),
+        new Vector3(50.52833f	,-4.592485f, 0f),
+        new Vector3(50.52822f	,-4.592645f, 0f),
+        new Vector3(50.52818f	,-4.592618f, 0f),
+        new Vector3(50.52812f	,-4.592772f, 0f),
+        new Vector3(50.52807f	,-4.592645f, 0f),
+        new Vector3(50.52817f	,-4.592514f, 0f),
+        new Vector3(50.52824f	,-4.592287f, 0f),
+        new Vector3(50.52823f	,-4.592142f, 0f),
+        new Vector3(50.52824f	,-4.592150f, 0f)
+    };
     public Vector3[] NewquayCoords;
     public Vector3[] PenrynCoords;
     public GameObject popUpPanel;
