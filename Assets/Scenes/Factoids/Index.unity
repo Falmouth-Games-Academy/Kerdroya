@@ -471,12 +471,12 @@ PrefabInstance:
     - target: {fileID: 7879286795985602411, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 2
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7879286796877471561, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 2
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e952583df3430f9057ad071d1de22, type: 3}
@@ -737,7 +737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc90682d95ad49169e70613c4e8246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 6
+  levelIndex: 4
 --- !u!1 &321605366
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,7 +906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc90682d95ad49169e70613c4e8246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 9
+  levelIndex: 7
 --- !u!1 &336677984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc90682d95ad49169e70613c4e8246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 8
+  levelIndex: 5
 --- !u!1 &413328847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,12 +1375,12 @@ PrefabInstance:
     - target: {fileID: 7879286795985602411, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7879286796877471561, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e952583df3430f9057ad071d1de22, type: 3}
@@ -1703,12 +1703,12 @@ PrefabInstance:
     - target: {fileID: 7879286795985602411, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7879286796877471561, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e952583df3430f9057ad071d1de22, type: 3}
@@ -1838,12 +1838,12 @@ PrefabInstance:
     - target: {fileID: 7879286795985602411, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7879286796877471561, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e952583df3430f9057ad071d1de22, type: 3}
@@ -2094,7 +2094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc90682d95ad49169e70613c4e8246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 4
+  levelIndex: 3
 --- !u!1001 &992775910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2215,12 +2215,12 @@ PrefabInstance:
     - target: {fileID: 7879286795985602411, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7879286796877471561, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e952583df3430f9057ad071d1de22, type: 3}
@@ -2398,7 +2398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc90682d95ad49169e70613c4e8246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 2
+  levelIndex: 9
 --- !u!1 &1093276574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2697,7 +2697,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b34aeb718f52a4dfda3772e4a9e26680, type: 3}
-    m_FontSize: 12
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
@@ -3021,12 +3021,12 @@ PrefabInstance:
     - target: {fileID: 7879286795985602411, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7879286796877471561, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e952583df3430f9057ad071d1de22, type: 3}
@@ -3291,12 +3291,12 @@ PrefabInstance:
     - target: {fileID: 7879286795985602411, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7879286796877471561, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e952583df3430f9057ad071d1de22, type: 3}
@@ -4105,7 +4105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc90682d95ad49169e70613c4e8246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 10
+  levelIndex: 1
 --- !u!1 &1651931102
 GameObject:
   m_ObjectHideFlags: 0
@@ -4317,12 +4317,12 @@ PrefabInstance:
     - target: {fileID: 7879286795985602411, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7879286796877471561, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e952583df3430f9057ad071d1de22, type: 3}
@@ -4500,7 +4500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc90682d95ad49169e70613c4e8246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 3
+  levelIndex: 8
 --- !u!1 &1735663165
 GameObject:
   m_ObjectHideFlags: 0
@@ -5015,12 +5015,12 @@ PrefabInstance:
     - target: {fileID: 7879286795985602411, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7879286796877471561, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e952583df3430f9057ad071d1de22, type: 3}
@@ -5475,7 +5475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc90682d95ad49169e70613c4e8246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 1
+  levelIndex: 2
 --- !u!1 &2029598735
 GameObject:
   m_ObjectHideFlags: 0
@@ -5901,7 +5901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc90682d95ad49169e70613c4e8246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 7
+  levelIndex: 6
 --- !u!1001 &2060065338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6022,12 +6022,12 @@ PrefabInstance:
     - target: {fileID: 7879286795985602411, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7879286796877471561, guid: e44e952583df3430f9057ad071d1de22,
         type: 3}
       propertyPath: levelIndex
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e952583df3430f9057ad071d1de22, type: 3}
@@ -6205,7 +6205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc90682d95ad49169e70613c4e8246a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 5
+  levelIndex: 10
 --- !u!1 &2124953092
 GameObject:
   m_ObjectHideFlags: 0

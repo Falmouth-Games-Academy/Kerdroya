@@ -6,6 +6,7 @@ using UnityEngine;
 public class Save
 {
     public List<bool> completedSections = new List<bool>();
+    public List<bool> completedFactoids = new List<bool>();
 
     public bool openingWatched;
 }

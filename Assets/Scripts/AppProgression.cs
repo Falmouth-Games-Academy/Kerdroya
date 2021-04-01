@@ -24,6 +24,7 @@ public class AppProgression : MonoBehaviour
         Clarrick wood = 11
      */
     public static bool[] levelCompleted = new bool[12];
+    public static bool[] factoidsCompleted = new bool[12];
 
     public static int currentComplete = -1;
 
@@ -60,12 +61,25 @@ public class AppProgression : MonoBehaviour
         SaveGame();
     }
 
+    public static void UpdateFactoidCompleted(int factoidIndex)
+    {
+        for (int i = 0; i < factoidsCompleted.Length; i++){
+            factoidsCompleted[i] = true;
+        }
+        SaveGame();
+    }
+
     private static Save CreateSaveGameObject()
     {
         Save save = new Save();
         foreach (bool CompletedLevel in levelCompleted)
         {
             save.completedSections.Add(CompletedLevel);
+        }
+
+        foreach (bool CompletedFactoid in factoidsCompleted)
+        {
+            save.completedFactoids.Add(CompletedFactoid);
         }
 
         save.openingWatched = openingwatched;
@@ -97,6 +111,7 @@ public class AppProgression : MonoBehaviour
             for (int i = 0; i < save.completedSections.Count; i++)
             {
                 levelCompleted[i] = save.completedSections[i];
+                factoidsCompleted[i] = save.completedFactoids[i];
             }
 
             openingwatched = save.openingWatched;
@@ -113,4 +128,11 @@ public class AppProgression : MonoBehaviour
         }
     }
 
+    public static int countNewFactoids () {
+        int count = 0;
+        for (int i = 0; i < levelCompleted.Length; i++) {
+            if (levelCompleted[i] == true && factoidsCompleted[i] == false) count++;
+        }
+        return count;
+    }
 }
