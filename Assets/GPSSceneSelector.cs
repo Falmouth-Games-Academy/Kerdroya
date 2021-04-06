@@ -34,6 +34,8 @@ public class GPSSceneSelector : MonoBehaviour
 
     IEnumerator Start()
     {
+        popUpPanel.SetActive(false);
+
         // First, check if user has location service enabled
         if (!Input.location.isEnabledByUser)
         {
