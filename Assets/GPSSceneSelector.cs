@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Android;
 
 public class GPSSceneSelector : MonoBehaviour
 {
@@ -36,7 +37,13 @@ public class GPSSceneSelector : MonoBehaviour
     {
         popUpPanel.SetActive(false);
 
-        // First, check if user has location service enabled
+        if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation))
+        {
+            Permission.RequestUserPermission(Permission.FineLocation);
+        }
+
+
+        // First, check if user has loc`§§§ation service enabled
         if (!Input.location.isEnabledByUser)
         {
             outputText.text = "GPS not enabled";
@@ -128,6 +135,7 @@ public class GPSSceneSelector : MonoBehaviour
             
             outputText.text += "BestID: " + bestID + "\n" +
                 "Closest Distance: " + closestDistance + "\n";
+            
             SceneSelection(bestID, closestDistance);
             yield return new WaitForSeconds(0.5f);
         }
@@ -138,6 +146,7 @@ public class GPSSceneSelector : MonoBehaviour
         closestDistance = Mathf.Infinity;
         bestID = -1;
         int currentID = 0;
+        
         foreach (Vector3 target in targetLocations)
         {
             //comparison including HEIGHT
