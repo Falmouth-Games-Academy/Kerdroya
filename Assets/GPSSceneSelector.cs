@@ -8,6 +8,8 @@ public class GPSSceneSelector : MonoBehaviour
     public Slider locationSlider;
     //public int locationToggle = 0;
     public float minSceneSwapDistance = 1f;
+    public InputField debugInputForAdjustingDistanceSensitivity;
+    public Text debugDetectionDistanceText;
     public Vector3[] KerdroyaSiteCoords = 
     {
         new Vector3(50.52843f	,-4.592323f, 0f),
@@ -32,6 +34,8 @@ public class GPSSceneSelector : MonoBehaviour
     public float alphaTranitionSpeed = 0.05f;
     public float alphaDelta = 0f;
     public Text outputText;
+
+    private int[] AONBtoSavefileTranslation = {2,9,6,7,8,10,1,0,5,3,11,4};
 
     IEnumerator Start()
     {
@@ -89,7 +93,7 @@ public class GPSSceneSelector : MonoBehaviour
                "\n";
 
             float closestDistance = 0;
-            int bestID = -1;
+            int bestAONBID = -1;
 
             //Switch based on the toggle in the debug menu. 0 and default are the coordinates of the Kerdroya labyrinth site
             switch (locationSlider.value)
@@ -99,7 +103,7 @@ public class GPSSceneSelector : MonoBehaviour
                                    new Vector3(Input.location.lastData.latitude,
                                                Input.location.lastData.longitude,
                                                Input.location.lastData.altitude),
-                                   ref bestID,
+                                   ref bestAONBID,
                                    ref closestDistance);
                     outputText.text += "\n " + "KERDROYA SITE" + "\n";
                     break;
@@ -108,7 +112,7 @@ public class GPSSceneSelector : MonoBehaviour
                                    new Vector3(Input.location.lastData.latitude,
                                                Input.location.lastData.longitude,
                                                Input.location.lastData.altitude),
-                                   ref bestID,
+                                   ref bestAONBID,
                                    ref closestDistance);
                     outputText.text += "\n " + "NEWQUAY" + "\n";
                     break;
@@ -118,7 +122,7 @@ public class GPSSceneSelector : MonoBehaviour
                                    new Vector3(Input.location.lastData.latitude,
                                                Input.location.lastData.longitude,
                                                Input.location.lastData.altitude),
-                                   ref bestID,
+                                   ref bestAONBID,
                                    ref closestDistance);
                     outputText.text += "\n " + "PENRYN" + "\n";
                     break;
@@ -127,28 +131,44 @@ public class GPSSceneSelector : MonoBehaviour
                                    new Vector3(Input.location.lastData.latitude,
                                                Input.location.lastData.longitude,
                                                Input.location.lastData.altitude),
-                                   ref bestID,
+                                   ref bestAONBID,
                                    ref closestDistance);
                     outputText.text += "\n " + "KERDROYA SITE" + "\n";
                     break;
             }
             
-            outputText.text += "BestID: " + bestID + "\n" +
+            outputText.text += "BestID: " + bestAONBID + "\n" +
                 "Closest Distance: " + closestDistance + "\n";
+<<<<<<< HEAD
             
             SceneSelection(bestID, closestDistance);
+=======
+
+            int saveID = AONBtoSavefileTranslation[bestAONBID];
+            SceneSelection(bestAONBID, saveID, closestDistance);
+>>>>>>> cd2e64d6f7b9b1ebf74c84ae8d6faa1395ca582f
             yield return new WaitForSeconds(0.5f);
         }
     }
 
-    public void ArrayProximityTest(Vector3[] targetLocations, Vector3 comparitor, ref int bestID, ref float closestDistance)
+    public void ArrayProximityTest(Vector3[] targetLocations, Vector3 comparitor, ref int bestAONBID, ref float closestDistance)
     {
         closestDistance = Mathf.Infinity;
-        bestID = -1;
+        bestAONBID = -1;
         int currentID = 0;
         
         foreach (Vector3 target in targetLocations)
         {
+            Debug.Log("CurrentID = " + currentID);
+            int saveID = AONBtoSavefileTranslation[currentID];
+            //check if complete
+            if (AppProgression.levelCompleted[saveID])
+            {
+                //continue
+                currentID++;
+                continue;
+            }
+            
             //comparison including HEIGHT
             //float distance = Vector3.Distance(target, comparitor);
             //comparison with long/lat ONLY
@@ -156,10 +176,12 @@ public class GPSSceneSelector : MonoBehaviour
             if (closestDistance > distance)
             {
                 closestDistance = distance;
-                bestID = currentID;
+                bestAONBID = currentID;
             }
             currentID++;
         }
+
+        
 
     }
 
@@ -170,17 +192,34 @@ public class GPSSceneSelector : MonoBehaviour
     }
 
 
-    public void SceneSelection(int sceneID, float distance)
+    public void SceneSelection(int AONBID, int saveID, float distance)
     {
         //check if main splash has loaded yet
         //check if already loading scene
         //case for player rejects scene change
 
-        if (distance < minSceneSwapDistance && !AppProgression.levelCompleted[sceneID])
+        Debug.Log(
+            AppProgression.levelCompleted[0] + "\n" +
+            AppProgression.levelCompleted[1] + "\n" +
+            AppProgression.levelCompleted[2] + "\n" +
+            AppProgression.levelCompleted[3] + "\n" +
+            AppProgression.levelCompleted[4] + "\n" +
+            AppProgression.levelCompleted[5] + "\n" +
+            AppProgression.levelCompleted[6] + "\n" +
+            AppProgression.levelCompleted[7] + "\n" +
+            AppProgression.levelCompleted[8] + "\n" +
+            AppProgression.levelCompleted[9] + "\n" +
+            AppProgression.levelCompleted[10] + "\n" +
+            AppProgression.levelCompleted[11] + "\n" 
+            );
+
+
+        if (distance < minSceneSwapDistance && !AppProgression.levelCompleted[saveID])
         {
             animatingPanel = true;
-            switch (sceneID)
+            switch (AONBID)
             {
+
                 case 0:
                     sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(6));
                     sceneText.text = "Lucky Hole"; //Morwenstow
@@ -233,8 +272,28 @@ public class GPSSceneSelector : MonoBehaviour
         }
     }
 
+    public void ChangeDetectionDistance()
+    {
+        minSceneSwapDistance = float.Parse(debugInputForAdjustingDistanceSensitivity.text);
+
+        if (debugInputForAdjustingDistanceSensitivity.text == null)
+        {
+            minSceneSwapDistance = 1;
+            return;
+        }
+
+        
+    }
+
+    void UpdateDetectionDistanceText()
+    {
+        debugDetectionDistanceText.text = "" + minSceneSwapDistance;
+    }
+
     public void FixedUpdate()
     {
+        UpdateDetectionDistanceText();
+
         if (AppProgression.openingwatched)
         {
             if (animatingPanel)
