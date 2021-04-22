@@ -2374,7 +2374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationSlider: {fileID: 1151526052}
-  minSceneSwapDistance: 1
+  minSceneSwapDistance: 0.00005
   debugInputForAdjustingDistanceSensitivity: {fileID: 1329451846}
   debugDetectionDistanceText: {fileID: 1889274283}
   KerdroyaSiteCoords:

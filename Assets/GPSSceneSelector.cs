@@ -7,7 +7,7 @@ public class GPSSceneSelector : MonoBehaviour
 {
     public Slider locationSlider;
     //public int locationToggle = 0;
-    public float minSceneSwapDistance = 1f;
+    public float minSceneSwapDistance = 0.00005f;
     public InputField debugInputForAdjustingDistanceSensitivity;
     public Text debugDetectionDistanceText;
     public Vector3[] KerdroyaSiteCoords = 
@@ -139,14 +139,9 @@ public class GPSSceneSelector : MonoBehaviour
             
             outputText.text += "BestID: " + bestAONBID + "\n" +
                 "Closest Distance: " + closestDistance + "\n";
-<<<<<<< HEAD
-            
-            SceneSelection(bestID, closestDistance);
-=======
 
             int saveID = AONBtoSavefileTranslation[bestAONBID];
             SceneSelection(bestAONBID, saveID, closestDistance);
->>>>>>> cd2e64d6f7b9b1ebf74c84ae8d6faa1395ca582f
             yield return new WaitForSeconds(0.5f);
         }
     }
@@ -269,6 +264,10 @@ public class GPSSceneSelector : MonoBehaviour
                     sceneText.text = "Colliford Lake";
                     break;
             }
+        }
+        else
+        {
+            animatingPanel = false;
         }
     }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Android;
 
 public class IntroAnimation : MonoBehaviour
 {
@@ -43,6 +44,12 @@ public class IntroAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation))
+        {
+            Permission.RequestUserPermission(Permission.FineLocation);
+        }
+
         graphicsFaded = new bool[graphics.Count];
         for (int i = 0; i < graphics.Count; i++)
         {
