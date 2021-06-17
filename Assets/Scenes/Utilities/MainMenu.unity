@@ -1380,7 +1380,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.7
-  m_Text: "Kerdroya: \nThe labyrinth \nof \nJan Tregeagle's labours"
+  m_Text: Tregeagle's Kerdroya
 --- !u!222 &357386093
 CanvasRenderer:
   m_ObjectHideFlags: 0
