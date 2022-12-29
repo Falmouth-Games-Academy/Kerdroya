@@ -534,14 +534,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "In amongst the purple <b>Grug Klogh (Bell Heather)</b> are beautiful low
-    cushions of prickly green and gold; these are not the more common species of Eythin
-    (Gorse) but are <b>Eythin Kernow (Cornish Fuzz)</b>.\r\n\nRemember: <b>Ny vydh
-    ammow ha\u2019n eythin heb bleujyow (Kissing\u2019s out of fashion when the gorse
-    is out of bloom)</b> \u2013 luckily you can always find a gorse flower somewhere
+  m_Text: "In amongst the purple <b>Grug Klogh</b> (Bell Heather) are beautiful low
+    cushions of prickly green and gold; these are not the more common species of <b>Eythin</b>
+    (Gorse) but are <b>Eythin Kernow</b> (Cornish Fuzz).\r\n\nRemember: <b>Ny vydh
+    ammow ha\u2019n eythin heb bleujyow</b> (Kissing\u2019s out of fashion when the
+    gorse is out of bloom) \u2013 luckily you can always find a gorse flower somewhere
     at any time of the year.\r\n\nEven the bees go mining in St Agnes; check out \u2018Wheal
-    Buzzy\u2019 the AONB\u2019s project to protect our <b>Gwenen Bal Unnek (Solitary
-    Mining Bees)</b>. \r\n"
+    Buzzy\u2019 the AONB\u2019s project to protect our <b>Gwenen Bal Unnek</b> (Solitary
+    Mining Bees). \r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -999,13 +999,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The Cornish name for St Agnes Beacon is Breanek; which means \u201CAnnik\u2019s
+  m_Text: "The Cornish name for St Agnes Beacon is <b>Breanek</b>; which means \u201CAnnik\u2019s
     hill\u201D (\u2018Annik\u2019 being the original name of the saint here). Later
     on, people mixed her up with the well-known saint, St Agnes, and the name of the
     place changed. She is most famous for tricking the giant Bolster into filling
     a bottomless hole with his own blood. That hole with its red-stained rocks can
-    still be seen at Chapel Porth and are remembered each year on Bolster Day; <b>sten
-    St Agnes yw gwella sten yn Kernow! (The tin of St Agnes is the best tin in Cornwall!)</b>"
+    still be seen at Chapel Porth and is remembered each year on Bolster Day; <b>sten
+    St Agnes yw gwella sten yn Kernow!</b> (The tin of St Agnes is the best tin in
+    Cornwall!)"
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1625,6 +1626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factoidIndex: 8
+  completed: 0
 --- !u!114 &1521970736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2234,7 +2236,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.25902715
+  m_Size: 0.071472086
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

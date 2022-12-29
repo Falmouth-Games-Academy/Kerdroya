@@ -1001,7 +1001,7 @@ MonoBehaviour:
     by King Athelstan over a thousand years ago in 926 AD. Interestingly, the border
     does not run down the middle of the river. The ancient Duchy charters are clear
     that border runs along the highwater mark on the Devon side: so the whole River
-    Tamar is actually in Cornwall.\r\n"
+    Tamar is actually <i>in</i> Cornwall.\r\n"
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1152,11 +1152,11 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "The two Dartmoor Giants, Taw and Tavi, were both in love with Tamara. She
-    cried herself into a river to run away from. Them. Both giants sat down and wept
+    cried herself into a river to run away from them. Both giants sat down and wept
     themselves into rivers too. Poor old Taw trickled away northwards and never saw
     Tamara again. But luckily for Tavi his stream of tears ran southwards and mingled
     forever with Tamara\u2019s as they both flow to the sea.\r\n\nJan Tregeagle\u2019s
-    impossible task  here is cry enough <b>Dagren (Teardrop)</b> to fill up an entire
+    impossible task  here is cry enough <b>Dagren</b> (Teardrop) to fill up an entire
     river.\r\n\r\n"
 --- !u!222 &938840293
 CanvasRenderer:
@@ -1784,6 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factoidIndex: 11
+  completed: 0
 --- !u!114 &1690270066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2225,7 +2226,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.31114227
+  m_Size: 0.08596209
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

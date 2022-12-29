@@ -321,24 +321,6 @@ Transform:
   m_Father: {fileID: 494440806}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &249851347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4248276154424612908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 784a23fda0a87ac498b5f15cfd6da1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiltBacklimitAngle: 25
-  tiltForwardslimitAngle: 5
-  distance: 0
-  onePercentOfDistance: 0
-  percentage: 0
-  tiltPercentage: 0
 --- !u!114 &249851349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2684,7 +2666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startLocation: {fileID: 881220988}
   endLocation: {fileID: 1715639890}
-  showRotation: {fileID: 249851347}
+  showRotation: {fileID: 0}
   minigameProgressTracker: {fileID: 1466720696}
   top: 0
   bottom: 0
@@ -4398,23 +4380,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4248276154424612898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4248276154424612908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6a6171091a94748a9ebf8012156de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballRef: {fileID: 0}
-  halfwayPoint: {fileID: 0}
-  endPoint: {fileID: 0}
-  ending: 0
-  completed: 0
 --- !u!4 &4248276154424612899
 Transform:
   m_ObjectHideFlags: 0
@@ -4438,8 +4403,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4248276154424612899}
-  - component: {fileID: 4248276154424612898}
-  - component: {fileID: 249851347}
   - component: {fileID: 249851349}
   m_Layer: 8
   m_Name: PhoneRotationObject

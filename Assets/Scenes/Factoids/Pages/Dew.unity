@@ -1157,8 +1157,8 @@ MonoBehaviour:
     information about Grenville\u2019s movements to the enemy (the \u2018Roundheads\u2019)
     and then he was forced to run away from Cornwall to save himself.\r\n\nIn Charles
     Causley\u2019s poem \u2018Morwenstow\u2019 the sea forever wears away the cliffs:
-    Tregeagle\u2019s impossible task here is to use a <b>Pluvenn (Feather)</b> to
-    grind down the cliffs at \u2018Lucky Hole\u2019.  \r\n"
+    Tregeagle\u2019s impossible task here is to use a <b>Pluven</b> (Feather) to grind
+    down the cliffs at \u2018Lucky Hole\u2019.  \r\n"
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2045,6 +2045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factoidIndex: 2
+  completed: 0
 --- !u!114 &1847734396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2230,7 +2231,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.2693717
+  m_Size: 0.07433807
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -22,6 +22,7 @@ public class AppProgression : MonoBehaviour
         Boscatle      = 9
         Tehidy        = 10
         Clarrick wood = 11
+        Kerdroya      = 12
      */
     public static bool[] levelCompleted = new bool[12];
     public static bool[] factoidsCompleted = new bool[12];
@@ -34,6 +35,7 @@ public class AppProgression : MonoBehaviour
     // Prevent this object from being destroyed between scenes loading.
     private void Awake()
     {
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);

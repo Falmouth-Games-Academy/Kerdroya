@@ -536,10 +536,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Park Head is a SSSI; a \u2018site of special scientific interest\u2019.
     The Cornish hedges here create just the right growing conditions for lush cushions
-    of <b>Tammon (Thrift), Fenoghel Mor (Rock Samphire), Kosfinel (Thyme)</b> and
-    <b>Bewles (Stonecrop)</b>. Besides the abundant seabirds all along the coast,
-    <b>Golvan Ys (Corn Bunting), Ahwesydh (Skylark)</b> and <b>Tinwynn (Wheatear)</b>
-    are often seen on the fertile farmland just inland.\r\n\r\n"
+    of <b>Tammon</b> (Thrift), <b>Fenoghel Mor</b> (Rock Samphire), <b>Kosfinel</b>
+    (Thyme) and <b>Bewles</b> (Stonecrop). Besides the abundant seabirds all along
+    the coast, <b>Golvan Ys</b> (Corn Bunting), <b>Ahwesydh</b> (Skylark) and <b>Tinwynn</b>
+    (Wheatear) are often seen on the fertile farmland just inland.\r\n\r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -883,6 +883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factoidIndex: 7
+  completed: 0
 --- !u!114 &804294597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1215,8 +1216,8 @@ MonoBehaviour:
     Hunter and his pack of hell-hounds are ready to pounce. They pursue him across
     the skies and along the cliffs of Cornwall. All around the Cornish coast, the
     relentless crashing and roaring of the waves is said to be the sound of Jan Tregeagle
-    howling in anguish. Here, his impossible task is to use a frond of <b>Gommon (Seaweed)</b>
-    to stop the waves from breaking
+    howling in anguish. Here, his impossible task is to use a frond of <b>Gommon</b>
+    (Seaweed) to stop the waves from breaking
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2230,7 +2231,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.28466925
+  m_Size: 0.07860669
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

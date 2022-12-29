@@ -534,12 +534,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The most famous residents of the Lizard are the <b>Palores (Cornish Choughs)</b>.
-    The National Bird of Cornwall; these entertaining and acrobatic flyers with their
-    bright red legs and beaks are said to be the returned spirit of King Arthur. Having
-    disappeared from Cornwall in the 1970s, a pair returned in 2002 and have since
-    successfully reared several broods. Distinctive plants found here include Kekesow
-    (Cornish Heath), Korrvanadhel Owr (Dyer\u2019s Greenweed) and Kamilen (Chamomile)."
+  m_Text: "The most famous residents of the Lizard are the <b>Palores</b> (Cornish
+    Choughs). The National Bird of Cornwall; these entertaining and acrobatic flyers
+    with their bright red legs and beaks are said to be the returned spirit of King
+    Arthur. Having disappeared from Cornwall in the 1970s, a pair returned in 2002
+    and have since successfully reared several broods. Distinctive plants found here
+    include <b>Kekesow</b> (Cornish Heath), <b>Korrvanadhel Owr</b> (Dyer\u2019s Greenweed)
+    and <b>Kamilen</b> (Chamomile)."
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -998,14 +999,14 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Claimed to be the oldest surviving place-name in Britain, <b>Predannack</b>
-    is the original name for the whole Lizard peninsula. it\u2019s meaning is the
-    <b>\u2018Britannic\u2019</b> headland; that is, the very first land you sight
-    as you arrive at Britain by the sea. \r\n\nThe Lizard remained as one of the last
-    places where<b> Kernowek (Cornish)</b> was spoken as an everyday, community language.
-    In 1648 after defeating the Cornish Uprising at the battle known as the \u2018Gear
-    Rout\u2019, the Roundhead army chased the Cornish-speaking rebels down the Lizard
-    peninsula. Trapped on these cliffs, the survivors refused to surrender but chose
-    instead to join hands and jump to their deaths. \r\n"
+    is the original name for the whole Lizard peninsula. Its meaning is the <b>\u2018Britannic\u2019</b>
+    headland; that is, the very first land you sight as you arrive at Britain by the
+    sea. \r\n\nThe Lizard remained as one of the last places where<b> Kernowek (Cornish)</b>
+    was spoken as an everyday, community language. In 1648 after defeating the Cornish
+    Uprising at the battle known as the \u2018Gear Rout\u2019, the Roundhead army
+    chased the Cornish-speaking rebels down the Lizard peninsula. Trapped on these
+    cliffs, the survivors refused to surrender but chose instead to join hands and
+    jump to their deaths. \r\n"
 --- !u!222 &892152494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1310,6 +1311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factoidIndex: 0
+  completed: 0
 --- !u!1 &1188115692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,7 +2237,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.24641016
+  m_Size: 0.067419894
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -2731,7 +2731,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Inventory
+  m_Text: Shards Collected
 --- !u!222 &1112624936
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5523,7 +5523,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Information
+  m_Text: Factoids
 --- !u!222 &2009999182
 CanvasRenderer:
   m_ObjectHideFlags: 0

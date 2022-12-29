@@ -1236,7 +1236,7 @@ MonoBehaviour:
     estuary which is the classic example of a \u2018ria\u2019; a drowned river valley,
     here creating the deepest natural harbour in Europe. Many tidal creeks branch
     off the main Fal estuary; these sheltered locations have lush microclimates with
-    the fine gardens and parklands in several places. East of St Mawes lies the picturesque
+    fine gardens and parklands in several places. East of St Mawes lies the picturesque
     Roseland; a landscape of well-managed farms and a stunning coastline with the
     pilchard fishing villages of Porthscatho, Portloe and Portholland.\r"
 --- !u!222 &981588337
@@ -1278,6 +1278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factoidIndex: 5
+  completed: 0
 --- !u!114 &1120951638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2227,7 +2228,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.29583627
+  m_Size: 0.08088305
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

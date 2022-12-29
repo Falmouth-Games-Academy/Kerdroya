@@ -535,12 +535,12 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Bodmin Moor is internationally important for the numerous birds that visit
-    annually or make the moors their home all year round. \r\n\n<b>Kornhwilen Owr
-    (Golden Plover)</b> are seen in large flocks between October and March. Their
-    numbers can reach a staggering 7,000 birds - a significant proportion of the British
-    population. You might also see flocks of <b>Kornwhilen (Lapwing)</b> and <b>Gaver
-    Hal (Snipe)</b>. In the wetlands are there some really interesting bog plants
-    e.g. <b>Teyrdelen an Kors (Bog Bean)</b> and <b>Eyles (Sundew)</b>.\r\n\r\n"
+    annually or make the moors their home all year round. \r\n\n<b>Kornhwilen Owr</b>
+    (Golden Plover) are seen in large flocks between October and March. Their numbers
+    can reach a staggering 7,000 birds - a significant proportion of the British population.
+    You might also see flocks of <b>Kornwhilen</b> (Lapwing) and <b>Gaver Hal</b>
+    (Snipe). In the wetlands there are some really interesting bog plants e.g. <b>Teyrdelen
+    an Kors</b> (Bog Bean) and <b>Eyles</b> (Sundew).\r\n\r\n"
 --- !u!222 &492792779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1285,6 +1285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factoidIndex: 4
+  completed: 0
 --- !u!114 &1079428818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2236,7 +2237,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.25041085
+  m_Size: 0.06966544
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

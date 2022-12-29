@@ -577,6 +577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factoidIndex: 10
+  completed: 0
 --- !u!114 &532457053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1210,8 +1211,8 @@ MonoBehaviour:
   m_Text: "Wherever you are stood in the Camborne/Redruth area, beneath your feet
     are a honeycomb of many 100s of miles of mining tunnels. The deepest mine, at
     870m, was Dolcoath, Camborne, which gave rise to the saying; <b>mar dhown avel
-    Dorkoth (as deep as Dolcoath)</b>.\r\nJan Tregeagle\u2019s task here is to use
-    an <b>Askorn-Hwans (Wishbone)</b> to dig a mine shaft mar dhown avel Dorkoth\r\n"
+    Dorkoth</b> (as deep as Dolcoath).\r\nJan Tregeagle\u2019s task here is to use
+    an <b>Askorn-Hwans</b> (Wishbone) to dig a mine shaft <b>mar dhown avel Dorkoth</b>\r\n"
 --- !u!222 &938840293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1450,8 +1451,8 @@ MonoBehaviour:
     hedging. The huge temperature and pressure of the granite intrusion caused mineralisation
     in the rocks and this led to Cornwall being one of the most important mining areas
     in the world. Not just gold and tin but over the years, many other important metals
-    such as antimony, arsenic, copper, lead, silver, uranium, wolfram, zinc etc etc
-    have all been mined in Cornwall."
+    such as antimony, arsenic, copper, lead, silver, uranium, wolfram and zinc have
+    all been mined in Cornwall."
 --- !u!222 &1198179551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2227,7 +2228,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.2896503
+  m_Size: 0.079209395
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

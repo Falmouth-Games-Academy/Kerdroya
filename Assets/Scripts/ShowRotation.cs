@@ -24,12 +24,13 @@ public class ShowRotation : MonoBehaviour
         onePercentOfDistance = 100 / distance;
     }
 
-    void OnGUI()
-    {
-        GUI.Label(new Rect(50, 100, 200, 100), "" + transform.localRotation.eulerAngles.x, style);
-        GUI.Label(new Rect(50, 150, 200, 100), "" + Mathf.DeltaAngle(transform.localRotation.eulerAngles.x,30),style);
-        GUI.Label(new Rect(50, 200, 200, 100), "" + tiltPercentage, style);
-    }
+    // Commenting out GUI debug text.
+    //void OnGUI()
+    //{
+    //    GUI.Label(new Rect(50, 100, 200, 100), "" + transform.localRotation.eulerAngles.x, style);
+    //    GUI.Label(new Rect(50, 150, 200, 100), "" + Mathf.DeltaAngle(transform.localRotation.eulerAngles.x,30),style);
+    //    GUI.Label(new Rect(50, 200, 200, 100), "" + tiltPercentage, style);
+    //}
 
     // Update is called once per frame
     void Update()
