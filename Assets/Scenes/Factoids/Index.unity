@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 294280395}
   - component: {fileID: 294280396}
   m_Layer: 5
-  m_Name: 7-SEYTH
+  m_Name: 7-SEYTH-Colliford Lake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 294280392}
-  sceneName: Seyth
+  sceneName: Seyth - Colliford Lake
 --- !u!114 &294280396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,7 +754,7 @@ GameObject:
   - component: {fileID: 321605372}
   - component: {fileID: 321605373}
   m_Layer: 5
-  m_Name: 10-DEG
+  m_Name: 10-DEG-Park Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -893,7 +893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 321605369}
-  sceneName: Deg
+  sceneName: Deg - Park Head
 --- !u!114 &321605373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,7 +923,7 @@ GameObject:
   - component: {fileID: 336677990}
   - component: {fileID: 336677991}
   m_Layer: 5
-  m_Name: 9-NAW
+  m_Name: 9-NAW-Blouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 336677987}
-  sceneName: Naw
+  sceneName: Naw - Blouth
 --- !u!114 &336677991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1942,7 +1942,7 @@ GameObject:
   - component: {fileID: 987163288}
   - component: {fileID: 987163289}
   m_Layer: 5
-  m_Name: 5-PYMP
+  m_Name: 5-PYMP-WestCoombe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2081,7 +2081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 987163285}
-  sceneName: Pymp
+  sceneName: Pymp - West Coombe
 --- !u!114 &987163289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2246,7 +2246,7 @@ GameObject:
   - component: {fileID: 1001514033}
   - component: {fileID: 1001514034}
   m_Layer: 5
-  m_Name: 3-TRY
+  m_Name: 3-TRY-Pentargon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2385,7 +2385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 1001514030}
-  sceneName: Try
+  sceneName: Try - Pentargon
 --- !u!114 &1001514034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3477,7 +3477,7 @@ GameObject:
   - component: {fileID: 1444916355}
   - component: {fileID: 1444916356}
   m_Layer: 5
-  m_Name: 1-ONAN
+  m_Name: 1-ONAN-Predannack Wollas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3616,7 +3616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 1444916351}
-  sceneName: Onan
+  sceneName: Onan - Predannack Wollas
 --- !u!114 &1444916356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3954,7 +3954,7 @@ GameObject:
   - component: {fileID: 1573604563}
   - component: {fileID: 1573604564}
   m_Layer: 5
-  m_Name: 11-UNNEK
+  m_Name: 11-UNNEK-Priests Cove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4093,7 +4093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 1573604560}
-  sceneName: Unnek
+  sceneName: Unnek - Priests Cove
 --- !u!114 &1573604564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4414,7 +4414,7 @@ GameObject:
   - component: {fileID: 1726269361}
   - component: {fileID: 1726269362}
   m_Layer: 5
-  m_Name: 4-PESWAR
+  m_Name: 4-PESWAR-Bawden
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4553,7 +4553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 1726269358}
-  sceneName: Peswar
+  sceneName: Peswar - Bawden
 --- !u!114 &1726269362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4740,7 +4740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 999.7201}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1753497403
@@ -5331,8 +5331,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 926346736}
   m_HandleRect: {fileID: 926346735}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.43510914
+  m_Value: 0
+  m_Size: 0.655592
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5389,7 +5389,7 @@ GameObject:
   - component: {fileID: 2024305372}
   - component: {fileID: 2024305373}
   m_Layer: 5
-  m_Name: 2-DEW
+  m_Name: 2-DEW-Lucky Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5528,7 +5528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 2024305369}
-  sceneName: Dew
+  sceneName: Dew - Lucky Hole
 --- !u!114 &2024305373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5558,7 +5558,7 @@ GameObject:
   - component: {fileID: 2029598741}
   - component: {fileID: 2029598742}
   m_Layer: 5
-  m_Name: 12-DEWTHEK
+  m_Name: 12-DEWTHEK-Clarrick Woods
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5697,7 +5697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 2029598738}
-  sceneName: Dewthek
+  sceneName: Dewthek - Clarrick Woods
 --- !u!114 &2029598742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5815,7 +5815,7 @@ GameObject:
   - component: {fileID: 2043213512}
   - component: {fileID: 2043213513}
   m_Layer: 5
-  m_Name: 8-ETH
+  m_Name: 8-ETH-Dennis Cove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5954,7 +5954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 2043213509}
-  sceneName: Eth
+  sceneName: Eth - Dennis Cove
 --- !u!114 &2043213513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6119,7 +6119,7 @@ GameObject:
   - component: {fileID: 2099420837}
   - component: {fileID: 2099420838}
   m_Layer: 5
-  m_Name: 6-HWEGH
+  m_Name: 6-HWEGH-North Cliff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6258,7 +6258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneSelectButton: {fileID: 2099420834}
-  sceneName: Hwegh
+  sceneName: Hwegh - North Cliff
 --- !u!114 &2099420838
 MonoBehaviour:
   m_ObjectHideFlags: 0
