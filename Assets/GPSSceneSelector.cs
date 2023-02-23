@@ -10,20 +10,20 @@ public class GPSSceneSelector : MonoBehaviour
     public float minSceneSwapDistance = 0.00005f;
     public InputField debugInputForAdjustingDistanceSensitivity;
     public Text debugDetectionDistanceText;
-    public Vector3[] KerdroyaSiteCoords = 
+    public Vector3[] KerdroyaSiteCoords =
     {
-        new Vector3(50.52843f	,-4.592323f, 0f),
-        new Vector3(50.52837f	,-4.592353f, 0f),
-        new Vector3(50.528219f	,-4.592422f, 0f),
-        new Vector3(50.52833f	,-4.592485f, 0f),
-        new Vector3(50.52822f	,-4.592645f, 0f),
-        new Vector3(50.52818f	,-4.592618f, 0f),
-        new Vector3(50.52812f	,-4.592772f, 0f),
-        new Vector3(50.52807f	,-4.592645f, 0f),
-        new Vector3(50.52817f	,-4.592514f, 0f),
-        new Vector3(50.52824f	,-4.592287f, 0f),
-        new Vector3(50.52823f	,-4.592142f, 0f),
-        new Vector3(50.52824f	,-4.592150f, 0f)
+        new Vector3(50.52843f   ,-4.592323f, 0f),
+        new Vector3(50.52837f   ,-4.592353f, 0f),
+        new Vector3(50.528219f  ,-4.592422f, 0f),
+        new Vector3(50.52833f   ,-4.592485f, 0f),
+        new Vector3(50.52822f   ,-4.592645f, 0f),
+        new Vector3(50.52818f   ,-4.592618f, 0f),
+        new Vector3(50.52812f   ,-4.592772f, 0f),
+        new Vector3(50.52807f   ,-4.592645f, 0f),
+        new Vector3(50.52817f   ,-4.592514f, 0f),
+        new Vector3(50.52824f   ,-4.592287f, 0f),
+        new Vector3(50.52823f   ,-4.592142f, 0f),
+        new Vector3(50.52824f   ,-4.592150f, 0f)
     };
     public Vector3[] NewquayCoords;
     public Vector3[] PenrynCoords;
@@ -35,7 +35,7 @@ public class GPSSceneSelector : MonoBehaviour
     public float alphaDelta = 0f;
     public Text outputText;
 
-    private int[] AONBtoSavefileTranslation = {2,9,6,7,8,10,1,0,5,3,11,4};
+    private int[] AONBtoSavefileTranslation = { 2, 9, 6, 7, 8, 10, 1, 0, 5, 3, 11, 4 };
 
     IEnumerator Start()
     {
@@ -51,9 +51,9 @@ public class GPSSceneSelector : MonoBehaviour
         if (!Input.location.isEnabledByUser)
         {
             outputText.text = "GPS not enabled";
-           // yield break;
+            // yield break;
         }
-        
+
 
         // Start service before querying location
         Input.location.Start(1, 1);
@@ -116,7 +116,7 @@ public class GPSSceneSelector : MonoBehaviour
                                    ref closestDistance);
                     outputText.text += "\n " + "NEWQUAY" + "\n";
                     break;
-                    
+
                 case 2:
                     ArrayProximityTest(PenrynCoords,
                                    new Vector3(Input.location.lastData.latitude,
@@ -136,7 +136,7 @@ public class GPSSceneSelector : MonoBehaviour
                     outputText.text += "\n " + "KERDROYA SITE" + "\n";
                     break;
             }
-            
+
             outputText.text += "BestID: " + bestAONBID + "\n" +
                 "Closest Distance: " + closestDistance + "\n";
 
@@ -151,7 +151,7 @@ public class GPSSceneSelector : MonoBehaviour
         closestDistance = Mathf.Infinity;
         bestAONBID = -1;
         int currentID = 0;
-        
+
         foreach (Vector3 target in targetLocations)
         {
             Debug.Log("CurrentID = " + currentID);
@@ -163,7 +163,7 @@ public class GPSSceneSelector : MonoBehaviour
                 currentID++;
                 continue;
             }
-            
+
             //comparison including HEIGHT
             //float distance = Vector3.Distance(target, comparitor);
             //comparison with long/lat ONLY
@@ -176,13 +176,14 @@ public class GPSSceneSelector : MonoBehaviour
             currentID++;
         }
 
-        
+
 
     }
 
-    public void HideLevelSelectButton() {
+    public void HideLevelSelectButton()
+    {
 
-    animatingPanel = false;
+        animatingPanel = false;
 
     }
 
@@ -205,7 +206,7 @@ public class GPSSceneSelector : MonoBehaviour
             AppProgression.levelCompleted[8] + "\n" +
             AppProgression.levelCompleted[9] + "\n" +
             AppProgression.levelCompleted[10] + "\n" +
-            AppProgression.levelCompleted[11] + "\n" 
+            AppProgression.levelCompleted[11] + "\n"
             );
 
 
@@ -229,7 +230,7 @@ public class GPSSceneSelector : MonoBehaviour
                     break;
                 case 3:
                     sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(14));
-                    sceneText.text = "Park Head"; 
+                    sceneText.text = "Park Head";
                     break;
                 case 4:
                     sceneSelectBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(12));
@@ -281,7 +282,7 @@ public class GPSSceneSelector : MonoBehaviour
             return;
         }
 
-        
+
     }
 
     void UpdateDetectionDistanceText()
