@@ -4672,6 +4672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 423864434}
   sandGameScript: {fileID: 0}
+  vignette: {fileID: 1091592977}
   halfway: 0
 --- !u!1 &1804646615
 GameObject:
