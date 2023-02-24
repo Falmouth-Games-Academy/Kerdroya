@@ -137,4 +137,11 @@ public class AppProgression : MonoBehaviour
         }
         return count;
     }
+
+    public static void ClearSaveData()
+    {
+        File.Delete(Application.persistentDataPath + "/gamesave.save");
+        print("Deleted Save Data");
+    }
+
 }

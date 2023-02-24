@@ -9,6 +9,7 @@ public class GyroRotate : MonoBehaviour
     private float _calibrationYAngle = 0f;
     private Transform _rawGyroRotation;
     private float _tempSmoothing;
+    private Quaternion startRot;
 
     //public BallMaze maze;
 
@@ -28,6 +29,7 @@ public class GyroRotate : MonoBehaviour
         // Wait until gyro is active, then calibrate to reset starting rotation.
         yield return new WaitForSeconds(1);
 
+        startRot = Input.gyro.attitude;
         StartCoroutine(CalibrateYAngle());
     }
 
@@ -40,7 +42,8 @@ public class GyroRotate : MonoBehaviour
 
             transform.rotation = Quaternion.Slerp(transform.rotation, _rawGyroRotation.rotation, _smoothing);
         }
-
+        //if (Quaternion.Angle(transform.rotation, startRot) > 90)
+        //    FindObjectOfType<MinigameProgressTracker>().points = 99;
     }
 
     private IEnumerator CalibrateYAngle()
