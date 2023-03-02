@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GyroRotate : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class GyroRotate : MonoBehaviour
     private Transform _rawGyroRotation;
     private float _tempSmoothing;
     private Quaternion startRot;
+    [SerializeField] private Text text;
+    [SerializeField] private Text startTex;
+    [SerializeField] private Text curTex;
+    private bool setup = false;
 
     //public BallMaze maze;
 
@@ -27,10 +32,12 @@ public class GyroRotate : MonoBehaviour
         _rawGyroRotation.rotation = transform.rotation;
 
         // Wait until gyro is active, then calibrate to reset starting rotation.
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
 
         startRot = Input.gyro.attitude;
         StartCoroutine(CalibrateYAngle());
+        startTex.text = startRot.ToString();
+        setup = true;
     }
 
     private void Update()
@@ -42,8 +49,10 @@ public class GyroRotate : MonoBehaviour
 
             transform.rotation = Quaternion.Slerp(transform.rotation, _rawGyroRotation.rotation, _smoothing);
         }
-        //if (Quaternion.Angle(transform.rotation, startRot) > 90)
-        //    FindObjectOfType<MinigameProgressTracker>().points = 99;
+        text.text = Quaternion.Angle(Input.gyro.attitude, startRot).ToString();
+        curTex.text = Input.gyro.attitude.ToString();
+        if (Quaternion.Angle(Input.gyro.attitude, startRot) > 90 && setup)
+            FindObjectOfType<MinigameProgressTracker>().points = 99;
     }
 
     private IEnumerator CalibrateYAngle()
