@@ -14,15 +14,16 @@ public class GyroRotate : MonoBehaviour
     [SerializeField] private Text text;
     [SerializeField] private Text startTex;
     [SerializeField] private Text curTex;
+    private TransitionHandler tHandle;
     private bool setup = false;
-
-    //public BallMaze maze;
+    private byte progress;
 
     // SETTINGS
     [SerializeField] private float _smoothing = 0.1f;
 
     private IEnumerator Start()
     {
+        tHandle = FindObjectOfType<TransitionHandler>();
         Input.gyro.enabled = true;
         Application.targetFrameRate = 60;
         _initialYAngle = transform.eulerAngles.y;
@@ -48,11 +49,40 @@ public class GyroRotate : MonoBehaviour
             ApplyCalibration();
 
             transform.rotation = Quaternion.Slerp(transform.rotation, _rawGyroRotation.rotation, _smoothing);
+
         }
+
+        Vector3 curRot = Input.gyro.attitude.eulerAngles;
+
+        switch (progress)
+        {
+            case 0:
+                curTex.text = progress.ToString();
+                if (tHandle?.sceneState >= 4)
+                    progress |= 1;
+                break;
+            case 1:
+                curTex.text = progress.ToString();
+                if (Mathf.Abs(curRot.y - 90) < 45)
+                    progress |= 1 << 1;
+                break;
+            case 3:
+                curTex.text = progress.ToString();
+                if (Mathf.Abs(curRot.y - 270) < 45)
+                    progress |= 1 << 2;
+                break;
+            case 7:
+                curTex.text = progress.ToString();
+                if (Mathf.Abs(curRot.y - 90) < 45)
+                    FindObjectOfType<MinigameProgressTracker>().points = 99;
+                break;
+            default:
+                progress = 0;
+                break;
+        }
+
         text.text = Quaternion.Angle(Input.gyro.attitude, startRot).ToString();
-        curTex.text = Input.gyro.attitude.ToString();
-        if (Quaternion.Angle(Input.gyro.attitude, startRot) > 90 && setup)
-            FindObjectOfType<MinigameProgressTracker>().points = 99;
+        //curTex.text = Input.gyro.attitude.eulerAngles.ToString();
     }
 
     private IEnumerator CalibrateYAngle()
