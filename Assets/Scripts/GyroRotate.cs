@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.XR.ARFoundation;
 
 public class GyroRotate : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class GyroRotate : MonoBehaviour
     private TransitionHandler tHandle;
     private bool setup = false;
     private byte progress;
+    [SerializeField] private GyroScene scene;
 
     // SETTINGS
     [SerializeField] private float _smoothing = 0.1f;
@@ -51,9 +53,31 @@ public class GyroRotate : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, _rawGyroRotation.rotation, _smoothing);
 
         }
-
+        
         Vector3 curRot = Input.gyro.attitude.eulerAngles;
 
+        switch (scene)
+        {
+            case GyroScene.clarrickWoods:
+                break;
+            case GyroScene.northCliff:
+                NorthCliffScene(curRot);
+                break;
+            default:
+                break;
+        }
+
+        text.text = Quaternion.Angle(Input.gyro.attitude, startRot).ToString();
+        //curTex.text = Input.gyro.attitude.eulerAngles.ToString();
+    }
+
+    private void ClarrickWoodsScene(Vector3 curRot)
+    {
+        
+    }
+
+    private void NorthCliffScene(Vector3 curRot)
+    {
         switch (progress)
         {
             case 0:
@@ -80,9 +104,6 @@ public class GyroRotate : MonoBehaviour
                 progress = 0;
                 break;
         }
-
-        text.text = Quaternion.Angle(Input.gyro.attitude, startRot).ToString();
-        //curTex.text = Input.gyro.attitude.eulerAngles.ToString();
     }
 
     private IEnumerator CalibrateYAngle()
@@ -112,4 +133,10 @@ public class GyroRotate : MonoBehaviour
         enabled = true;
         StartCoroutine(CalibrateYAngle());
     }
+}
+
+public enum GyroScene
+{
+    clarrickWoods,
+    northCliff
 }
