@@ -39,7 +39,8 @@ public class GyroRotate : MonoBehaviour
 
         startRot = Input.gyro.attitude;
         StartCoroutine(CalibrateYAngle());
-        startTex.text = startRot.ToString();
+        if (startTex != null)
+            startTex.text = startRot.ToString();
         setup = true;
     }
 
@@ -53,27 +54,19 @@ public class GyroRotate : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, _rawGyroRotation.rotation, _smoothing);
 
         }
-        
+
         Vector3 curRot = Input.gyro.attitude.eulerAngles;
 
-        switch (scene)
-        {
-            case GyroScene.clarrickWoods:
-                break;
-            case GyroScene.northCliff:
-                NorthCliffScene(curRot);
-                break;
-            default:
-                break;
-        }
+        NorthCliffScene(curRot);
 
-        text.text = Quaternion.Angle(Input.gyro.attitude, startRot).ToString();
+        if (text != null)
+            text.text = Quaternion.Angle(Input.gyro.attitude, startRot).ToString();
         //curTex.text = Input.gyro.attitude.eulerAngles.ToString();
     }
 
     private void ClarrickWoodsScene(Vector3 curRot)
     {
-        
+
     }
 
     private void NorthCliffScene(Vector3 curRot)
@@ -81,22 +74,18 @@ public class GyroRotate : MonoBehaviour
         switch (progress)
         {
             case 0:
-                curTex.text = progress.ToString();
                 if (tHandle?.sceneState >= 4)
                     progress |= 1;
                 break;
             case 1:
-                curTex.text = progress.ToString();
                 if (Mathf.Abs(curRot.y - 90) < 45)
                     progress |= 1 << 1;
                 break;
             case 3:
-                curTex.text = progress.ToString();
                 if (Mathf.Abs(curRot.y - 270) < 45)
                     progress |= 1 << 2;
                 break;
             case 7:
-                curTex.text = progress.ToString();
                 if (Mathf.Abs(curRot.y - 90) < 45)
                     FindObjectOfType<MinigameProgressTracker>().points = 99;
                 break;

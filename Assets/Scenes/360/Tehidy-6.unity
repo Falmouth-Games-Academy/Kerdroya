@@ -336,6 +336,7 @@ MonoBehaviour:
   text: {fileID: 896028174}
   startTex: {fileID: 606559598}
   curTex: {fileID: 1288416176}
+  scene: 1
   _smoothing: 0.1
 --- !u!1 &258653447
 GameObject:
@@ -2360,6 +2361,7 @@ MonoBehaviour:
   text: {fileID: 0}
   startTex: {fileID: 0}
   curTex: {fileID: 0}
+  scene: 0
   _smoothing: 0.1
 --- !u!65 &939247205
 BoxCollider:
@@ -4942,6 +4944,7 @@ MonoBehaviour:
   text: {fileID: 0}
   startTex: {fileID: 0}
   curTex: {fileID: 0}
+  scene: 0
   _smoothing: 0.1
 --- !u!1 &2131301785
 GameObject:
