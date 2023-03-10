@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using ARSupportCheck;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.ARCore;
 
 public class ColifordLakeTransitionHandler : MonoBehaviour
 {
@@ -260,7 +262,12 @@ public class ColifordLakeTransitionHandler : MonoBehaviour
             AppProgression.levelCompleted[puzzleID] = true;
             AppProgression.currentComplete = puzzleID;
             AppProgression.SaveGame();
-            UnityEngine.SceneManagement.SceneManager.LoadScene(33);
+            if (ARSupportChecker.IsSupported())
+                UnityEngine.SceneManagement.SceneManager.LoadScene(33);
+            else 
+                UnityEngine.SceneManagement.SceneManager.LoadScene(35);
+                
         }
     }
+
 }
