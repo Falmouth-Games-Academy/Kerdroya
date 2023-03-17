@@ -21,4 +21,14 @@ public class ParkHeadTap : MonoBehaviour, IPointerClickHandler
         }
         
     }
+
+    private void OnMouseOver()
+    {
+        if (GetComponent<SpriteRenderer>().enabled == false)
+        {
+            GetComponent<SpriteRenderer>().enabled = true;
+            miniGameProgressTracker.points++;
+        }
+    }
+
 }

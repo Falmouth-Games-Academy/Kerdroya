@@ -13,7 +13,8 @@ public class ElementDragger : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(castPoint, out hit, Mathf.Infinity, hitLayers))
         {
-            targetObject.transform.position = hit.point;
+            if (targetObject)
+                targetObject.transform.position = hit.point;
         }
     }
 }
