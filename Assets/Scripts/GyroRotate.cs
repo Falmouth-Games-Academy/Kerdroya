@@ -19,6 +19,8 @@ public class GyroRotate : MonoBehaviour
     private bool setup = false;
     private byte progress;
     [SerializeField] private GyroScene scene;
+    [SerializeField] private Transform rotationalTruth;
+    [SerializeField] private Transform wishbone;
 
     // SETTINGS
     [SerializeField] private float _smoothing = 0.1f;
@@ -71,6 +73,10 @@ public class GyroRotate : MonoBehaviour
 
     private void NorthCliffScene(Vector3 curRot)
     {
+        curTex.text = Vector3.Angle(Vector3.up, rotationalTruth.up).ToString();
+        //Vector3 boneRot = wishbone.eulerAngles;
+        //boneRot.z = Vector3.Angle(Vector3.up, rotationalTruth.up);
+        //wishbone.eulerAngles = boneRot;
         switch (progress)
         {
             case 0:
@@ -78,15 +84,15 @@ public class GyroRotate : MonoBehaviour
                     progress |= 1;
                 break;
             case 1:
-                if (Mathf.Abs(curRot.y - 90) < 45)
+                if (Vector3.Angle(rotationalTruth.up, Vector3.up) < 45)
                     progress |= 1 << 1;
                 break;
             case 3:
-                if (Mathf.Abs(curRot.y - 270) < 45)
+                if (Vector3.Angle(rotationalTruth.up, Vector3.up) > 135)
                     progress |= 1 << 2;
                 break;
             case 7:
-                if (Mathf.Abs(curRot.y - 90) < 45)
+                if (Vector3.Angle(rotationalTruth.up, Vector3.up) < 45)
                     FindObjectOfType<MinigameProgressTracker>().points = 99;
                 break;
             default:
